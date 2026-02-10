@@ -243,29 +243,149 @@
     </header>
 
     <main>
-      <section class="bg-gray-100 py-24">
-        <div class="max-w-7xl mx-auto px-4">
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 max-w-3xl">
-            Home Remodeling Experts in Chicago
-          </h1>
+      <section class="relative h-[80vh] min-h-[520px] bg-black overflow-hidden">
+        <!-- VIDEO BACKGROUND -->
+        <video
+          class="absolute inset-0 w-full h-full object-cover"
+          src="assets/video/Remodel-Collage-VID-1-1.webm"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
 
-          <p class="mt-4 text-lg text-gray-600 max-w-2xl">
-            EcoBuild Plus delivers high-quality kitchen and bathroom remodeling
-            services built for durability, style, and long-term value.
-          </p>
+        <!-- DARK OVERLAY -->
+        <div class="absolute inset-0 bg-black/50"></div>
 
-          <div class="mt-8 flex gap-4 flex-wrap">
-            <a
-              href="#contact"
-              class="bg-yellow-600 text-white px-6 py-3 rounded"
+        <!-- CONTENT -->
+        <div class="relative z-10 h-full flex items-center">
+          <div class="mx-auto max-w-[1440px] px-6 text-white">
+            <h1
+              class="text-center uppercase text-4xl md:text-6xl font-bold leading-tight"
             >
-              Get a Free Estimate
+              Quality Home Building & Remodeling for<br
+                class="hidden md:block"
+              />
+              Chicago Families
+            </h1>
+
+            <p class="text-center mt-6 text-lg md:text-xl text-white/90">
+              For over 25 years, EcoBuild Plus has helped families in Chicago
+              and the Northwest suburbs build their future. Whether you are
+              looking to build a new custom home, update your kitchen, or add
+              more space for your growing family, we deliver honest
+              craftsmanship and reliable service you can count on. We treat your
+              home like it’s our own.
+            </p>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+              <a
+                href="#estimate"
+                class="rounded-full bg-green-900 px-7 py-3 text-white font-semibold hover:bg-green-700 transition"
+              >
+                Get a Free Estimate
+              </a>
+
+              <a
+                href="#services"
+                class="rounded-full bg-white border px-7 py-3 text-black font-semibold hover:bg-transparent hover:border hover:text-white transition"
+              >
+                Financing
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- CERTIFICATIONS -->
+          <div class="flex flex-wrap items-center justify-center gap-16">
+            <img
+              src="assets/img/logo/acrr-2 1.svg"
+              class="h-24"
+              alt="BBB Accredited Business"
+            />
+            <img
+              src="assets/img/logo/nahb-logo-200x173.webp"
+              class="h-24"
+              alt="NAHB"
+            />
+            <img
+              src="assets/img/logo/BPI 1.svg"
+              class="h-24"
+              alt="Building Performance Institute"
+            />
+            <img
+              src="assets/img/logo/osha-logo@logotyp 1.svg"
+              class="h-24"
+              alt="OSHA Certified"
+            />
+            <img src="assets/img/logo/ASHI 1.svg" class="h-24" alt="ASHI" />
+            <img
+              src="assets/img/logo/6467d12e9251b96807309aad_United-States-Environmental-Protection-Agency 1.svg"
+              class="h-24"
+              alt="EPA Certified"
+            />
+          </div>
+
+          <!-- REVIEWS -->
+          <div
+            class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            <!-- Google -->
+            <a
+              href="#"
+              class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            >
+              <img
+                src="assets/img/logo/google-reviews.webp"
+                class="mx-auto h-10"
+                alt="Google Reviews"
+              />
+
+              <p class="mt-2 text-sm text-gray-600">Read Google Reviews</p>
             </a>
+
+            <!-- Yelp -->
             <a
-              href="/pages/kitchen-remodeling.html"
-              class="border border-yellow-600 text-yellow-600 px-6 py-3 rounded"
+              href="#"
+              class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
             >
-              View Our Services
+              <img
+                src="assets/img/logo/yelp-reviews.webp"
+                class="mx-auto h-10"
+                alt="Yelp Reviews"
+              />
+
+              <p class="mt-2 text-sm text-gray-600">Read Yelp Reviews</p>
+            </a>
+
+            <!-- Angi -->
+            <a
+              href="#"
+              class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            >
+              <img
+                src="assets/img/logo/angi-logo-400x235.webp"
+                class="mx-auto h-10"
+                alt="Angi Reviews"
+              />
+              <p class="mt-4 text-sm text-gray-600">Read Angi Reviews</p>
+            </a>
+
+            <!-- BBB -->
+            <a
+              href="#"
+              class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
+            >
+              <img
+                src="assets/img/logo/bbb-reviews.webp"
+                class="mx-auto h-10"
+                alt="BBB Reviews"
+              />
+
+              <p class="mt-2 text-sm text-gray-600">Read BBB Reviews</p>
             </a>
           </div>
         </div>
