@@ -1,43 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoBuild Plus | Home Remodeling Chicago</title>
-  <meta name="description" content="EcoBuild Plus provides high-quality kitchen and bathroom remodeling services in Chicago and surrounding areas." />
-  <link rel="stylesheet" href="assets/css/main.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBuild Plus | Home Remodeling Chicago</title>
+    <meta
+      name="description"
+      content="EcoBuild Plus provides high-quality kitchen and bathroom remodeling services in Chicago and surrounding areas."
+    />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 bg-white border-b">
+      <div
+        class="max-w-[1440px] mx-auto px-5 py-2 h-18 flex items-center justify-between"
+      >
+        <a href="/" class="text-xl font-bold text-gray-900">
+          <img
+            src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
+            alt="EcoBuild Plus Logo"
+            class="h-12 w-auto"
+          />
+        </a>
+        <a
+          href="#contact"
+          class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition"
+        >
+          Financing Options
+        </a>
 
-   <header class="site-header">
-    <div class="container">
-      <div class="logo">
-        <a href="/">EcoBuild Plus</a>
+        <img
+          src="assets/img/icons/usa-flag.webp"
+          alt="United States flag"
+          class="h-8 w-auto inline-block align-middle"
+        />
+        <p class="text-sm text-gray-900 text-center">
+          <strong class="text-green-900"
+            >Your #1 Home Improvement Experts</strong
+          >
+          <br />
+          Serving Chicago Area
+        </p>
+
+        <p class="text-center text-sm/6">
+          <span class="text-[16px]">Give Us A Call Today!</span>
+          <br />
+          <a
+            href="tel:+12242768350"
+            class="text-green-900 hover:text-green-800 transition font text-[22px]"
+            ><strong> (224) 276 - 8350</strong></a
+          >
+        </p>
+        <a
+          href="#contact"
+          class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition"
+        >
+          Get a Free Estimate
+        </a>
       </div>
+      <div>
+        <nav class="hidden md:flex gap-12 justify-center items-center py-3">
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1 font-medium text-[18px] text-gray-900 hover:text-green-900"
+            >
+              About
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown -->
+            <div
+              class="absolute left-0 mt-2 w-56 overflow-hidden rounded-md bg-green-900 shadow-lg opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible"
+            >
+              <a
+                href="/"
+                class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                About EcoBuild Plus
+              </a>
+              <a
+                href="/"
+                class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                Resource
+              </a>
+            </div>
+          </div>
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1 font-medium text-[18px] text-gray-900 hover:text-green-900"
+            >
+              Residential
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown -->
+            <div
+              class="absolute left-0 mt-2 w-80 overflow-hidden rounded-md bg-green-900 shadow-lg opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible"
+            >
+              <a
+                href="/"
+                class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                View All Residential Services
+              </a>
+              <a
+                href="/"
+                class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                New Home Construction
+              </a>
+              <a
+                href="/"
+                class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                Home Remodeling
+              </a>
+              <a
+                href="/"
+                class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                Kitchen Remodeling
+              </a>
+              <a
+                href="/"
+                class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                Bathroom Remodeling
+              </a>
+              <a
+                href="/"
+                class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                Basement Remodeling
+              </a>
+              <a
+                href="/"
+                class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                Home Additions
+              </a>
+              <a
+                href="/"
+                class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                Accessible Remodeling
+              </a>
+            </div>
+          </div>
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1 font-medium text-[18px] text-gray-900 hover:text-green-900"
+            >
+              Projects
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown -->
+            <div
+              class="absolute left-0 mt-2 w-64 overflow-hidden rounded-md bg-green-900 shadow-lg opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible"
+            >
+              <a
+                href="/"
+                class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                Kitchen Before & After
+              </a>
+              <a
+                href="/resources.html"
+                class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+              >
+                Bathroom Before & After
+              </a>
+            </div>
+          </div>
+          <a
+            href="/pages/service-areas.html"
+            class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
+            >Service Areas</a
+          >
+          <a
+            href="/pages/financing.html"
+            class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
+            >Financing</a
+          >
+          <a
+            href="/pages/commercial.html"
+            class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
+            >Commercial</a
+          >
+          <a
+            href="/pages/blog.html"
+            class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
+            >Blog</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
+          >
+            Contact
+          </a>
+        </nav>
 
-      <nav class="main-nav" id="mainNav">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/pages/kitchen-remodeling.html">Kitchen</a></li>
-          <li><a href="/pages/bathroom-remodeling.html">Bathroom</a></li>
-          <li><a href="/pages/about.html">About</a></li>
-          <li><a href="#contact" class="btn-primary">Get a Quote</a></li>
-        </ul>
-      </nav>
+        <button id="navToggle" class="md:hidden text-2xl">☰</button>
+      </div>
+    </header>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        ☰
-      </button>
-    </div>
-  </header>
+    <main>
+      <section class="bg-gray-100 py-24">
+        <div class="max-w-7xl mx-auto px-4">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 max-w-3xl">
+            Home Remodeling Experts in Chicago
+          </h1>
 
-  <main>
-    <section>
-      <h2>Home Remodeling Experts in Chicago</h2>
-      <p>Kitchen, bathroom, and home remodeling done right.</p>
-    </section>
-  </main>
+          <p class="mt-4 text-lg text-gray-600 max-w-2xl">
+            EcoBuild Plus delivers high-quality kitchen and bathroom remodeling
+            services built for durability, style, and long-term value.
+          </p>
 
-  <script src="assets/js/main.js" defer></script>
-</body>
+          <div class="mt-8 flex gap-4 flex-wrap">
+            <a
+              href="#contact"
+              class="bg-yellow-600 text-white px-6 py-3 rounded"
+            >
+              Get a Free Estimate
+            </a>
+            <a
+              href="/pages/kitchen-remodeling.html"
+              class="border border-yellow-600 text-yellow-600 px-6 py-3 rounded"
+            >
+              View Our Services
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>
