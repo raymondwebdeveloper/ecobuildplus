@@ -12,6 +12,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="sticky top-0 z-50 bg-white border-b">
@@ -1382,6 +1389,355 @@
           </div>
         </div>
       </section>
+
+      <footer class="relative text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 -z-10">
+          <img
+            src="assets/img/bg/bg_footer.svg"
+            alt="Footer Background"
+            class="w-full h-full object-cover z-1 opacity-5"
+          />
+          <div class="absolute inset-0 -z-10 bg-[#112c1a]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 py-16">
+          <!-- Logo + Description -->
+          <div class="text-center mb-12">
+            <img
+              src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
+              class="mx-auto h-[85px] mb-4"
+            />
+            <p class="max-w-3xl mx-auto text-gray-200 leading-relaxed">
+              EcoBuild Plus is your trusted Chicagoland General Contractor,
+              specializing in premier new home construction and luxury home
+              remodeling.
+            </p>
+          </div>
+
+          <!-- 4 Column Grid -->
+          <div class="grid md:grid-cols-4 gap-10">
+            <!-- Company -->
+            <div>
+              <h3 class="font-bold text-lg mb-4 border-b border-white/20 pb-2">
+                ECOBUILD PLUS
+              </h3>
+              <p class="text-sm text-gray-200 leading-6">
+                Office Location:<br />
+                409 W Algonquin Rd<br />
+                Mt Prospect, IL 60056
+              </p>
+              <p class="mt-4 font-semibold">(847) 7383-9000</p>
+            </div>
+
+            <!-- Opening Hours -->
+            <div>
+              <h3 class="font-bold text-lg mb-4 border-b border-white/20 pb-2">
+                OPENING HOURS
+              </h3>
+              <ul class="text-sm text-gray-200 space-y-2">
+                <li>Mon–Fri: 8 AM – 6 PM</li>
+                <li>Saturday: 9 AM – 3 PM</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </div>
+
+            <!-- Residential -->
+            <div>
+              <h3 class="font-bold text-lg mb-4 border-b border-white/20 pb-2">
+                RESIDENTIAL
+              </h3>
+              <ul class="text-sm text-gray-200 space-y-2">
+                <li>
+                  <a href="#" class="hover:text-white transition"
+                    >New Home Construction</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition"
+                    >Kitchen Remodeling</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition"
+                    >Bathroom Remodeling</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition"
+                    >Home Additions</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Links -->
+            <div>
+              <h3 class="font-bold text-lg mb-4 border-b border-white/20 pb-2">
+                LINKS
+              </h3>
+              <ul class="text-sm text-gray-200 space-y-2">
+                <li>
+                  <a href="#" class="hover:text-white transition">About</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition">Projects</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition">Blog</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Sub Footer -->
+          <div class="text-center">
+            <!-- Social Media Icons -->
+            <div class="flex justify-center py-10">
+              <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <!-- Google Map -->
+                <a
+                  href="#"
+                  aria-label="Google Map"
+                  class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
+                >
+                  <i class="fa-solid fa-location-dot text-white text-lg"></i>
+                </a>
+
+                <!-- X (Twitter) -->
+                <a
+                  href="#"
+                  aria-label="X"
+                  class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
+                >
+                  <i class="fa-brands fa-x-twitter text-white text-lg"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
+                >
+                  <i class="fa-brands fa-instagram text-white text-lg"></i>
+                </a>
+
+                <!-- Houzz (closest icon substitute = house) -->
+                <a
+                  href="#"
+                  aria-label="Houzz"
+                  class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
+                >
+                  <i class="fa-solid fa-house text-white text-lg"></i>
+                </a>
+
+                <!-- Angi (no official icon → use stylized A) -->
+                <a
+                  href="#"
+                  aria-label="Angi"
+                  class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
+                >
+                  <i class="fa-solid fa-a text-white text-lg"></i>
+                </a>
+
+                <!-- Facebook -->
+                <a
+                  href="#"
+                  aria-label="Facebook"
+                  class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
+                >
+                  <i class="fa-brands fa-facebook-f text-white text-lg"></i>
+                </a>
+
+                <!-- TikTok -->
+                <a
+                  href="#"
+                  aria-label="TikTok"
+                  class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
+                >
+                  <i class="fa-brands fa-tiktok text-white text-lg"></i>
+                </a>
+
+                <!-- YouTube -->
+                <a
+                  href="#"
+                  aria-label="YouTube"
+                  class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
+                >
+                  <i class="fa-brands fa-youtube text-white text-lg"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a
+                  href="#"
+                  aria-label="LinkedIn"
+                  class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
+                >
+                  <i class="fa-brands fa-linkedin-in text-white text-lg"></i>
+                </a>
+
+                <!-- Yelp -->
+                <a
+                  href="#"
+                  aria-label="Yelp"
+                  class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
+                >
+                  <i class="fa-brands fa-yelp text-white text-lg"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Policy Links -->
+            <div
+              class="flex flex-wrap justify-center gap-8 text-sm text-gray-200 mb-6"
+            >
+              <a href="#" class="hover:text-white transition">Privacy Policy</a>
+              <a href="#" class="hover:text-white transition">Resource</a>
+              <a href="#" class="hover:text-white transition"
+                >Terms & Conditions</a
+              >
+              <a href="#" class="hover:text-white transition"
+                >EcoBuild Plus Warranty</a
+              >
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-sm text-white mb-6">
+              © 2026 EcoBuild Plus. All rights reserved.
+            </p>
+
+            <!-- Service Areas -->
+            <p class="text-xs text-white max-w-6xl mx-auto leading-relaxed">
+              EcoBuild Plus proudly serves Chicago and the surrounding areas,
+              including:
+
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Deerfield</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Arlington Heights</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Des Plaines</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Elk Grove Village</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Morton Grove</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Mount Prospect</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Niles</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Palatine</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Park Ridge</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Prospect Heights</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Schaumburg</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Evanston</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Northbrook</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Inverness</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Lake Zurich</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Lincolnshire</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Mundelein</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >North Barrington</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Riverwoods</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Rolling Meadows</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Roselle</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Rosemont</a
+              >,
+              <a
+                href="#"
+                class="hover:text-white transition-colors hover:underline"
+                >Vernon Hills</a
+              >
+              —
+
+              <a href="#" class="underline hover:text-white transition-colors">
+                See all service areas
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script src="assets/js/main.js" defer></script>
