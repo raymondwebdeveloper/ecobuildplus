@@ -275,20 +275,7 @@
               class="flex items-center justify-between w-full hover:text-green-900"
             >
               Residential
-              <svg
-                class="h-4 w-4 transition-transform duration-300"
-                :class="{ 'rotate-180': active === 'residential' }"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
             </button>
 
             <div
@@ -296,7 +283,7 @@
               x-collapse
               class="mt-2 ml-4 space-y-2 text-base text-gray-600"
             >
-              <a href="residential.html" class="block hover:text-green-900"
+              <a href="#" class="block hover:text-green-900"
                 >View All Residential Services</a
               >
               <a href="#" class="block hover:text-green-900"
@@ -326,20 +313,7 @@
               class="flex items-center justify-between w-full hover:text-green-900"
             >
               Projects
-              <svg
-                class="h-4 w-4 transition-transform duration-300"
-                :class="{ 'rotate-180': active === 'projects' }"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
             </button>
 
             <div
@@ -404,33 +378,31 @@
     <main>
       <!-- Hero Section -->
       <section class="relative h-[80vh] min-h-[520px] bg-black overflow-hidden">
-        <!-- Cover background -->
+        <!-- Cover Background -->
         <img
-          src="assets/img/bg/About-Us-Cover.webp"
-          class="absolute h-full w-full object-cover"
-          alt=""
+          src="assets/img/bg/Residential-Interior-Design-with-Ecobuild-1.webp"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="Residential Interior Design with Ecobuild Plus"
         />
 
         <!-- DARK OVERLAY -->
-        <div class="absolute inset-0 bg-black/75"></div>
+        <div class="absolute inset-0 bg-black/50"></div>
 
         <!-- CONTENT -->
         <div class="relative z-10 h-full flex items-center">
           <div class="mx-auto max-w-[1440px] px-6 text-white">
             <h1
-              class="text-center uppercase text-[29px] md:text-5xl font-bold leading-tight"
+              class="text-center uppercase text-4xl md:text-5xl font-bold leading-tight"
             >
-              About EcoBuild Plus: 25 Years of Trusted Building
+              Complete Home Building & Remodeling Services
             </h1>
 
-            <p
-              class="text-center mt-6 text-lg md:text-xl text-white/90 hidden md:block"
-            >
-              More than just contractors, we are your neighbors and partners in
-              creating better homes. Founded by Andrei and Dima, EcoBuild Plus
-              was built on a simple promise: to deliver honest work,
-              high-performance engineering, and lasting quality to families
-              across Chicago and the suburbs.
+            <p class="text-center mt-6 text-lg md:text-xl text-white/90">
+              Whether you need a new home built from the ground up or a single
+              room updated, EcoBuild Plus is your partner in home improvement.
+              We serve families across Chicago and the Northwest suburbs with
+              honest craftsmanship, clear communication, and quality materials
+              that stand the test of time.
             </p>
 
             <div class="mt-8 flex flex-wrap justify-center gap-4">
@@ -439,351 +411,319 @@
                 class="inline-flex items-center gap-2 rounded-full bg-green-900 px-7 py-4 text-white font-semibold hover:bg-green-700 transition"
               >
                 Contact Us Now
-                <i class="ml-2 fa-solid fa-arrow-right"></i>
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Team -->
-      <section class="py-10 bg-white">
-        <div class="max-w-[1200px] mx-auto px-6">
-          <!-- Section Title -->
-          <h2
-            class="text-3xl md:text-5xl font-bold text-center text-[#112c1a] mb-12"
-          >
-            Meet The Dream Team
-          </h2>
-
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <!-- Image -->
-            <div>
-              <img
-                src="assets/img/Jeff-Headshot-800x671.webp"
-                alt="Jeff Goble - Senior Project Manager"
-                class="w-full h-full rounded-xl shadow-lg hover:brightness-150 transition duration-500 object-cover"
-              />
-            </div>
-
-            <!-- Content -->
-            <div>
-              <h3 class="text-3xl font-bold text-[#112c1a]">Jeff Goble</h3>
-
-              <p
-                class="text-green-900 uppercase tracking-wide text-sm text-gray-500 mb-6"
-              >
-                Sr. Project Manager
-              </p>
-
-              <p class="text-green-900 leading-relaxed mb-6">
-                As Lead Project Manager and the heartbeat of our job sites, Jeff
-                approaches every build with the same integrity he would his own
-                home. He shares the belief that a house is more than a
-                structure, it is the foundation where life happens. From the
-                first blueprint to the final walk-through, Jeff’s unwavering
-                attention to detail ensures your dream vision becomes reality.
-              </p>
-
-              <h4 class="font-bold text-[#112c1a] mb-4">
-                What to Expect When Working with Jeff:
-              </h4>
-
-              <ul class="space-y-4 text-gray-700">
-                <li class="flex gap-3 text-green-900">
-                  <span class="font-bold">•</span>
-                  <span
-                    ><strong class="text-[#112c1a]"
-                      >Unwavering Advocacy:</strong
-                    >
-                    Jeff acts as your representative on-site, ensuring your
-                    design vision is executed without compromise.</span
-                  >
-                </li>
-
-                <li class="flex gap-3 text-green-900">
-                  <span class="font-bold">•</span>
-                  <span
-                    ><strong class="text-[#112c1a]"
-                      >Transparent Communication:</strong
-                    >
-                    ou will never be left guessing. Jeff keeps you informed on
-                    timelines, progress, and milestones every step of the way.
-                  </span>
-                </li>
-
-                <li class="flex gap-3 text-green-900">
-                  <span class="font-bold">•</span>
-                  <span
-                    ><strong class="text-[#112c1a]"
-                      >Respect for Your Home:</strong
-                    >
-                    Whether it’s a new build or a remodel, Jeff maintains a
-                    clean, organized, and safe job site that respects your
-                    property and privacy.</span
-                  >
-                </li>
-
-                <li class="flex gap-3 text-green-900">
-                  <span class="font-bold">•</span>
-                  <span
-                    ><strong class="text-[#112c1a]"
-                      >Solutions-Oriented Leadership:</strong
-                    >
-                    Construction is complex; Jeff proactively identifies
-                    challenges and implements smart solutions to keep your
-                    project moving forward smoothly.</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Mastery -->
-      <section class="py-10 bg-white">
-        <div
-          class="max-w-[1200px] mx-auto px-6 grid md:grid-cols-2 gap-14 items-center"
-        >
-          <!-- LEFT: Image Grid -->
-          <div class="space-y-4">
-            <!-- Large Image -->
+      <!-- CERTIFICATIONS -->
+      <section class="bg-white py-10">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-wrap items-center justify-between gap-16">
             <img
-              src="assets/img/25-years-of-luxury-.webp"
-              alt="Luxury Home"
-              class="w-full hover:brightness-150 transition duration-500"
+              src="assets/img/logo/acrr-2 1.svg"
+              class="h-14"
+              alt="BBB Accredited Business"
+            />
+            <img
+              src="assets/img/logo/nahb-logo-200x173.webp"
+              class="h-24"
+              alt="NAHB"
+            />
+            <img
+              src="assets/img/logo/BPI 1.svg"
+              class="h-24"
+              alt="Building Performance Institute"
+            />
+            <img
+              src="assets/img/logo/osha-logo@logotyp 1.svg"
+              class="h-24"
+              alt="OSHA Certified"
+            />
+            <img src="assets/img/logo/ASHI 1.svg" class="h-24" alt="ASHI" />
+            <img
+              src="assets/img/logo/6467d12e9251b96807309aad_United-States-Environmental-Protection-Agency 1.svg"
+              class="h-24"
+              alt="EPA Certified"
             />
           </div>
 
-          <!-- RIGHT: Content -->
-          <div>
-            <p
-              class="uppercase tracking-widest text-sm text-green-900 font-semibold mb-3"
-            >
-              Premier – Luxury – Professional
-            </p>
-            <hr />
-            <h2
-              class="text-4xl md:text-4xl font-bold uppercase text-[#112c1a] my-3"
-            >
-              25 Years of Mastery
-            </h2>
-
-            <p class="text-green-900 leading-relaxed mb-6">
-              For over 25 years, we have been more than just builders in
-              Chicago; we have been guardians of quality. We noticed a gap in
-              the luxury market: homes that looked beautiful but didn’t feel
-              right; drafty, inefficient, or poorly managed.
-            </p>
-
-            <p class="text-green-900 leading-relaxed mb-8">
-              We founded EcoBuild Plus to solve this. Our philosophy isn’t just
-              about construction; it’s about creating a sanctuary. A home that
-              is quieter, healthier, and built with such precision that it
-              stands the test of time for generations. We don’t just renovate
-              spaces; we elevate the way you live.
-            </p>
-
+          <!-- REVIEWS -->
+          <div
+            class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            <!-- Google -->
             <a
-              href="#services"
-              class="inline-flex items-center gap-3 rounded-full bg-green-900 px-8 py-4 text-white font-medium hover:bg-green-800 transition"
+              href="#"
+              class="bg-white rounded-xl shadow-md p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
             >
-              View Our Services
-              <i class="fa-solid fa-arrow-right"></i>
+              <img
+                src="assets/img/logo/google-reviews.webp"
+                class="mx-auto h-10"
+                alt="Google Reviews"
+              />
+
+              <p class="mt-2 text-sm text-gray-600">Read Google Reviews</p>
+            </a>
+
+            <!-- Yelp -->
+            <a
+              href="#"
+              class="bg-white rounded-xl shadow-md p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
+            >
+              <img
+                src="assets/img/logo/yelp-reviews.webp"
+                class="mx-auto h-10"
+                alt="Yelp Reviews"
+              />
+
+              <p class="mt-2 text-sm text-gray-600">Read Yelp Reviews</p>
+            </a>
+
+            <!-- Angi -->
+            <a
+              href="#"
+              class="bg-white rounded-xl shadow-md p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
+            >
+              <img
+                src="assets/img/logo/angi-logo-400x235.webp"
+                class="mx-auto h-10"
+                alt="Angi Reviews"
+              />
+              <p class="mt-4 text-sm text-gray-600">Read Angi Reviews</p>
+            </a>
+
+            <!-- BBB -->
+            <a
+              href="#"
+              class="bg-white rounded-xl shadow-md p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
+            >
+              <img
+                src="assets/img/logo/bbb-reviews.webp"
+                class="mx-auto h-10"
+                alt="BBB Reviews"
+              />
+
+              <p class="mt-2 text-sm text-gray-600">Read BBB Reviews</p>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- Process -->
-      <section class="py-10 bg-gray-50">
-        <div class="max-w-[1200px] mx-auto px-6">
-          <!-- Title -->
-          <h2
-            class="text-4xl md:text-5xl font-bold text-center text-[#112c1a] mb-14"
-          >
-            The Process: Orchestrated Perfection
-          </h2>
-
-          <!-- Card Container -->
-          <div class="bg-white rounded-2xl shadow-md p-10">
-            <div class="grid md:grid-cols-4 text-center">
-              <!-- Step 1 -->
-              <div
-                class="p-6 md:border-r border-green-900/30 hover:translate-y-1 transition-transform duration-200"
-              >
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-3">
-                  Discovery
-                </h3>
-                <p class="text-green-900">We listen to your dream.</p>
-              </div>
-
-              <!-- Step 2 -->
-              <div
-                class="p-6 md:border-r border-green-900/30 hover:translate-y-1 transition-transform duration-200"
-              >
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-3">Design</h3>
-                <p class="text-green-900">
-                  We align architecture with engineering.
-                </p>
-              </div>
-
-              <!-- Step 3 -->
-              <div
-                class="p-6 md:border-r border-green-900/30 hover:translate-y-1 transition-transform duration-200"
-              >
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-3">
-                  The Build
-                </h3>
-                <p class="text-green-900">
-                  White-glove management and clean job sites.
-                </p>
-              </div>
-
-              <!-- Step 4 -->
-              <div
-                class="p-6 hover:translate-y-1 transition-transform duration-200"
-              >
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-3">
-                  Welcome Home
-                </h3>
-                <p class="text-green-900">Enjoy living in your new dream.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 3 Premium -->
-      <section class="py-10 bg-white">
-        <div class="max-w-[1200px] mx-auto px-6">
-          <div class="grid md:grid-cols-3 gap-12">
-            <!-- COLUMN 1 -->
-            <div class="text-center md:text-left">
-              <h3
-                class="text-2xl md:text-2xl font-bold text-center text-[#112c1a] mb-6 uppercase tracking-wide"
-              >
-                Intelligent Engineering
-              </h3>
-
-              <img
-                src="assets/img/Premier-Engineering--600x503.webp"
-                alt="Intelligent Engineering"
-                class="w-full h-[300px] object-cover mb-6 hover:brightness-150 transition duration-500"
-              />
-
-              <p class="text-green-900 leading-relaxed text-md">
-                True luxury is invisible. It’s the perfect temperature in every
-                room, the silence of the outside world melting away, and the
-                peace of mind knowing your home is engineered to perform
-                flawlessly.
-              </p>
-            </div>
-
-            <!-- COLUMN 2 -->
-            <div class="text-center md:text-left">
-              <h3
-                class="text-2xl md:text-2xl font-bold text-center text-[#112c1a] mb-6 uppercase tracking-wide"
-              >
-                Tailored Luxury
-              </h3>
-
-              <img
-                src="assets/img/EcoBuild-Plus-Tailored-Luxury-600x503.webp"
-                alt="Tailored Luxury"
-                class="w-full h-[300px] object-cover mb-6 hover:brightness-150 transition duration-500"
-              />
-
-              <p class="text-green-900 leading-relaxed text-md">
-                No two lives are the same, and no two homes should be either. We
-                specialize in one-of-a-kind builds, customizing every square
-                inch to fit your family’s lifestyle, taste, and future.
-              </p>
-            </div>
-
-            <!-- COLUMN 3 -->
-            <div class="text-center md:text-left">
-              <h3
-                class="text-2xl md:text-2xl font-bold text-center text-[#112c1a] mb-6 uppercase tracking-wide"
-              >
-                The ‘Plus’ Experience
-              </h3>
-
-              <img
-                src="assets/img/EcoBuild-Way-600x503.webp"
-                alt="Plus Experience"
-                class="w-full h-[300px] object-cover mb-6 hover:brightness-150 transition duration-500"
-              />
-
-              <p class="text-green-900 leading-relaxed text-md">
-                We believe the building process should be as refined as the
-                finished home. We handle permitting, sourcing, and scheduling so
-                you can enjoy watching your dream take shape.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Vision -->
-      <section class="py-10 bg-[#f5f5f3]">
-        <div class="max-w-[1200px] mx-auto px-6">
-          <!-- Section Title -->
-          <h2
-            class="text-3xl md:text-5xl font-bold text-center text-[#112c1a] mb-10"
-          >
-            Your Vision, Any Location
+      <section
+        class="relative h-[100vh] min-h-[520px] bg-black overflow-hidden"
+      >
+        <!-- Background -->
+        <img
+          src="assets/img/bg/Home-Construction-and-Remodel-Photos.webp"
+          class="w-full h-full object-cover"
+        />
+
+        <!-- Green Overlay -->
+        <div class="h-1/3 absolute mt-auto inset-0 bg-green-900/70"></div>
+
+        <!-- Content -->
+        <div
+          class="h-1/3 absolute mt-auto inset-0 flex flex-col items-center justify-center text-center px-6"
+        >
+          <h2 class="text-white text-4xl md:text-6xl font-bold mb-6">
+            Turning Vision Into Reality
           </h2>
 
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <!-- LEFT IMAGE -->
-            <div>
-              <img
-                src="assets/img/EcoBuild-Plus-Service-Area-Map-1-1-800x450.webp"
-                alt="Chicago and Suburbs Coverage"
-                class="w-full h-auto object-cover transition duration-500 hover:scale-105 transition-transform"
-              />
-            </div>
+          <p class="text-white/90 text-lg md:text-lg mb-8">
+            From concept to completion, we turn ambitious designs into
+            breathtaking spaces. Experience a seamless construction process
+            defined by transparency, clarity, and white-glove service.
+          </p>
 
-            <!-- RIGHT CONTENT -->
-            <div>
-              <h3
-                class="text-3xl md:text-4xl font-bold text-[#112c1a] mb-6 leading-tight"
-              >
-                Your Luxury Home Builder For <br />
-                Chicago And The Suburbs
-              </h3>
-
-              <p class="text-green-900 text-lg leading-relaxed">
-                Luxury knows no boundaries, and neither do we. While our roots
-                are in Chicago, our reputation for excellence has taken us
-                across Illinois. We bring our dedicated crews, project managers,
-                and trusted supply chain to your site, ensuring the same
-                ‘EcoBuild Standard’ whether you are building in Winnetka,
-                Naperville, or beyond.
-              </p>
-
-              <!-- Optional CTA -->
-              <a
-                href="/pages/service-areas.html"
-                class="inline-block mt-8 rounded-full bg-green-900 px-8 py-4 text-white font-medium hover:bg-green-800 transition"
-              >
-                Explore Service Areas →
-              </a>
-            </div>
-          </div>
+          <a
+            href="#contact"
+            class="inline-flex items-center gap-2 bg-white text-green-900 font-medium px-8 py-4 rounded-full shadow-lg hover:bg-green-900 hover:text-white transition"
+          >
+            Get a Free Quote
+            <span>→</span>
+          </a>
         </div>
       </section>
 
-      <!-- BUILDING YOUR DREAM -->
+      <!-- DREAM CONSTRUCTION PROJECTS -->
       <section class="bg-white py-10">
         <div class="max-w-7xl mx-auto px-6">
           <!-- Heading -->
           <h2
-            class="text-4xl md:text-5xl font-bold text-center uppercase text-[#112c1a] mb-10"
+            class="uppercase text-4xl md:text-5xl font-bold text-center text-[#112c1a] mb-10"
           >
-            Start Building Your Dream Today
+            Construction Services
+          </h2>
+
+          <!-- Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Card 1 -->
+            <div
+              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition-all duration-300 group overflow-hidden p-2"
+            >
+              <!-- Image -->
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="assets/img/EcoBuild-Plus-Chicago-Luxury-Home-Remodel-800x671.webp"
+                  class="w-full h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt="Custom Home"
+                />
+              </div>
+
+              <!-- Content -->
+              <div class="p-8 text-center">
+                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
+                  CUSTOM HOME
+                </h3>
+
+                <p class="text-gray-600 mb-8">
+                  Ready to build your masterpiece? Explore our custom home
+                  services and create a luxurious, personalized dream space.
+                </p>
+
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
+                >
+                  View Details
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition-all duration-300 group overflow-hidden p-2"
+            >
+              <!-- Image -->
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="assets/img/Luxury-New-Home-Construction-800x671.webp"
+                  class="w-full h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt="Custom Home"
+                />
+              </div>
+
+              <!-- Content -->
+              <div class="py-8 px-4 text-center">
+                <h3 class="uppercase text-2xl font-bold text-[#112c1a] mb-4">
+                  New Home Construction
+                </h3>
+
+                <p class="text-gray-600 mb-8">
+                  We manage every detail of your new home construction,
+                  providing a seamless and professional journey to your
+                  brand-new, dream home.
+                </p>
+
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
+                >
+                  View Details
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition-all duration-300 group overflow-hidden p-2"
+            >
+              <!-- Image -->
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="assets/img/New-Home-Addition-800x671.webp"
+                  class="w-full h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt="Custom Home"
+                />
+              </div>
+
+              <!-- Content -->
+              <div class="p-8 text-center">
+                <h3 class="uppercase text-2xl font-bold text-[#112c1a] mb-4">
+                  New Home Addition
+                </h3>
+
+                <p class="text-gray-600 mb-8">
+                  Partner with our experts for a custom-designed new home
+                  addition built effortlessly, exactly how you dreamed.
+                </p>
+
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
+                >
+                  View Details
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Premier Remodeling Services -->
+      <section class="bg-white py-10">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Heading -->
+          <h2
+            class="uppercase text-4xl md:text-5xl font-bold text-center text-[#112c1a] mb-10"
+          >
+            Premier Remodeling Services
           </h2>
 
           <!-- Grid -->
@@ -888,13 +828,13 @@
           <div
             class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 max-w-4xl mx-auto"
           >
-            <!-- Home Addition -->
+            <!-- Multi-room -->
             <div
               class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
             >
               <div class="overflow-hidden">
                 <img
-                  src="assets/img/New-Home-Addition-800x671.webp"
+                  src="assets/img/Home-Remodeling-Experts-800x671.webp"
                   class="w-full h-[330px] rounded-md object-cover group-hover:scale-105 transition-transform duration-500"
                   alt="Multi Room Remodeling"
                 />
@@ -902,12 +842,13 @@
 
               <div class="p-8 text-center">
                 <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
-                  HOME ADDITION
+                  HOME REMODELING
                 </h3>
 
                 <p class="text-gray-600 text-sm mb-6">
-                  Partner with our experts for a custom-designed new home
-                  addition built effortlessly, exactly how you dreamed.
+                  Managing complex, multi-room projects is our specialty. Our
+                  team delivers a beautiful, cohesive home. Get your dream home
+                  today!
                 </p>
 
                 <a
@@ -933,8 +874,8 @@
               </div>
 
               <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold uppercase text-[#112c1a] mb-4">
-                  Accessible Home Remodeling
+                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
+                  ACCESSIBLE HOME REMODELING
                 </h3>
 
                 <p class="text-gray-600 text-sm mb-6">
@@ -952,6 +893,51 @@
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start Your Journey with Confidence -->
+      <section class="bg-[#0f3b22] py-10">
+        <div
+          class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+        >
+          <!-- LEFT CONTENT -->
+          <div class="text-white">
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+              <span class="text-white/90">25+ YEARS OF LUXURY</span><br />
+              CONSTRUCTION &<br />
+              REMODELING
+            </h2>
+
+            <p class="mt-6 text-white/80 leading-relaxed">
+              Embarking on a custom build or major renovation is a significant
+              investment. We guide you through every phase of the process, from
+              architectural planning to the final tailored finish. Our mission
+              is to deliver ‘High-Performance Luxury’ creating homes that are
+              not only visually stunning but engineered for exceptional health,
+              silence, and comfort. Experience a seamless construction journey
+              with Chicago’s premier residential partner.
+            </p>
+
+            <!-- BUTTON -->
+            <div class="mt-10">
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 bg-green-700 hover:bg-green-600 text-white px-8 py-4 rounded-full font-medium transition duration-300"
+              >
+                Get a Free Consultation →
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="relative">
+            <img
+              src="assets/img/Home-Construction-and-Remodeling-Consultation.webp"
+              alt="Luxury Home"
+              class="w-full h-full object-cover rounded-md transition duration-500 hover:brightness-150"
+            />
           </div>
         </div>
       </section>
