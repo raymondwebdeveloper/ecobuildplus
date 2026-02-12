@@ -21,7 +21,10 @@
     />
   </head>
   <body>
-    <header class="sticky top-0 z-50 bg-white border-b">
+    <header
+      x-data="{ open: false }"
+      class="sticky top-0 z-50 bg-white border-b"
+    >
       <div
         class="max-w-[1440px] mx-auto px-5 py-2 h-18 flex items-center justify-between"
       >
@@ -32,27 +35,26 @@
             class="h-12 w-auto"
           />
         </a>
+
         <a
           href="#contact"
-          class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition"
+          class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition hidden md:inline-block"
         >
           Financing Options
         </a>
-
         <img
           src="assets/img/icons/usa-flag.webp"
           alt="United States flag"
-          class="h-8 w-auto inline-block align-middle"
+          class="h-8 w-auto inline-block align-middle hidden md:inline-block"
         />
-        <p class="text-sm text-gray-900 text-center">
+        <p class="text-sm text-gray-900 text-center hidden md:inline-block">
           <strong class="text-green-900"
             >Your #1 Home Improvement Experts</strong
           >
           <br />
           Serving Chicago Area
         </p>
-
-        <p class="text-center text-sm/6">
+        <p class="text-center text-sm/6 hidden md:inline-block">
           <span class="text-[16px]">Give Us A Call Today!</span>
           <br />
           <a
@@ -63,10 +65,11 @@
         </p>
         <a
           href="#contact"
-          class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition"
+          class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition hidden md:inline-block"
         >
           Get a Free Estimate
         </a>
+        <button @click="open = !open" class="md:hidden text-2xl">☰</button>
       </div>
       <div>
         <nav class="hidden md:flex gap-12 justify-center items-center py-3">
@@ -75,19 +78,10 @@
               class="flex items-center gap-1 font-medium text-[18px] text-gray-900 hover:text-green-900"
             >
               About
-              <svg
-                class="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <i
+                class="fa-solid fa-angle-down text-xs transition-transform duration-300"
+                :class="{ 'rotate-180': active === 'projects' }"
+              ></i>
             </button>
             <!-- Dropdown -->
             <div
@@ -112,19 +106,10 @@
               class="flex items-center gap-1 font-medium text-[18px] text-gray-900 hover:text-green-900"
             >
               Residential
-              <svg
-                class="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <i
+                class="fa-solid fa-angle-down text-xs transition-transform duration-300"
+                :class="{ 'rotate-180': active === 'residential' }"
+              ></i>
             </button>
             <!-- Dropdown -->
             <div
@@ -185,19 +170,10 @@
               class="flex items-center gap-1 font-medium text-[18px] text-gray-900 hover:text-green-900"
             >
               Projects
-              <svg
-                class="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <i
+                class="fa-solid fa-angle-down text-xs transition-transform duration-300"
+                :class="{ 'rotate-180': active === 'projects' }"
+              ></i>
             </button>
             <!-- Dropdown -->
             <div
@@ -244,8 +220,185 @@
             Contact
           </a>
         </nav>
+      </div>
 
-        <button id="navToggle" class="md:hidden text-2xl">☰</button>
+      <!-- Mobile Menu -->
+      <div
+        x-show="open"
+        x-transition
+        @click.away="open = false"
+        class="md:hidden bg-white border-t shadow-lg"
+      >
+        <div
+          x-data="{ active: null }"
+          class="px-6 py-6 space-y-4 text-lg font-medium"
+        >
+          <!-- ABOUT -->
+          <div>
+            <button
+              @click="active === 'about' ? active = null : active = 'about'"
+              class="flex items-center justify-between w-full hover:text-green-900"
+            >
+              About
+              <svg
+                class="h-4 w-4 transition-transform duration-300"
+                :class="{ 'rotate-180': active === 'about' }"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div
+              x-show="active === 'about'"
+              x-collapse
+              class="mt-2 ml-4 space-y-2 text-base text-gray-600 overflow-hidden"
+            >
+              <a href="#" class="block hover:text-green-900"
+                >About EcoBuild Plus</a
+              >
+              <a href="#" class="block hover:text-green-900">Resource</a>
+              <a href="#" class="block hover:text-green-900">Our Team</a>
+            </div>
+          </div>
+
+          <!-- RESIDENTIAL -->
+          <div>
+            <button
+              @click="active === 'residential' ? active = null : active = 'residential'"
+              class="flex items-center justify-between w-full hover:text-green-900"
+            >
+              Residential
+              <svg
+                class="h-4 w-4 transition-transform duration-300"
+                :class="{ 'rotate-180': active === 'residential' }"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div
+              x-show="active === 'residential'"
+              x-collapse
+              class="mt-2 ml-4 space-y-2 text-base text-gray-600"
+            >
+              <a href="#" class="block hover:text-green-900"
+                >View All Residential Services</a
+              >
+              <a href="#" class="block hover:text-green-900"
+                >New Home Construction</a
+              >
+              <a href="#" class="block hover:text-green-900">Home Remodeling</a>
+              <a href="#" class="block hover:text-green-900"
+                >Kitchen Remodeling</a
+              >
+              <a href="#" class="block hover:text-green-900"
+                >Bathroom Remodeling</a
+              >
+              <a href="#" class="block hover:text-green-900"
+                >Basement Remodeling</a
+              >
+              <a href="#" class="block hover:text-green-900">Home Additions</a>
+              <a href="#" class="block hover:text-green-900"
+                >Accessible Remodeling</a
+              >
+            </div>
+          </div>
+
+          <!-- PROJECTS -->
+          <div>
+            <button
+              @click="active === 'projects' ? active = null : active = 'projects'"
+              class="flex items-center justify-between w-full hover:text-green-900"
+            >
+              Projects
+              <svg
+                class="h-4 w-4 transition-transform duration-300"
+                :class="{ 'rotate-180': active === 'projects' }"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div
+              x-show="active === 'projects'"
+              x-collapse
+              class="mt-2 ml-4 space-y-2 text-base text-gray-600"
+            >
+              <a href="#" class="block hover:text-green-900"
+                >Kitchen Before & After</a
+              >
+              <a href="#" class="block hover:text-green-900"
+                >Bathroom Before & After</a
+              >
+            </div>
+          </div>
+
+          <!-- NORMAL LINKS -->
+          <a href="#" class="block hover:text-green-900">Service Areas</a>
+          <a href="#" class="block hover:text-green-900">Commercial</a>
+          <a href="#" class="block hover:text-green-900">Blog</a>
+          <a href="#" class="block hover:text-green-900">Contact</a>
+
+          <!-- CTA -->
+          <div class="pt-6 text-center">
+            <a href="tel:+18475926206" class="text-2xl hover:underline">
+              (847) 592-6206</a
+            >
+            <a
+              href="#contact"
+              class="block text-center mt-4 rounded-full bg-green-900 px-6 py-3 text-white hover:bg-green-800 transition"
+            >
+              Contact Us Now
+            </a>
+            <!-- Social Media Premium -->
+            <div class="flex justify-center gap-4 mt-6">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded bg-green-900 text-white hover:bg-green-800 transition"
+              >
+                <i class="fa-brands fa-facebook-f text-sm"></i>
+              </a>
+
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded bg-green-900 text-white hover:bg-green-800 transition"
+              >
+                <i class="fa-brands fa-instagram text-sm"></i>
+              </a>
+
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded bg-green-900 text-white hover:bg-green-800 transition"
+              >
+                <i class="fa-brands fa-linkedin-in text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -277,13 +430,21 @@
               Chicago Families
             </h1>
 
-            <p class="text-center mt-6 text-lg md:text-xl text-white/90">
+            <p
+              class="text-center mt-6 text-lg md:text-xl text-white/90 hidden md:block"
+            >
               For over 25 years, EcoBuild Plus has helped families in Chicago
               and the Northwest suburbs build their future. Whether you are
               looking to build a new custom home, update your kitchen, or add
               more space for your growing family, we deliver honest
               craftsmanship and reliable service you can count on. We treat your
               home like it’s our own.
+            </p>
+            <p
+              class="text-center mt-6 text-lg md:text-xl text-white/90 block md:hidden"
+            >
+              For over 25 years, we’ve helped Chicagoland families build custom
+              homes, remodel kitchens and add more space as they grow.
             </p>
 
             <div class="mt-8 flex flex-wrap justify-center gap-4">
@@ -1741,5 +1902,13 @@
     </main>
 
     <script src="assets/js/main.js" defer></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </body>
 </html>
