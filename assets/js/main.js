@@ -41,4 +41,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
  
 
+document.addEventListener("DOMContentLoaded", function () {
+  const sliders = document.querySelectorAll("[data-slider]");
+
+  sliders.forEach(slider => {
+    const slides = slider.querySelector(".slides");
+    const images = slides.querySelectorAll("img");
+    const prevBtn = slider.querySelector(".prev");
+    const nextBtn = slider.querySelector(".next");
+
+    let index = 0;
+
+    function updateSlide() {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % images.length;
+      updateSlide();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + images.length) % images.length;
+      updateSlide();
+    });
+  });
+});
+
+
  

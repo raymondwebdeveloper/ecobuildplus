@@ -19,13 +19,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
   </head>
   <body>
     <header
@@ -392,41 +385,378 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="relative h-[50vh] min-h-[320px] overflow-hidden">
+      <section class="relative h-[80vh] min-h-[520px] bg-black overflow-hidden">
         <!-- Cover Background -->
         <img
-          src="assets/img/bg/bg_form.svg"
-          class="absolute inset-0 -z-index-10 w-full h-full object-cover"
+          src="assets/img/bg/Commercial-cover-image-1.webp"
+          class="absolute inset-0 w-full h-full object-cover"
           alt="Residential Interior Design with Ecobuild Plus"
         />
 
         <!-- DARK OVERLAY -->
-        <div class="absolute inset-0 bg-[#112c1a]/95"></div>
+        <div class="absolute inset-0 bg-black/50"></div>
 
         <!-- CONTENT -->
         <div class="relative z-10 h-full flex items-center">
-          <div class="mx-auto max-w-[1440px] px-6 text-white">
-            <h1 class="uppercase text-4xl md:text-5xl font-bold leading-tight">
-              Service Areas
+          <div class="mx-auto px-6 text-white">
+            <h1
+              class="text-center uppercase text-3xl md:text-[48px] font-bold leading-tight"
+            >
+              Reliable Commercial Construction for Local Business
             </h1>
 
-            <p class="mt-6 text-md md:text-lg text-white/90">
-              Below you’ll find a list of our service areas in Chicagoland.
-              Don’t see your location listed below? Just give us a call. We’d be
-              happy to learn more about your project and see what we can do to
-              assist you.
+            <p
+              class="text-center mt-6 text-lg md:text-xl text-white/90 md:max-w-6xl mx-auto"
+            >
+              From new retail builds to office renovations and warehouse updates
+              across Chicagoland, our team delivers projects on time and on
+              budget, minimizing downtime so you can get back to work.
+            </p>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+              <a
+                href="#estimate"
+                class="inline-flex items-center gap-2 rounded-full bg-green-900 px-7 py-4 text-white font-semibold hover:bg-green-700 transition"
+              >
+                Request a Proposal
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="bg-white py-10">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-wrap items-center justify-between gap-16">
+            <img
+              src="assets/img/logo/acrr-2 1.svg"
+              class="h-14"
+              alt="BBB Accredited Business"
+            />
+            <img
+              src="assets/img/logo/nahb-logo-200x173.webp"
+              class="h-24"
+              alt="NAHB"
+            />
+            <img
+              src="assets/img/logo/BPI 1.svg"
+              class="h-24"
+              alt="Building Performance Institute"
+            />
+            <img
+              src="assets/img/logo/osha-logo@logotyp 1.svg"
+              class="h-24"
+              alt="OSHA Certified"
+            />
+            <img src="assets/img/logo/ASHI 1.svg" class="h-24" alt="ASHI" />
+            <img
+              src="assets/img/logo/6467d12e9251b96807309aad_United-States-Environmental-Protection-Agency 1.svg"
+              class="h-24"
+              alt="EPA Certified"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- FULL-SERVICE -->
+      <section class="bg-white py-10">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Section Title -->
+          <div class="text-center mb-5">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#112c1a]">
+              FULL-SERVICE COMMERCIAL CONSTRUCTION SOLUTIONS
+            </h2>
+          </div>
+
+          <!-- 3 Column Grid -->
+          <div class="grid md:grid-cols-3 gap-10">
+            <!-- COLUMN 1 -->
+            <div class="text-center">
+              <h3 class="text-2xl font-bold text-green-900 mb-6">
+                Tenant Improvements & <br />
+                Build-Outs
+              </h3>
+
+              <img
+                src="assets/img/Tenant-Improvements-Build-Outs-Images-1-800x450.webp"
+                alt="Tenant Improvements & Build-Outs"
+                class="w-full h-[220px] rounded-lg shadow-md mb-6 hover:brightness-150 transition duration-500"
+              />
+
+              <p class="text-gray-700 leading-relaxed">
+                Customizing white-box spaces for offices, retail stores, and
+                medical facilities. We tailor the layout to your workflow.
+              </p>
+            </div>
+
+            <!-- COLUMN 2 -->
+            <div class="text-center">
+              <h3 class="text-2xl font-bold text-green-900 mb-6">
+                Occupied Facility <br />
+                Renovations
+              </h3>
+
+              <img
+                src="assets/img/Occupied-Facility-Renovations-800x450.webp"
+                alt="Occupied Facility Renovations"
+                class="w-full h-[220px] rounded-lg shadow-md mb-6 hover:brightness-150 transition duration-500"
+              />
+
+              <p class="text-gray-700 leading-relaxed">
+                Upgrade your space without shutting down. Our low-impact
+                construction protocols minimize noise and dust to keep your
+                business operational.
+              </p>
+            </div>
+
+            <!-- COLUMN 3 -->
+            <div class="text-center">
+              <h3 class="text-2xl font-bold text-green-900 mb-6">
+                Ground-Up Construction & <br />
+                Additions
+              </h3>
+
+              <img
+                src="assets/img/Ground-Up-Construction-Additions-800x450.webp"
+                alt="Ground-Up Construction & Additions"
+                class="w-full rounded-lg shadow-md mb-6"
+              />
+
+              <p class="text-gray-700 leading-relaxed">
+                From foundation to finish, we handle zoning, permitting, and
+                construction for new commercial structures and industrial
+                warehouses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Operation Cost -->
+      <section class="bg-[#0f3b22] py-10">
+        <div class="max-w-7xl mx-auto px-6 items-center">
+          <div class="text-white text-center">
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+              Sustainable Building = Lower Operating Costs
+            </h2>
+
+            <p class="mt-6 text-white/80 leading-relaxed">
+              We don’t just build for today; we build for your bottom line. By
+              integrating energy-efficient HVAC, insulation, and passive
+              principles into your commercial property, we help you
+              significantly reduce long-term utility overhead.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Map -->
-      <section class="py-16 bg-white">
+      <!-- Project Roadmap -->
+      <section class="bg-gray-100 py-10">
         <div class="max-w-7xl mx-auto px-6">
-          <div
-            id="serviceMap"
-            class="relative w-full h-[600px] rounded-xl overflow-hidden shadow-lg z-0"
-          ></div>
+          <!-- Title -->
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#112c1a]">
+              Our Commercial Project Roadmap
+            </h2>
+          </div>
+
+          <!-- 4 Column Grid -->
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- CARD 1 -->
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="assets/img/Commercial-Consulting-600x338.webp"
+                class="w-full h-[350px] object-cover hover:scale-110 transition duration-300"
+                alt="Consultation & Feasibility"
+              />
+
+              <div class="absolute inset-0 bg-green-900/60"></div>
+
+              <div
+                class="absolute inset-0 flex items-center justify-center text-center px-6 absolute inset-0 bg-green-900/10 group-hover:bg-green-900/50 transition duration-300"
+              >
+                <h3 class="text-white text-3xl font-bold leading-tight">
+                  Consultation <br />
+                  & Feasibility
+                </h3>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="assets/img/Pre-Construction-Permitting-600x338.webp"
+                class="w-full h-[350px] object-cover"
+                alt="Preparation & Permits"
+              />
+
+              <div class="absolute inset-0 bg-green-900/60"></div>
+
+              <div
+                class="absolute inset-0 flex items-center justify-center text-center px-6 absolute inset-0 bg-green-900/10 group-hover:bg-green-900/50 transition duration-300"
+              >
+                <h3 class="text-white text-3xl font-bold leading-tight">
+                  Preparation <br />
+                  & Permits
+                </h3>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="assets/img/Gemini_Generated_Image_gr596agr596agr59-600x327.webp"
+                class="w-full h-[350px] object-cover"
+                alt="Construction Management"
+              />
+
+              <div class="absolute inset-0 bg-green-900/60"></div>
+
+              <div
+                class="absolute inset-0 flex items-center justify-center text-center px-6 absolute inset-0 bg-green-900/10 group-hover:bg-green-900/50 transition duration-300"
+              >
+                <h3 class="text-white text-3xl font-bold leading-tight">
+                  Construction <br />
+                  Management
+                </h3>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="assets/img/Ground-Up-Construction-Additions-800x450.webp"
+                class="w-full h-[350px] object-cover"
+                alt="Completion & Warranty"
+              />
+
+              <div class="absolute inset-0 bg-green-900/60"></div>
+
+              <div
+                class="absolute inset-0 flex items-center justify-center text-center px-6 absolute inset-0 bg-green-900/10 group-hover:bg-green-900/50 transition duration-300"
+              >
+                <h3 class="text-white text-3xl font-bold leading-tight">
+                  Completion <br />
+                  & Warranty
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Commercial Projects -->
+      <section class="bg-gray-100 py-10">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Section Title -->
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-[#112c1a]">
+              Featured Commercial Projects
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12">
+            <!-- LEFT PROJECT -->
+            <div>
+              <h3 class="text-3xl font-bold text-[#112c1a] mb-6 text-center">
+                Deer Park Medical Center
+              </h3>
+
+              <div
+                class="relative overflow-hidden rounded-lg"
+                data-slider="slider1"
+              >
+                <div class="slides flex transition-transform duration-500">
+                  <img
+                    src="assets/img/Deer-Park-Medical-Center.webp"
+                    class="w-full shrink-0 object-cover h-[400px]"
+                  />
+                  <img
+                    src="assets/img/Deer-Park-Medical-Center-Lobby.webp"
+                    class="w-full shrink-0 object-cover h-[400px]"
+                  />
+                  <img
+                    src="assets/img/Deer-Park-Medical-Center-Medical-Room.webp"
+                    class="w-full shrink-0 object-cover h-[400px]"
+                  />
+                  <img
+                    src="assets/img/Deer-Park-Medical-Center-Aerial-Shot.webp"
+                    class="w-full shrink-0 object-cover h-[400px]"
+                  />
+                </div>
+
+                <!-- Controls -->
+                <button
+                  class="prev absolute left-2 top-1/2 -translate-y-1/2 bg-green-900/70 text-white px-3 py-2 rounded"
+                >
+                  ‹
+                </button>
+
+                <button
+                  class="next absolute right-2 top-1/2 -translate-y-1/2 bg-green-900/70 text-white px-3 py-2 rounded"
+                >
+                  ›
+                </button>
+              </div>
+            </div>
+
+            <!-- RIGHT PROJECT -->
+            <div>
+              <h3 class="text-3xl font-bold text-[#112c1a] mb-6 text-center">
+                Prairie Point Corporate Office
+              </h3>
+
+              <div
+                class="relative overflow-hidden rounded-lg"
+                data-slider="slider2"
+              >
+                <div class="slides flex transition-transform duration-500">
+                  <img
+                    src="assets/img/Commercial-Office-Building.webp"
+                    class="w-full shrink-0 object-cover h-[400px]"
+                  />
+                  <img
+                    src="assets/img/Commercial-Office-Building-Lobby.webp"
+                    class="w-full shrink-0 object-cover h-[400px]"
+                  />
+                  <img
+                    src="assets/img/Commercial-Office-Building-Work-Floor.webp"
+                    class="w-full shrink-0 object-cover h-[400px]"
+                  />
+                  <img
+                    src="assets/img/0...webp"
+                    class="w-full shrink-0 object-cover h-[400px]"
+                  />
+                </div>
+
+                <button
+                  class="prev absolute left-2 top-1/2 -translate-y-1/2 bg-green-900/70 text-white px-3 py-2 rounded"
+                >
+                  ‹
+                </button>
+
+                <button
+                  class="next absolute right-2 top-1/2 -translate-y-1/2 bg-green-900/70 text-white px-3 py-2 rounded"
+                >
+                  ›
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -691,6 +1021,112 @@
               ><i class="fa-solid fa-link text-xs opacity-70"></i
               ><span> Wood Dale</span></a
             >
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="relative bg-gray-100 py-10 overflow-hidden">
+        <img
+          src="assets/img/bg/bg_faq.svg"
+          class="absolute inset-0 object-cover w-full h-full opacity-10 pointer-events-none"
+          alt="FAQ Background"
+        />
+
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Title -->
+          <h2 class="text-3xl md:text-4xl font-bold text-[#112c1a] mb-5">
+            Frequently asked questions
+          </h2>
+
+          <div class="space-y-5 text-gray-800">
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                Can I remodel my office or retail store without shutting down
+                business operations?
+              </h3>
+              <p class="leading-relaxed">
+                You can remodel your office or retail store without shutting
+                down by utilizing low-impact construction protocols designed to
+                keep your business operational. Our team coordinates specific
+                work phases to minimize interference with your daily workflow,
+                allowing your staff and customers to use the facility during the
+                upgrade.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                How are noise and dust controlled during an occupied facility
+                renovation?
+              </h3>
+              <p class="leading-relaxed">
+                Noise and dust are controlled during an occupied facility
+                renovation through strict construction protocols that isolate
+                work zones from your active business areas. We use specialized
+                barriers and HEPA-filtered air scrubbers to manage airborne
+                particles, while noisy activities are scheduled during off-peak
+                hours to prevent customer disruption.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                What happens to my expensive equipment or inventory while the
+                construction is happening?
+              </h3>
+              <p class="leading-relaxed">
+                Your expensive equipment or inventory is protected while
+                construction is happening by our team managing the site with
+                precision and rigorous cleanliness. We physically seal off
+                storage zones and maintain high safety standards to verify that
+                your business assets remain clean and undamaged throughout the
+                renovation.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                Will I have a main person to call if something goes wrong in the
+                middle of the night?
+              </h3>
+              <p class="leading-relaxed">
+                You will have a main person to call through our dedicated
+                construction management phase where a seasoned professional
+                oversees your site daily. This point of contact maintains the
+                project roadmap and makes sure that any urgent facility concerns
+                are addressed to keep your property safe and on schedule.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                How do I know the building is actually safe and won’t fail an
+                inspection later?
+              </h3>
+              <p class="leading-relaxed">
+                You know the building is safe because we handle all city
+                paperwork and every structure is built above code during the
+                completion phase. Our team manages zoning and permitting with
+                military precision, conducting thorough internal reviews to
+                verify that the project passes every official municipal
+                inspection.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                What happens if the project takes longer than you said and I
+                lose money?
+              </h3>
+              <p class="leading-relaxed">
+                If a project faces potential delays, our team utilizes a
+                structured roadmap to eliminate downtime and deliver results as
+                promised. We protect your bottom line by integrating efficient
+                management practices that reduce long-term utility overhead,
+                safeguarding your business growth and financial investment.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -1100,7 +1536,7 @@
       </footer>
     </main>
 
-    <script src="assets/js/map.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
@@ -1109,6 +1545,5 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   </body>
 </html>
