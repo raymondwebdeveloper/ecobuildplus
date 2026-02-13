@@ -19,6 +19,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header
@@ -275,20 +282,7 @@
               class="flex items-center justify-between w-full hover:text-green-900"
             >
               Residential
-              <svg
-                class="h-4 w-4 transition-transform duration-300"
-                :class="{ 'rotate-180': active === 'residential' }"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
             </button>
 
             <div
@@ -296,7 +290,7 @@
               x-collapse
               class="mt-2 ml-4 space-y-2 text-base text-gray-600"
             >
-              <a href="residential.html" class="block hover:text-green-900"
+              <a href="#" class="block hover:text-green-900"
                 >View All Residential Services</a
               >
               <a href="#" class="block hover:text-green-900"
@@ -326,20 +320,7 @@
               class="flex items-center justify-between w-full hover:text-green-900"
             >
               Projects
-              <svg
-                class="h-4 w-4 transition-transform duration-300"
-                :class="{ 'rotate-180': active === 'projects' }"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
             </button>
 
             <div
@@ -409,643 +390,305 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="relative h-[80vh] min-h-[520px] bg-black overflow-hidden">
-        <!-- Cover background -->
+      <section class="relative h-[50vh] min-h-[320px] overflow-hidden">
+        <!-- Cover Background -->
         <img
-          src="assets/img/bg/About-Us-Cover.webp"
-          class="absolute h-full w-full object-cover"
-          alt=""
+          src="assets/img/bg/bg_form.svg"
+          class="absolute inset-0 -z-index-10 w-full h-full object-cover"
+          alt="Residential Interior Design with Ecobuild Plus"
         />
 
         <!-- DARK OVERLAY -->
-        <div class="absolute inset-0 bg-black/75"></div>
+        <div class="absolute inset-0 bg-[#112c1a]/95"></div>
 
         <!-- CONTENT -->
         <div class="relative z-10 h-full flex items-center">
           <div class="mx-auto max-w-[1440px] px-6 text-white">
-            <h1
-              class="text-center uppercase text-[29px] md:text-5xl font-bold leading-tight"
-            >
-              About EcoBuild Plus: 25 Years of Trusted Building
+            <h1 class="uppercase text-4xl md:text-5xl font-bold leading-tight">
+              Service Areas
             </h1>
 
-            <p
-              class="text-center mt-6 text-lg md:text-xl text-white/90 hidden md:block"
-            >
-              More than just contractors, we are your neighbors and partners in
-              creating better homes. Founded by Andrei and Dima, EcoBuild Plus
-              was built on a simple promise: to deliver honest work,
-              high-performance engineering, and lasting quality to families
-              across Chicago and the suburbs.
+            <p class="mt-6 text-md md:text-lg text-white/90">
+              Below you’ll find a list of our service areas in Chicagoland.
+              Don’t see your location listed below? Just give us a call. We’d be
+              happy to learn more about your project and see what we can do to
+              assist you.
             </p>
-
-            <div class="mt-8 flex flex-wrap justify-center gap-4">
-              <a
-                href="#estimate"
-                class="inline-flex items-center gap-2 rounded-full bg-green-900 px-7 py-4 text-white font-semibold hover:bg-green-700 transition"
-              >
-                Contact Us Now
-                <i class="ml-2 fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
           </div>
         </div>
       </section>
 
-      <!-- Team -->
-      <section class="py-10 bg-white">
-        <div class="max-w-[1200px] mx-auto px-6">
-          <!-- Section Title -->
-          <h2
-            class="text-3xl md:text-5xl font-bold text-center text-[#112c1a] mb-12"
-          >
-            Meet The Dream Team
-          </h2>
-
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <!-- Image -->
-            <div>
-              <img
-                src="assets/img/Jeff-Headshot-800x671.webp"
-                alt="Jeff Goble - Senior Project Manager"
-                class="w-full h-full rounded-xl shadow-lg hover:brightness-150 transition duration-500 object-cover"
-              />
-            </div>
-
-            <!-- Content -->
-            <div>
-              <h3 class="text-3xl font-bold text-[#112c1a]">Jeff Goble</h3>
-
-              <p
-                class="text-green-900 uppercase tracking-wide text-sm text-gray-500 mb-6"
-              >
-                Sr. Project Manager
-              </p>
-
-              <p class="text-green-900 leading-relaxed mb-6">
-                As Lead Project Manager and the heartbeat of our job sites, Jeff
-                approaches every build with the same integrity he would his own
-                home. He shares the belief that a house is more than a
-                structure, it is the foundation where life happens. From the
-                first blueprint to the final walk-through, Jeff’s unwavering
-                attention to detail ensures your dream vision becomes reality.
-              </p>
-
-              <h4 class="font-bold text-[#112c1a] mb-4">
-                What to Expect When Working with Jeff:
-              </h4>
-
-              <ul class="space-y-4 text-gray-700">
-                <li class="flex gap-3 text-green-900">
-                  <span class="font-bold">•</span>
-                  <span
-                    ><strong class="text-[#112c1a]"
-                      >Unwavering Advocacy:</strong
-                    >
-                    Jeff acts as your representative on-site, ensuring your
-                    design vision is executed without compromise.</span
-                  >
-                </li>
-
-                <li class="flex gap-3 text-green-900">
-                  <span class="font-bold">•</span>
-                  <span
-                    ><strong class="text-[#112c1a]"
-                      >Transparent Communication:</strong
-                    >
-                    ou will never be left guessing. Jeff keeps you informed on
-                    timelines, progress, and milestones every step of the way.
-                  </span>
-                </li>
-
-                <li class="flex gap-3 text-green-900">
-                  <span class="font-bold">•</span>
-                  <span
-                    ><strong class="text-[#112c1a]"
-                      >Respect for Your Home:</strong
-                    >
-                    Whether it’s a new build or a remodel, Jeff maintains a
-                    clean, organized, and safe job site that respects your
-                    property and privacy.</span
-                  >
-                </li>
-
-                <li class="flex gap-3 text-green-900">
-                  <span class="font-bold">•</span>
-                  <span
-                    ><strong class="text-[#112c1a]"
-                      >Solutions-Oriented Leadership:</strong
-                    >
-                    Construction is complex; Jeff proactively identifies
-                    challenges and implements smart solutions to keep your
-                    project moving forward smoothly.</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Mastery -->
-      <section class="py-10 bg-white">
-        <div
-          class="max-w-[1200px] mx-auto px-6 grid md:grid-cols-2 gap-14 items-center"
-        >
-          <!-- LEFT: Image Grid -->
-          <div class="space-y-4">
-            <!-- Large Image -->
-            <img
-              src="assets/img/25-years-of-luxury-.webp"
-              alt="Luxury Home"
-              class="w-full hover:brightness-150 transition duration-500"
-            />
-          </div>
-
-          <!-- RIGHT: Content -->
-          <div>
-            <p
-              class="uppercase tracking-widest text-sm text-green-900 font-semibold mb-3"
-            >
-              Premier – Luxury – Professional
-            </p>
-            <hr />
-            <h2
-              class="text-4xl md:text-4xl font-bold uppercase text-[#112c1a] my-3"
-            >
-              25 Years of Mastery
-            </h2>
-
-            <p class="text-green-900 leading-relaxed mb-6">
-              For over 25 years, we have been more than just builders in
-              Chicago; we have been guardians of quality. We noticed a gap in
-              the luxury market: homes that looked beautiful but didn’t feel
-              right; drafty, inefficient, or poorly managed.
-            </p>
-
-            <p class="text-green-900 leading-relaxed mb-8">
-              We founded EcoBuild Plus to solve this. Our philosophy isn’t just
-              about construction; it’s about creating a sanctuary. A home that
-              is quieter, healthier, and built with such precision that it
-              stands the test of time for generations. We don’t just renovate
-              spaces; we elevate the way you live.
-            </p>
-
-            <a
-              href="#services"
-              class="inline-flex items-center gap-3 rounded-full bg-green-900 px-8 py-4 text-white font-medium hover:bg-green-800 transition"
-            >
-              View Our Services
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Process -->
-      <section class="py-10 bg-gray-50">
-        <div class="max-w-[1200px] mx-auto px-6">
-          <!-- Title -->
-          <h2
-            class="text-4xl md:text-5xl font-bold text-center text-[#112c1a] mb-14"
-          >
-            The Process: Orchestrated Perfection
-          </h2>
-
-          <!-- Card Container -->
-          <div class="bg-white rounded-2xl shadow-md p-10">
-            <div class="grid md:grid-cols-4 text-center">
-              <!-- Step 1 -->
-              <div
-                class="p-6 md:border-r border-green-900/30 hover:translate-y-1 transition-transform duration-200"
-              >
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-3">
-                  Discovery
-                </h3>
-                <p class="text-green-900">We listen to your dream.</p>
-              </div>
-
-              <!-- Step 2 -->
-              <div
-                class="p-6 md:border-r border-green-900/30 hover:translate-y-1 transition-transform duration-200"
-              >
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-3">Design</h3>
-                <p class="text-green-900">
-                  We align architecture with engineering.
-                </p>
-              </div>
-
-              <!-- Step 3 -->
-              <div
-                class="p-6 md:border-r border-green-900/30 hover:translate-y-1 transition-transform duration-200"
-              >
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-3">
-                  The Build
-                </h3>
-                <p class="text-green-900">
-                  White-glove management and clean job sites.
-                </p>
-              </div>
-
-              <!-- Step 4 -->
-              <div
-                class="p-6 hover:translate-y-1 transition-transform duration-200"
-              >
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-3">
-                  Welcome Home
-                </h3>
-                <p class="text-green-900">Enjoy living in your new dream.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 3 Premium -->
-      <section class="py-10 bg-white">
-        <div class="max-w-[1200px] mx-auto px-6">
-          <div class="grid md:grid-cols-3 gap-12">
-            <!-- COLUMN 1 -->
-            <div class="text-center md:text-left">
-              <h3
-                class="text-2xl md:text-2xl font-bold text-center text-[#112c1a] mb-6 uppercase tracking-wide"
-              >
-                Intelligent Engineering
-              </h3>
-
-              <img
-                src="assets/img/Premier-Engineering--600x503.webp"
-                alt="Intelligent Engineering"
-                class="w-full h-[300px] object-cover mb-6 hover:brightness-150 transition duration-500"
-              />
-
-              <p class="text-green-900 leading-relaxed text-md">
-                True luxury is invisible. It’s the perfect temperature in every
-                room, the silence of the outside world melting away, and the
-                peace of mind knowing your home is engineered to perform
-                flawlessly.
-              </p>
-            </div>
-
-            <!-- COLUMN 2 -->
-            <div class="text-center md:text-left">
-              <h3
-                class="text-2xl md:text-2xl font-bold text-center text-[#112c1a] mb-6 uppercase tracking-wide"
-              >
-                Tailored Luxury
-              </h3>
-
-              <img
-                src="assets/img/EcoBuild-Plus-Tailored-Luxury-600x503.webp"
-                alt="Tailored Luxury"
-                class="w-full h-[300px] object-cover mb-6 hover:brightness-150 transition duration-500"
-              />
-
-              <p class="text-green-900 leading-relaxed text-md">
-                No two lives are the same, and no two homes should be either. We
-                specialize in one-of-a-kind builds, customizing every square
-                inch to fit your family’s lifestyle, taste, and future.
-              </p>
-            </div>
-
-            <!-- COLUMN 3 -->
-            <div class="text-center md:text-left">
-              <h3
-                class="text-2xl md:text-2xl font-bold text-center text-[#112c1a] mb-6 uppercase tracking-wide"
-              >
-                The ‘Plus’ Experience
-              </h3>
-
-              <img
-                src="assets/img/EcoBuild-Way-600x503.webp"
-                alt="Plus Experience"
-                class="w-full h-[300px] object-cover mb-6 hover:brightness-150 transition duration-500"
-              />
-
-              <p class="text-green-900 leading-relaxed text-md">
-                We believe the building process should be as refined as the
-                finished home. We handle permitting, sourcing, and scheduling so
-                you can enjoy watching your dream take shape.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Vision -->
-      <section class="py-10 bg-[#f5f5f3]">
-        <div class="max-w-[1200px] mx-auto px-6">
-          <!-- Section Title -->
-          <h2
-            class="text-3xl md:text-5xl font-bold text-center text-[#112c1a] mb-10"
-          >
-            Your Vision, Any Location
-          </h2>
-
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <!-- LEFT IMAGE -->
-            <div>
-              <img
-                src="assets/img/EcoBuild-Plus-Service-Area-Map-1-1-800x450.webp"
-                alt="Chicago and Suburbs Coverage"
-                class="w-full h-auto object-cover transition duration-500 hover:scale-105 transition-transform"
-              />
-            </div>
-
-            <!-- RIGHT CONTENT -->
-            <div>
-              <h3
-                class="text-3xl md:text-4xl font-bold text-[#112c1a] mb-6 leading-tight"
-              >
-                Your Luxury Home Builder For <br />
-                Chicago And The Suburbs
-              </h3>
-
-              <p class="text-green-900 text-lg leading-relaxed">
-                Luxury knows no boundaries, and neither do we. While our roots
-                are in Chicago, our reputation for excellence has taken us
-                across Illinois. We bring our dedicated crews, project managers,
-                and trusted supply chain to your site, ensuring the same
-                ‘EcoBuild Standard’ whether you are building in Winnetka,
-                Naperville, or beyond.
-              </p>
-
-              <!-- Optional CTA -->
-              <a
-                href="/pages/service-areas.html"
-                class="inline-block mt-8 rounded-full bg-green-900 px-8 py-4 text-white font-medium hover:bg-green-800 transition"
-              >
-                Explore Service Areas →
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- BUILDING YOUR DREAM -->
-      <section class="bg-white py-10">
+      <!-- Map -->
+      <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-          <!-- Heading -->
-          <h2
-            class="text-4xl md:text-5xl font-bold text-center uppercase text-[#112c1a] mb-10"
-          >
-            Start Building Your Dream Today
-          </h2>
+          <div
+            id="serviceMap"
+            class="relative w-full h-[600px] rounded-xl overflow-hidden shadow-lg z-0"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Service Areas -->
+      <section class="py-10 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Section Title -->
+          <div class="mb-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#112c1a]">
+              NORTHWEST SUBURBS SERVICE AREAS
+            </h2>
+          </div>
 
           <!-- Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <!-- Card 1 -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
-            >
-              <div class="overflow-hidden">
-                <img
-                  src="assets/img/Luxury-Kitchen-Remodel-800x671.webp"
-                  class="w-full rounded-md h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Kitchen Remodeling"
-                />
-              </div>
-
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
-                  KITCHEN REMODELING
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-6">
-                  Transform your vision into a functional masterpiece.
-                  Guaranteed flawless flow and a custom dream kitchen.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
-            >
-              <div class="overflow-hidden">
-                <img
-                  src="assets/img/Luxury-Bathroom-Remodel-800x671.webp"
-                  class="w-full rounded-md h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Bathroom Remodeling"
-                />
-              </div>
-
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
-                  BATHROOM REMODELING
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-6">
-                  Your dream bathroom starts now. Get a stunning, custom retreat
-                  with our expert process. Guaranteed serenity and function.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
-            >
-              <div class="overflow-hidden">
-                <img
-                  src="assets/img/Luxury-Basement-Remodel-800x671.webp"
-                  class="w-full rounded-md h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Basement Remodeling"
-                />
-              </div>
-
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
-                  BASEMENT REMODELING
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-6">
-                  We turn storage space into profitable, luxury living areas.
-                  From high-end theaters to custom guest suites, we build your
-                  functional vision.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bottom Row -->
           <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 max-w-4xl mx-auto"
+            class="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-12 text-lg"
           >
-            <!-- Home Addition -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
+            <!-- Column 1 -->
+            <a href="#" class="area-link">
+              <i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Arlington Heights </span></a
             >
-              <div class="overflow-hidden">
-                <img
-                  src="assets/img/New-Home-Addition-800x671.webp"
-                  class="w-full h-[330px] rounded-md object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Multi Room Remodeling"
-                />
-              </div>
-
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
-                  HOME ADDITION
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-6">
-                  Partner with our experts for a custom-designed new home
-                  addition built effortlessly, exactly how you dreamed.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Accessible -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
+            <a href="#" class="area-link">
+              <i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Bensenville</span></a
             >
-              <div class="overflow-hidden">
-                <img
-                  src="assets/img/Accessible-Home-Remodeling-1-800x671.webp"
-                  class="w-full h-[330px] rounded-md object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Accessible Home Remodeling"
-                />
-              </div>
-
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold uppercase text-[#112c1a] mb-4">
-                  Accessible Home Remodeling
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-6">
-                  Find essential home modifications, in-home care solutions, and
-                  tips for maintaining independence and quality of life in your
-                  own home.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Our Extended Family -->
-      <section class="py-10 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
-          <!-- Section Title -->
-          <h2
-            class="text-4xl md:text-5xl font-bold text-center text-[#112c1a] mb-10"
-          >
-            Our Extended Family
-          </h2>
-
-          <!-- Cards -->
-          <div class="grid md:grid-cols-3 gap-10">
-            <!-- Card 1 -->
-            <div
-              class="bg-white rounded-2xl shadow-sm p-10 text-center transition duration-500 hover:shadow-xl hover:-translate-y-2"
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Deer Park</span></a
             >
-              <img
-                src="assets/img/logo/Green-Attic-Roofing-Logo.svg"
-                alt="Green Attic Roofing"
-                class="h-16 mx-auto mb-6 object-contain"
-              />
-
-              <h3 class="text-2xl font-bold text-green-900 mb-4">
-                Green Attic Roofing
-              </h3>
-
-              <p class="text-gray-600 leading-relaxed">
-                <strong>Green Attic Roofing</strong> is a trusted roofing
-                contractor serving the Chicago area, specializing in
-                residential, commercial, and industrial roofing. We deliver
-                energy-efficient solutions with premium materials and expert
-                installation.
-              </p>
-
-              <div class="w-12 h-[2px] bg-green-700 mx-auto mt-8"></div>
-            </div>
-
-            <!-- Card 2 -->
-            <div
-              class="bg-white rounded-2xl shadow-sm p-10 text-center transition duration-500 hover:shadow-xl hover:-translate-y-2"
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Elk Grove Village</span></a
             >
-              <img
-                src="assets/img/logo/Profix247-Logo.svg"
-                alt="ProFix 24/7"
-                class="h-16 mx-auto mb-6 object-contain"
-              />
-
-              <h3 class="text-2xl font-bold text-green-900 mb-4">
-                ProFix 24/7
-              </h3>
-
-              <p class="text-gray-600 leading-relaxed">
-                <strong>ProFix 24/7</strong> is a trusted restoration company in
-                Chicago, specializing in water damage, mold remediation, and
-                full-scale property restoration. With 20 years of experience, we
-                deliver fast and reliable solutions.
-              </p>
-
-              <div class="w-12 h-[2px] bg-green-700 mx-auto mt-8"></div>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-              class="bg-white rounded-2xl shadow-sm p-10 text-center transition duration-500 hover:shadow-xl hover:-translate-y-2"
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Grayslake</span></a
             >
-              <img
-                src="assets/img/logo/Green-Attic-Insualtion-Main-Logo.svg"
-                alt="Green Attic Insulation"
-                class="h-16 mx-auto mb-6 object-contain"
-              />
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Hoffman Estates</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Itasca</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lake Villa</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lindenhurst</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Mundelein</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Oakwood Hills</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Prairie Grove</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Roselle</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Schiller Park</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Vernon Hills</span></a
+            >
 
-              <h3 class="text-2xl font-bold text-green-900 mb-4">
-                Green Attic Insulation
-              </h3>
+            <!-- Column 2 -->
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Arlington Heights</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Buffalo Grove</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Deerfield</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Evanston</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Hanover Park</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Holiday Hills</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Kildeer</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lake Zurich</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Long Grove</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Niles</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Palatine</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Prospect Heights</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Rosemont</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> South Barrington</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> West Dundee</span></a
+            >
 
-              <p class="text-gray-600 leading-relaxed">
-                <strong>Green Attic Insulation</strong> provides professional
-                and energy-efficient insulation services in the Chicagoland
-                area, including cellulose attic insulation, spray foam, roofing,
-                and more.
-              </p>
+            <!-- Column 3 -->
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Barrington Hills</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Carpentersville</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Des Plaines</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Fox River Grove</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Harwood Heights</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Inverness</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lake Barrington</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Libertyville</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Morton Grove</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> North Barrington</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Park Ridge</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Riverwoods</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Round Lake</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Streamwood</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Wheeling</span></a
+            >
 
-              <div class="w-12 h-[2px] bg-green-700 mx-auto mt-8"></div>
-            </div>
+            <!-- Column 4 -->
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Bartlett</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Cary</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Elgin</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Glenview</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Hawthorn Woods</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Island Lake</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lake in the Hills</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lake Forest</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Mount Prospect</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Northbrook</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Port Barrington</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Rolling Meadows</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Schaumburg</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Trout Valley</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Wood Dale</span></a
+            >
           </div>
         </div>
       </section>
@@ -1455,7 +1098,7 @@
       </footer>
     </main>
 
-    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/map.js" defer></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
@@ -1464,5 +1107,6 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   </body>
 </html>
