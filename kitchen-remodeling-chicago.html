@@ -103,7 +103,7 @@
           </div>
           <div class="relative group">
             <button
-              class="flex items-center gap-1 font-medium text-[18px] text-gray-900 hover:text-green-900"
+              class="flex items-center gap-1 font-medium text-[18px] text-green-900 hover:text-green-900"
             >
               Residential
               <i
@@ -135,7 +135,7 @@
               </a>
               <a
                 href="kitchen-remodeling-chicago.html"
-                class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
+                class="block px-5 py-3 text-[18px] text-white transition-all duration-300 bg-green-700 hover:bg-green-700"
               >
                 Kitchen Remodeling
               </a>
@@ -180,13 +180,13 @@
               class="absolute left-0 mt-2 w-64 overflow-hidden rounded-md bg-green-900 shadow-lg opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible"
             >
               <a
-                href="/kitchen-before-after-gallery.html"
+                href="kitchen-before-after-gallery.html"
                 class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Kitchen Before & After
               </a>
               <a
-                href="/bathroom-before-after-gallery.html"
+                href="bathroom-before-after-gallery.html"
                 class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Bathroom Before & After
@@ -277,20 +277,7 @@
               class="flex items-center justify-between w-full hover:text-green-900"
             >
               Residential
-              <svg
-                class="h-4 w-4 transition-transform duration-300"
-                :class="{ 'rotate-180': active === 'residential' }"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
             </button>
 
             <div
@@ -298,7 +285,7 @@
               x-collapse
               class="mt-2 ml-4 space-y-2 text-base text-gray-600"
             >
-              <a href="residential.html" class="block hover:text-green-900"
+              <a href="#" class="block hover:text-green-900"
                 >View All Residential Services</a
               >
               <a
@@ -336,20 +323,7 @@
               class="flex items-center justify-between w-full hover:text-green-900"
             >
               Projects
-              <svg
-                class="h-4 w-4 transition-transform duration-300"
-                :class="{ 'rotate-180': active === 'projects' }"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
             </button>
 
             <div
@@ -422,15 +396,12 @@
     <main>
       <!-- Hero Section -->
       <section class="relative h-[80vh] min-h-[520px] bg-black overflow-hidden">
-        <!-- VIDEO BACKGROUND -->
-        <video
+        <!-- Cover Background -->
+        <img
+          src="assets/img/bg/EcoBuild-Plus-Accessible-Remodeling-Invisible-Accessibility.webp"
           class="absolute inset-0 w-full h-full object-cover"
-          src="assets/video/Remodel-Collage-VID-1-1.webm"
-          autoplay
-          muted
-          loop
-          playsinline
-        ></video>
+          alt="Residential Interior Design with Ecobuild Plus"
+        />
 
         <!-- DARK OVERLAY -->
         <div class="absolute inset-0 bg-black/50"></div>
@@ -439,57 +410,22 @@
         <div class="relative z-10 h-full flex items-center">
           <div class="mx-auto max-w-[1440px] px-6 text-white">
             <h1
-              class="text-center uppercase text-4xl md:text-6xl font-bold leading-tight"
+              class="text-center uppercase text-4xl md:text-5xl font-bold leading-tight"
             >
-              Quality Home Building & Remodeling for<br
-                class="hidden md:block"
-              />
-              Chicago Families
+              Chicago’s Premier Kitchen Remodeling Experts
             </h1>
 
-            <p
-              class="text-center mt-6 text-lg md:text-xl text-white/90 hidden md:block"
-            >
-              For over 25 years, EcoBuild Plus has helped families in Chicago
-              and the Northwest suburbs build their future. Whether you are
-              looking to build a new custom home, update your kitchen, or add
-              more space for your growing family, we deliver honest
-              craftsmanship and reliable service you can count on. We treat your
-              home like it’s our own.
-            </p>
-            <p
-              class="text-center mt-6 text-lg md:text-xl text-white/90 block md:hidden"
-            >
-              For over 25 years, we’ve helped Chicagoland families build custom
-              homes, remodel kitchens and add more space as they grow.
+            <p class="text-center mt-6 text-lg md:text-xl text-white/90">
+              Rated 4.8/5 Stars. From custom cabinets to full renovations, we
+              design and build the kitchen of your dreams.
             </p>
 
             <div class="mt-8 flex flex-wrap justify-center gap-4">
               <a
-                href="#estimate"
-                class="uppercase inline-flex items-center gap-2 rounded-full bg-green-900 px-7 py-4 text-white font-semibold hover:bg-green-700 transition"
+                href="#contact"
+                class="inline-flex items-center gap-2 rounded-full bg-green-900 px-7 py-4 text-white font-semibold hover:bg-green-700 transition"
               >
-                RESIDENTIAL
-                <svg
-                  class="h-5 w-5"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </a>
-
-              <a
-                href="#services"
-                class="uppercase inline-flex items-center gap-2 rounded-full bg-white border px-7 py-4 text-black font-semibold hover:bg-transparent hover:border hover:text-white transition"
-              >
-                Financing
+                Contact Us Now
                 <svg
                   class="h-5 w-5"
                   fill="none"
@@ -512,39 +448,8 @@
       <!-- CERTIFICATIONS -->
       <section class="bg-white py-10">
         <div class="max-w-7xl mx-auto px-6">
-          <div class="flex flex-wrap items-center justify-center gap-16">
-            <img
-              src="assets/img/logo/acrr-2 1.svg"
-              class="h-24"
-              alt="BBB Accredited Business"
-            />
-            <img
-              src="assets/img/logo/nahb-logo-200x173.webp"
-              class="h-24"
-              alt="NAHB"
-            />
-            <img
-              src="assets/img/logo/BPI 1.svg"
-              class="h-24"
-              alt="Building Performance Institute"
-            />
-            <img
-              src="assets/img/logo/osha-logo@logotyp 1.svg"
-              class="h-24"
-              alt="OSHA Certified"
-            />
-            <img src="assets/img/logo/ASHI 1.svg" class="h-24" alt="ASHI" />
-            <img
-              src="assets/img/logo/6467d12e9251b96807309aad_United-States-Environmental-Protection-Agency 1.svg"
-              class="h-24"
-              alt="EPA Certified"
-            />
-          </div>
-
           <!-- REVIEWS -->
-          <div
-            class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
-          >
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Google -->
             <a
               href="#"
@@ -603,538 +508,637 @@
         </div>
       </section>
 
-      <!-- OUR PREMIER SERVICES -->
-      <section class="py-10 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-          <h2 class="text-[55px] text-4xl font-bold text-center text-[#112c1a]">
-            OUR PREMIER SERVICES
+      <!-- Your Dream Kitchen Starts Here -->
+      <section
+        class="relative h-[100vh] min-h-[520px] bg-black overflow-hidden"
+      >
+        <!-- Background -->
+        <img
+          src="assets/img/Dream-Kitchen-Remodeling-1.webp"
+          class="w-full h-full object-cover"
+        />
+
+        <!-- Green Overlay -->
+        <div class="h-1/2 absolute mt-auto inset-0 bg-green-900/70"></div>
+
+        <!-- Content -->
+        <div
+          class="h-1/2 absolute mt-auto inset-0 flex flex-col items-center justify-center text-center px-6"
+        >
+          <h2 class="text-white text-4xl md:text-6xl font-bold mb-6">
+            Your Dream Kitchen Starts Here
           </h2>
 
-          <p class="mt-4 text-center text-[#112c1a] max-w-3xl mx-auto">
-            We specialize in all phases of building, offering top of the line
-            <strong>new construction</strong>, <strong>remodeling</strong>, and
-            <strong>commercial construction</strong> solutions across the
-            Chicago metropolitan area.
+          <p class="text-white/90 text-lg md:text-lg mb-4">
+            From initial design to final walk-through, our certified kitchen
+            remodelers deliver unmatched quality and craft.
+          </p>
+          <p class="text-white/90 text-lg md:text-lg mb-8">
+            We don’t just install high-end kitchens; we build functional
+            masterpieces that elevate your lifestyle and stand the test of time.
           </p>
 
-          <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="relative group overflow-hidden">
-              <!-- Image -->
-              <img
-                src="assets/img/Luxury-New-Home-Construction-800x671.webp"
-                alt="New Construction"
-                class="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+          <a
+            href="#contact"
+            class="inline-flex items-center gap-2 bg-white text-green-900 font-medium px-8 py-4 rounded-full shadow-lg hover:bg-green-900 hover:text-white transition"
+          >
+            Get a Free Quote
+            <span>→</span>
+          </a>
+        </div>
+      </section>
 
-              <!-- Overlay -->
-              <div
-                class="absolute inset-x-0 bottom-0 h-1/2 bg-green-900/0 translate-y-[110px] group-hover:translate-y-0 transition-transform duration-500 ease-out group-hover:bg-green-900/70 transition-opacity transition-transform duration-500 ease-out flex items-end"
-              >
-                <div class="p-6">
-                  <h3 class="text-2xl font-bold text-white uppercase pb-2 mb-2">
-                    New Construction
-                  </h3>
+      <!-- Why Chicago Trusts Our Signature New Home Construction -->
+      <section class="bg-gray-100 py-16">
+        <div
+          class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start"
+        >
+          <!-- LEFT IMAGE COLUMN -->
+          <div class="space-y-1">
+            <img
+              src="assets/img/Dream-Kitchen-Remodel.webp"
+              class="w-full h-[300px] shadow-md object-cover object-center"
+              alt="New Home Construction with EcoBuild Plus"
+            />
+            <img
+              src="assets/img/Dream-Kitchen-Remodel-1.webp"
+              class="w-full shadow-md object-cover object-center"
+              alt="Luxury Kitchen and Family Room Remodeling with EcoBuild Plus"
+            />
+          </div>
 
-                  <p class="mt-2 text-sm text-white leading-relaxed">
-                    We transform custom home dreams into enduring, high-value
-                    realities. Our precision process guarantees flawless
-                    execution and the highest standards of luxury and
-                    durability.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <!-- RIGHT CONTENT COLUMN -->
+          <div>
+            <h2
+              class="text-3xl md:text-[55px] font-bold uppercase text-[#112c1a] leading-tight mb-6"
+            >
+              Why Chicagoland Trusts Our Kitchen Remodeling
+            </h2>
 
-            <div class="relative group overflow-hidden">
-              <img
-                src="assets/img/Northshore-Kitchen-Design-600x503.webp"
-                alt="Remodeling"
-                class="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+            <p class="text-gray-800 mb-5 leading-relaxed">
+              A great kitchen isn’t just beautiful; it’s smart, comfortable, and
+              built to make everyday life easier.
+            </p>
 
-              <div
-                class="absolute inset-x-0 bottom-0 h-1/2 bg-green-900/0 translate-y-[110px] group-hover:translate-y-0 transition-transform duration-500 ease-out group-hover:bg-green-900/70 transition-opacity transition-transform duration-500 ease-out flex items-end"
-              >
-                <div class="p-6">
-                  <h3 class="text-2xl font-bold text-white uppercase">
-                    Remodeling
-                  </h3>
-                  <p class="mt-2 text-sm text-white leading-relaxed">
-                    Expertly designed kitchens, bathrooms, and basement
-                    conversions built for flawless execution and enduring
-                    quality. We transform your space into a high-value reality.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="relative group overflow-hidden">
-              <img
-                src="assets/img/commercial-construction-workers-600x400.webp"
-                alt="Commercial Construction"
-                class="w-full h-[420px] object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+            <p class="text-gray-800 mb-5 leading-relaxed">
+              Most remodels fail because contractors miss the little details
+              that make a big difference.
+              <strong>EcoBuild Plus</strong> doesn’t. We fix the problems you
+              see and the ones you haven’t noticed yet.
+            </p>
 
-              <div
-                class="absolute inset-x-0 bottom-0 h-1/2 bg-green-900/0 translate-y-[87px] group-hover:translate-y-0 transition-transform duration-500 ease-out group-hover:bg-green-900/70 transition-opacity transition-transform duration-500 ease-out flex items-end"
-              >
-                <div class="p-6">
-                  <h3 class="text-2xl font-bold text-white uppercase">
-                    Commercial Construction
-                  </h3>
-                  <p class="mt-2 text-sm text-white leading-relaxed">
-                    We build and manage high-value commercial construction
-                    projects that drive business forward. Expert execution
-                    minimizes disruption and guarantees quality.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <p class="text-gray-800 mb-6 leading-relaxed">
+              Here’s how we build <i>kitchens</i> that truly work:
+            </p>
+
+            <ul class="space-y-2 text-gray-800 leading-relaxed">
+              <li class="flex items-start gap-3">
+                <span>•</span>
+                <p>
+                  <strong class="text-[#112c1a]">Flawless Flow:</strong>
+                  We plan your kitchen so you can move easily while cooking.
+                  Your sink, stove, and fridge form a perfect “work triangle,”
+                  ensuring nothing blocks your path.
+                </p>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span>•</span>
+                <p>
+                  <strong class="text-[#112c1a]">Smart Ergonomics:</strong>
+                  We design around you. Counter heights, cabinet placement, and
+                  appliance setup are adjusted to match your comfort and cooking
+                  style.
+                </p>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span>•</span>
+                <p>
+                  <strong class="text-[#112c1a]">Perfect Lighting:</strong>
+                  We install bright, shadow-free lighting under cabinets and
+                  over countertops so every meal prep feels easy, efficient, and
+                  safe.
+                </p>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span>•</span>
+                <p>
+                  <strong class="text-[#112c1a]">Maxed-Out Space:</strong>
+                  No more wasted corners or clutter. We use clever storage
+                  solutions like pull-out drawers, tall cabinets, and hidden
+                  step stools to make every inch count.
+                </p>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span>•</span>
+                <p>
+                  <strong class="text-[#112c1a]">Custom Expansion:</strong>
+                  Want more room? We can remove walls, add islands, or extend
+                  your kitchen into open living spaces to create a modern, airy
+                  feel.
+                </p>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span>•</span>
+                <p>
+                  <strong class="text-[#112c1a]">Expert Craftsmanship:</strong>
+                  From materials and finishes to plumbing and electrical work,
+                  our team handles every detail with precision so you can relax
+                  and enjoy watching your dream kitchen come to life.
+                </p>
+              </li>
+            </ul>
+
+            <p class="mt-6 font-semibold text-green-900">
+              Your dream Kitchen is one call away!
+            </p>
+
+            <a
+              href="#contact"
+              class="inline-block mt-6 bg-green-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-800 transition duration-300"
+            >
+              Get a Free Estimate →
+            </a>
           </div>
         </div>
       </section>
 
-      <!-- DREAM CONSTRUCTION PROJECTS -->
-      <section class="bg-white py-10">
-        <div class="max-w-7xl mx-auto px-6">
-          <!-- Heading -->
-          <h2
-            class="text-4xl md:text-5xl font-bold text-center text-[#112c1a] mb-10"
-          >
-            DREAM CONSTRUCTION PROJECTS
-          </h2>
-
-          <!-- Cards -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <!-- Card 1 -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition-all duration-300 group overflow-hidden p-2"
-            >
-              <!-- Image -->
-              <div class="overflow-hidden rounded-md">
-                <img
-                  src="assets/img/EcoBuild-Plus-Chicago-Luxury-Home-Remodel-800x671.webp"
-                  class="w-full h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Custom Home"
-                />
-              </div>
-
-              <!-- Content -->
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-green-900 mb-4">
-                  CUSTOM HOME
-                </h3>
-
-                <p class="text-gray-600 mb-8">
-                  Ready to build your masterpiece? Explore our custom home
-                  services and create a luxurious, personalized dream space.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition-all duration-300 group overflow-hidden p-2"
-            >
-              <!-- Image -->
-              <div class="overflow-hidden rounded-md">
-                <img
-                  src="assets/img/Luxury-New-Home-Construction-800x671.webp"
-                  class="w-full h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Custom Home"
-                />
-              </div>
-
-              <!-- Content -->
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-green-900 mb-4">
-                  New Home Construction
-                </h3>
-
-                <p class="text-gray-600 mb-8">
-                  We manage every detail of your new home construction,
-                  providing a seamless and professional journey to your
-                  brand-new, dream home.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition-all duration-300 group overflow-hidden p-2"
-            >
-              <!-- Image -->
-              <div class="overflow-hidden rounded-md">
-                <img
-                  src="assets/img/New-Home-Addition-800x671.webp"
-                  class="w-full h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Custom Home"
-                />
-              </div>
-
-              <!-- Content -->
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-green-900 mb-4">
-                  New Home Addition
-                </h3>
-
-                <p class="text-gray-600 mb-8">
-                  Partner with our experts for a custom-designed new home
-                  addition built effortlessly, exactly how you dreamed.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- LUXURY REMODELING SERVICES -->
-      <section class="bg-white py-10">
-        <div class="max-w-7xl mx-auto px-6">
-          <!-- Heading -->
-          <h2
-            class="text-4xl md:text-5xl font-bold text-center text-[#112c1a] mb-10"
-          >
-            LUXURY REMODELING SERVICES
-          </h2>
-
-          <!-- Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <!-- Card 1 -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
-            >
-              <div class="overflow-hidden">
-                <img
-                  src="assets/img/Luxury-Kitchen-Remodel-800x671.webp"
-                  class="w-full rounded-md h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Kitchen Remodeling"
-                />
-              </div>
-
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
-                  KITCHEN REMODELING
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-6">
-                  Transform your vision into a functional masterpiece.
-                  Guaranteed flawless flow and a custom dream kitchen.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
-            >
-              <div class="overflow-hidden">
-                <img
-                  src="assets/img/Luxury-Bathroom-Remodel-800x671.webp"
-                  class="w-full rounded-md h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Bathroom Remodeling"
-                />
-              </div>
-
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
-                  BATHROOM REMODELING
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-6">
-                  Your dream bathroom starts now. Get a stunning, custom retreat
-                  with our expert process. Guaranteed serenity and function.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
-            >
-              <div class="overflow-hidden">
-                <img
-                  src="assets/img/Luxury-Basement-Remodel-800x671.webp"
-                  class="w-full rounded-md h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Basement Remodeling"
-                />
-              </div>
-
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
-                  BASEMENT REMODELING
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-6">
-                  We turn storage space into profitable, luxury living areas.
-                  From high-end theaters to custom guest suites, we build your
-                  functional vision.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bottom Row -->
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 max-w-4xl mx-auto"
-          >
-            <!-- Multi-room -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
-            >
-              <div class="overflow-hidden">
-                <img
-                  src="assets/img/Home-Remodeling-Experts-800x671.webp"
-                  class="w-full h-[330px] rounded-md object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Multi Room Remodeling"
-                />
-              </div>
-
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
-                  MULTI-ROOM REMODELING
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-6">
-                  We specialize in complex, cohesive multi-room remodeling that
-                  transforms your entire home into the dream space you’ve always
-                  wanted.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Accessible -->
-            <div
-              class="bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 group overflow-hidden p-2"
-            >
-              <div class="overflow-hidden">
-                <img
-                  src="assets/img/Accessible-Home-Remodeling-1-800x671.webp"
-                  class="w-full h-[330px] rounded-md object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt="Accessible Home Remodeling"
-                />
-              </div>
-
-              <div class="p-8 text-center">
-                <h3 class="text-2xl font-bold text-[#112c1a] mb-4">
-                  ACCESSIBLE HOME REMODELING
-                </h3>
-
-                <p class="text-gray-600 text-sm mb-6">
-                  Find essential home modifications, in-home care solutions, and
-                  tips for maintaining independence and quality of life in your
-                  own home.
-                </p>
-
-                <a
-                  href="#"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
-                >
-                  View Details
-                  <span>→</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- COMMERCIAL CONSTRUCTION PROJECTS -->
-      <section class="bg-white py-10">
-        <div class="max-w-7xl mx-auto px-6">
-          <!-- Heading -->
-          <h2
-            class="text-4xl md:text-5xl font-bold text-center text-[#112c1a] mb-10"
-          >
-            COMMERCIAL CONSTRUCTION PROJECTS
-          </h2>
-
-          <!-- Content Grid -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <!-- LEFT: Images -->
-            <div class="grid grid-cols-2 gap-6">
-              <img
-                src="assets/img/Commercial-Construction-800x671.webp"
-                alt="Commercial Construction"
-                class="rounded-tl-3xl object-cover w-full h-[300px] transition duration-500 hover:brightness-150"
-              />
-
-              <img
-                src="assets/img/Commercial-Roof-Replacement-800x800.webp"
-                alt="Industrial Facility Construction"
-                class="rounded-br-3xl object-cover w-full h-[300px] transition duration-500 hover:brightness-150"
-              />
-            </div>
-
-            <!-- RIGHT: Text -->
-            <div>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                We are your trusted general contractor for superior commercial
-                construction. Specializing in expert new builds and efficient
-                commercial renovations across office, retail, and industrial
-                sectors.
-              </p>
-
-              <p class="text-gray-700 leading-relaxed mb-6">
-                We guarantee professional project management and quality
-                craftsmanship to deliver your project on time and on budget.
-              </p>
-
-              <p class="text-gray-700 leading-relaxed mb-10">
-                Partner with us for your next commercial development.
-              </p>
-
-              <!-- CTA -->
-              <a
-                href="#"
-                class="inline-flex items-center gap-3 bg-green-900 hover:bg-green-800 text-white px-8 py-4 rounded-full font-medium transition duration-300"
-              >
-                Discover More
-                <span class="text-lg">→</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 25+ Years of Luxury Construction & Remodeling -->
+      <!-- Your 4-Step Path to Your Dream Kitchen -->
       <section class="bg-[#0f3b22] py-10">
         <div
           class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
         >
           <!-- LEFT CONTENT -->
           <div class="text-white">
-            <h2 class="text-4xl md:text-5xl font-bold leading-tight">
-              <span class="text-white/90">25+ YEARS OF LUXURY</span><br />
-              CONSTRUCTION &<br />
-              REMODELING
-            </h2>
-
-            <p class="mt-6 font-semibold text-white/90">
-              Elevate Your Vision with Chicagoland’s Premier Custom Builder.
-            </p>
-
-            <p class="mt-6 text-white/80 leading-relaxed">
-              For over 25 years, EcoBuild Plus has established the benchmark for
-              excellence in luxury construction and high-end remodeling across
-              the entire Chicagoland area.
-            </p>
-
-            <p class="mt-4 text-white/80 leading-relaxed">
-              We are not just contractors. We are dedicated partners who
-              transform ambitious visions into enduring, high-value realities.
-              Our decades of experience ensure unmatched precision, superior
-              quality, and a seamless process for your dream project.
-            </p>
-
-            <!-- BUTTON -->
-            <div class="mt-10">
-              <a
-                href="#"
-                class="inline-flex items-center gap-2 bg-green-700 hover:bg-green-600 text-white px-8 py-4 rounded-full font-medium transition duration-300"
+            <div class="relative max-w-5xl mx-auto px-6 text-white">
+              <!-- Title -->
+              <h2
+                class="text-4xl md:text-5xl font-bold uppercase leading-tight mb-6"
               >
-                Learn More →
-              </a>
+                Your 4-Step Path to Your Dream Kitchen
+              </h2>
+
+              <!-- Intro -->
+              <p class="text-lg text-gray-200 mb-8 leading-relaxed">
+                Embarking on a kitchen remodel should be exciting, not
+                overwhelming. We have refined our remodeling process into a
+                seamless experience that bridges the gap between creative vision
+                and expert construction. As your dedicated Chicagoland
+                design-build team, we handle the complexities from local permits
+                to daily project management, guaranteeing you a stress-free
+                journey to the kitchen you’ve always dreamed of.
+              </p>
+
+              <!-- Bullet List -->
+              <ul class="space-y-5 text-lg leading-relaxed text-gray-100">
+                <li class="flex items-start gap-3">
+                  <span>•</span>
+                  <p>
+                    <strong>The Vision Meet-Up:</strong> We start by talking
+                    about you, how you live, cook, and gather with family. Not
+                    just cabinets and tiles. This helps us design a kitchen that
+                    fits your real life perfectly.
+                  </p>
+                </li>
+
+                <li class="flex items-start gap-3">
+                  <span>•</span>
+                  <p>
+                    <strong>The Master Blueprint:</strong> Next, we turn your
+                    ideas into a detailed plan. Our experts handle permits,
+                    follow Chicagoland building codes, and give you a clear,
+                    guaranteed cost before we start.
+                  </p>
+                </li>
+
+                <li class="flex items-start gap-3">
+                  <span>•</span>
+                  <p>
+                    <strong>Expert Execution:</strong> Our in-house design and
+                    build team takes care of everything, scheduling, materials,
+                    and daily progress. We keep your home clean, safe, and on
+                    track from start to finish.
+                  </p>
+                </li>
+
+                <li class="flex items-start gap-3">
+                  <span>•</span>
+                  <p>
+                    <strong>The Final Reveal:</strong> Before we hand over your
+                    new kitchen, we inspect every detail to make sure it’s
+                    flawless. Then, all that’s left for you is to step in and
+                    enjoy it.
+                  </p>
+                </li>
+              </ul>
+
+              <!-- CTA -->
+              <div class="mt-10">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center gap-3 bg-white border text-green-900 px-8 py-4 rounded-full font-semibold hover:bg-transparent hover:text-white transition duration-300 shadow-md"
+                >
+                  Get a Free Consultation Now →
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- RIGHT IMAGE -->
-          <div class="relative">
+          <div class="relative space-y-1 bg-white p-1">
             <img
-              src="assets/img/Chicago-Luxury-Construction-and-Remodeling-800x671.webp"
+              src="assets/img/EcoBuild-Plus-Kitchen-Remodel--800x450.webp"
               alt="Luxury Home"
-              class="w-full h-full object-cover rounded-md transition duration-500 hover:brightness-150"
+              class="w-full h-[350px] object-cover transition duration-500 hover:brightness-150"
             />
+            <img
+              src="assets/img/EcoBuild-Plus-Kitchen-Remodels-800x450.webp"
+              alt="Luxury Home"
+              class="w-full h-[350px] object-cover transition duration-500 hover:brightness-150"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- See Your Dream -->
+      <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Top Divider Title -->
+          <div class="flex items-center justify-center mb-6">
+            <div class="h-[2px] bg-green-900 flex-1"></div>
+            <h2
+              class="text-3xl md:text-4xl font-bold text-green-900 px-6 text-center"
+            >
+              See Your Dream: Kitchens Built By EcoBuild Experts
+            </h2>
+            <div class="h-[2px] bg-green-900 flex-1"></div>
+          </div>
+
+          <!-- Subtitle -->
+          <h3
+            class="text-2xl md:text-3xl font-bold text-green-900 text-center mb-6"
+          >
+            You Shouldn’t Just Imagine Your Dream Kitchen. You Should See It
+            Come To Life.
+          </h3>
+
+          <!-- Description -->
+          <div
+            class="max-w-4xl mx-auto text-center text-gray-700 space-y-4 mb-12"
+          >
+            <p>
+              At
+              <span class="font-semibold text-green-900">EcoBuild Plus</span>,
+              we blend expert craftsmanship with your unique style and needs.
+              The result? Kitchens that look stunning, feel effortless, and work
+              perfectly for your everyday life.
+            </p>
+            <p>
+              Take a look below at some of the kitchens we’ve proudly built
+              across Chicago and the Chicagoland suburbs. Each kitchen designed
+              to bring lasting value, comfort, and joy.
+            </p>
+          </div>
+
+          <!-- Kitchen Cards -->
+          <div class="grid md:grid-cols-3 gap-10">
+            <!-- Card 1 -->
+            <div class="relative group shadow-lg rounded overflow-hidden">
+              <a href="#">
+                <img
+                  src="assets/img/Accessible-Kitchen-Remodeling-600x503.webp"
+                  alt="Kitchen Remodeling in Deerfield"
+                  class="w-full h-[420px] object-cover"
+                />
+
+                <div
+                  class="absolute inset-0 bg-green-900/40 group-hover:bg-green-900/60 transition duration-300"
+                ></div>
+
+                <div
+                  class="absolute inset-0 flex items-center justify-center text-center px-6"
+                >
+                  <h4 class="text-white text-2xl font-bold leading-snug">
+                    Kitchen Remodeling In Deerfield
+                  </h4>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative group shadow-lg rounded overflow-hidden">
+              <a href="#">
+                <img
+                  src="assets/img/kitchen-remodeling-in-evanston-600x450.webp"
+                  alt="Kitchen Remodeling in Evanston"
+                  class="w-full h-[420px] object-cover"
+                />
+
+                <div
+                  class="absolute inset-0 bg-green-900/40 group-hover:bg-green-900/60 transition duration-300"
+                ></div>
+
+                <div
+                  class="absolute inset-0 flex items-center justify-center text-center px-6"
+                >
+                  <h4 class="text-white text-2xl font-bold leading-snug">
+                    Kitchen Remodeling In Evanston
+                  </h4>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative group shadow-lg rounded overflow-hidden">
+              <a href="#">
+                <img
+                  src="assets/img/kitchen-remodeling-in-des-plaines-600x599.webp"
+                  alt="Kitchen Remodeling in Des Plaines"
+                  class="w-full h-[420px] object-cover"
+                />
+
+                <div
+                  class="absolute inset-0 bg-green-900/40 group-hover:bg-green-900/60 transition duration-300"
+                ></div>
+
+                <div
+                  class="absolute inset-0 flex items-center justify-center text-center px-6"
+                >
+                  <h4 class="text-white text-2xl font-bold leading-snug">
+                    Kitchen Remodeling In Des Plaines
+                  </h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Areas -->
+      <section class="py-10 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Section Title -->
+          <div class="mb-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#112c1a]">
+              NORTHWEST SUBURBS SERVICE AREAS
+            </h2>
+          </div>
+
+          <!-- Grid -->
+          <div
+            class="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-12 text-lg"
+          >
+            <!-- Column 1 -->
+            <a href="#" class="area-link">
+              <i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Arlington Heights </span></a
+            >
+            <a href="#" class="area-link">
+              <i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Bensenville</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Deer Park</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Elk Grove Village</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Grayslake</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Hoffman Estates</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Itasca</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lake Villa</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lindenhurst</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Mundelein</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Oakwood Hills</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Prairie Grove</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Roselle</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Schiller Park</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Vernon Hills</span></a
+            >
+
+            <!-- Column 2 -->
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Arlington Heights</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Buffalo Grove</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Deerfield</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Evanston</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Hanover Park</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Holiday Hills</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Kildeer</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lake Zurich</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Long Grove</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Niles</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Palatine</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Prospect Heights</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Rosemont</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> South Barrington</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> West Dundee</span></a
+            >
+
+            <!-- Column 3 -->
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Barrington Hills</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Carpentersville</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Des Plaines</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Fox River Grove</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Harwood Heights</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Inverness</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lake Barrington</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Libertyville</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Morton Grove</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> North Barrington</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Park Ridge</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Riverwoods</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Round Lake</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Streamwood</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Wheeling</span></a
+            >
+
+            <!-- Column 4 -->
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Bartlett</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Cary</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Elgin</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Glenview</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Hawthorn Woods</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Island Lake</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lake in the Hills</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Lake Forest</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Mount Prospect</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Northbrook</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Port Barrington</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Rolling Meadows</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Schaumburg</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Trout Valley</span></a
+            >
+            <a href="#" class="area-link"
+              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><span> Wood Dale</span></a
+            >
           </div>
         </div>
       </section>
@@ -1229,285 +1233,154 @@
         </div>
       </section>
 
-      <!-- Request a Quote -->
-      <section class="relative bg-white py-20 overflow-hidden">
+      <!-- FAQ -->
+      <section class="relative bg-gray-100 py-10 overflow-hidden">
         <img
-          src="assets/img/bg/bg_form.svg"
-          class="absolute right-0 top-0 h-full object-contain"
+          src="assets/img/bg/bg_faq.svg"
+          class="absolute inset-0 object-cover w-full h-full opacity-10 pointer-events-none"
+          alt="FAQ Background"
         />
 
-        <div
-          class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-center"
-        >
-          <div></div>
-          <div class="col-span-2 col-start-2">
-            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
-              Request a Quote Now
-            </h2>
-            <form class="grid md:grid-cols-2 gap-6">
-              <!-- First Name -->
-              <input
-                type="text"
-                placeholder="First Name*"
-                class="w-full rounded-full border border-gray-300 px-5 py-1 bg-gray-100 focus:ring-2 focus:ring-green-700 outline-none"
-              />
-              <!-- Last Name -->
-              <input
-                type="text"
-                placeholder="Last Name*"
-                class="w-full rounded-full border border-gray-300 px-5 py-1 bg-gray-100 focus:ring-2 focus:ring-green-700 outline-none"
-              />
-              <!-- Phone -->
-              <input
-                type="text"
-                placeholder="Phone*"
-                class="w-full rounded-full border border-gray-300 px-5 py-1 bg-gray-100 focus:ring-2 focus:ring-green-700 outline-none"
-              />
-              <!-- Email -->
-              <input
-                type="email"
-                placeholder="Email*"
-                class="w-full rounded-full border border-gray-300 px-5 py-1 bg-gray-100 focus:ring-2 focus:ring-green-700 outline-none"
-              />
-              <!-- Address -->
-              <input
-                type="text"
-                placeholder="Street Address"
-                class="md:col-span-2 w-full rounded-full border border-gray-300 px-5 py-1 bg-gray-100 focus:ring-2 focus:ring-green-700 outline-none"
-              />
-              <!-- City -->
-              <input
-                type="text"
-                placeholder="City"
-                class="rounded-full border border-gray-300 px-5 py-1 bg-gray-100 focus:ring-2 focus:ring-green-700 outline-none"
-              />
-              <!-- State -->
-              <input
-                type="text"
-                placeholder="State/Region"
-                class="rounded-full border border-gray-300 px-5 py-1 bg-gray-100 focus:ring-2 focus:ring-green-700 outline-none"
-              />
-              <!-- Zip -->
-              <input
-                type="text"
-                placeholder="Postal Code"
-                class="rounded-full border border-gray-300 px-5 py-1 bg-gray-100 focus:ring-2 focus:ring-green-700 outline-none"
-              />
-              <!-- About Project -->
-              <textarea
-                placeholder="About Your Project*"
-                rows="4"
-                class="md:col-span-2 rounded-2xl border border-gray-300 px-5 py-4 bg-gray-100 focus:ring-2 focus:ring-green-700 outline-none"
-              >
-              </textarea>
-              <!-- Submit -->
-              <div class="md:col-span-2 mt-6">
-                <button
-                  type="submit"
-                  class="bg-green-700 hover:bg-green-800 text-white font-semibold px-10 py-3 rounded-full transition"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- Insights & Knowledge Hub -->
-      <section class="py-10">
         <div class="max-w-7xl mx-auto px-6">
-          <!-- Top Label -->
-          <div class="text-center mb-6">
-            <p
-              class="text-green-900 uppercase tracking-widest text-sm font-bold"
-            >
-              Premier – Luxury – Innovative
-            </p>
-          </div>
-
-          <!-- Main Heading -->
-          <h2
-            class="text-4xl md:text-4xl font-bold text-center text-[#112c1a] mb-6"
-          >
-            EcoBuild Plus Insights & Knowledge Hub
+          <!-- Title -->
+          <h2 class="text-3xl md:text-4xl font-bold text-[#112c1a] mb-5">
+            Chicagoland Kitchen Remodeling FAQ
           </h2>
 
-          <!-- Subtext -->
-          <p class="text-center text-gray-600 max-w-4xl mx-auto mb-10 text-sm">
-            Stay informed on the latest trends, expert insights, and updates in
-            sustainable home construction and eco-friendly design.
-          </p>
-
-          <!-- Blog Grid -->
-          <div class="grid md:grid-cols-3 gap-10">
-            <!-- Card -->
-            <div class="group">
-              <div class="overflow-hidden rounded-2xl">
-                <img
-                  src="assets/img/How-Much-Does-It-Cost-to-Build-a-House-in-Chicago_new-version.webp"
-                  class="w-full h-[200px] object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-110"
-                  alt=""
-                />
-              </div>
-
-              <p class="text-sm text-gray-900 mt-6">Architecture & Building</p>
-
-              <h3
-                class="text-xl font-bold text-[#112c1a] mt-2 leading-snug group-hover:text-green-700 transition"
-              >
-                How Much Does It Cost To Build A House In Chicago? [2026]
+          <div class="space-y-5 text-gray-800">
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                How Much Does It Cost to Remodel a Kitchen in the Chicago Area
+                on Average?
               </h3>
-
-              <a
-                href="#"
-                class="inline-flex items-center gap-2 mt-4 text-green-900 font-semibold hover:gap-3 transition-all"
-              >
-                Read More
-                <span>→</span>
-              </a>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="group">
-              <div class="overflow-hidden rounded-2xl">
-                <img
-                  src="assets/img/How-much-does-it-cost-to-remodel-a-bathroom-in-Chicago.webp"
-                  class="w-full h-[200px] object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-110"
-                  alt=""
-                />
-              </div>
-
-              <p class="text-sm text-gray-900 mt-6">Remodeling, Bathroom</p>
-
-              <h3
-                class="text-xl font-bold text-[#112c1a] mt-2 leading-snug group-hover:text-green-700 transition"
-              >
-                How Much Does It Cost To Remodel A Bathroom In Chicago?
-              </h3>
-
-              <a
-                href="#"
-                class="inline-flex items-center gap-2 mt-4 text-green-900 font-semibold hover:gap-3 transition-all"
-              >
-                Read More
-                <span>→</span>
-              </a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="group">
-              <div class="overflow-hidden rounded-2xl">
-                <img
-                  src="assets/img/What-Is-a-Realistic-Budget-for-a-Kitchen-Remodel.webp"
-                  class="w-full h-[200px] object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-110"
-                  alt=""
-                />
-              </div>
-
-              <p class="text-sm text-gray-900 mt-6">Remodeling, Kitchen</p>
-
-              <h3
-                class="text-xl font-bold text-[#112c1a] mt-2 leading-snug group-hover:text-green-700 transition"
-              >
-                What Is A Realistic Budget For A Kitchen Remodel
-              </h3>
-
-              <a
-                href="#"
-                class="inline-flex items-center gap-2 mt-4 text-green-900 font-semibold hover:gap-3 transition-all"
-              >
-                Read More
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Our Extended Family -->
-      <section class="py-10 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
-          <!-- Section Title -->
-          <h2
-            class="text-4xl md:text-5xl font-bold text-center text-[#112c1a] mb-10"
-          >
-            Our Extended Family
-          </h2>
-
-          <!-- Cards -->
-          <div class="grid md:grid-cols-3 gap-10">
-            <!-- Card 1 -->
-            <div
-              class="bg-white rounded-2xl shadow-sm p-10 text-center transition duration-500 hover:shadow-xl hover:-translate-y-2"
-            >
-              <img
-                src="assets/img/logo/Green-Attic-Roofing-Logo.svg"
-                alt="Green Attic Roofing"
-                class="h-16 mx-auto mb-6 object-contain"
-              />
-
-              <h3 class="text-2xl font-bold text-green-900 mb-4">
-                Green Attic Roofing
-              </h3>
-
-              <p class="text-gray-600 leading-relaxed">
-                <strong>Green Attic Roofing</strong> is a trusted roofing
-                contractor serving the Chicago area, specializing in
-                residential, commercial, and industrial roofing. We deliver
-                energy-efficient solutions with premium materials and expert
-                installation.
+              <p class="leading-relaxed">
+                It costs roughly between $35,000 and $75,000 to remodel a
+                kitchen in the Chicago area on average, with your exact price
+                shaped mainly by the size of the kitchen, the scope of layout or
+                wall changes, and the materials and appliance packages you
+                choose. Larger or more upscale projects that include custom
+                cabinetry, premium countertops, and high-end appliance suites
+                can often range from about $80,000 to $150,000 or more. Getting
+                a project-specific estimate from EcoBuild Plus is the best way
+                to understand your actual budget.
               </p>
-
-              <div class="w-12 h-[2px] bg-green-700 mx-auto mt-8"></div>
             </div>
 
-            <!-- Card 2 -->
-            <div
-              class="bg-white rounded-2xl shadow-sm p-10 text-center transition duration-500 hover:shadow-xl hover:-translate-y-2"
-            >
-              <img
-                src="assets/img/logo/Profix247-Logo.svg"
-                alt="ProFix 24/7"
-                class="h-16 mx-auto mb-6 object-contain"
-              />
-
-              <h3 class="text-2xl font-bold text-green-900 mb-4">
-                ProFix 24/7
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                What Is the Single Priciest Element of a Kitchen Remodel in
+                Chicagoland?
               </h3>
-
-              <p class="text-gray-600 leading-relaxed">
-                <strong>ProFix 24/7</strong> is a trusted restoration company in
-                Chicago, specializing in water damage, mold remediation, and
-                full-scale property restoration. With 20 years of experience, we
-                deliver fast and reliable solutions.
+              <p class="leading-relaxed">
+                The single priciest element of a kitchen remodel in Chicagoland
+                is typically the cabinetry, which often runs from about $10,000
+                to $30,000 or more depending on kitchen size and whether you
+                choose stock, semi-custom, or fully custom options. In many
+                budgets, cabinets take the largest share of total costs,
+                especially when paired with higher-end designs or specialty
+                storage features.
               </p>
-
-              <div class="w-12 h-[2px] bg-green-700 mx-auto mt-8"></div>
             </div>
 
-            <!-- Card 3 -->
-            <div
-              class="bg-white rounded-2xl shadow-sm p-10 text-center transition duration-500 hover:shadow-xl hover:-translate-y-2"
-            >
-              <img
-                src="assets/img/logo/Green-Attic-Insualtion-Main-Logo.svg"
-                alt="Green Attic Insulation"
-                class="h-16 mx-auto mb-6 object-contain"
-              />
-
-              <h3 class="text-2xl font-bold text-green-900 mb-4">
-                Green Attic Insulation
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                How Much Does It Cost to Design a Kitchen?
               </h3>
-
-              <p class="text-gray-600 leading-relaxed">
-                <strong>Green Attic Insulation</strong> provides professional
-                and energy-efficient insulation services in the Chicagoland
-                area, including cellulose attic insulation, spray foam, roofing,
-                and more.
+              <p class="leading-relaxed">
+                It costs between about $1,500 and $7,500 or more to design a
+                kitchen, depending largely on the complexity of the design and
+                the size of the space. The cost structure can vary, with some
+                designers charging an hourly rate and others using a flat fee or
+                a percentage of the overall project cost, so it is wise to
+                compare detailed quotes for your specific project.
               </p>
+            </div>
 
-              <div class="w-12 h-[2px] bg-green-700 mx-auto mt-8"></div>
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                Do I Have to Pull Permits in the Chicago and Suburban Area to
+                Remodel My Kitchen?
+              </h3>
+              <p class="leading-relaxed">
+                You do have to pull permits in the Chicago and suburban area for
+                most kitchen remodels that go beyond simple cosmetic work. If
+                your remodel includes structural changes, new or relocated
+                plumbing, new or modified electrical circuits, or changes to
+                mechanical systems, permits through the Chicago Department of
+                Buildings or your local municipality are required. Like-for-like
+                cabinet or countertop swaps may not require permits but should
+                still be confirmed with professionals at EcoBuild Plus.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                What Are the Best Ways to Add More Storage Without Changing the
+                Kitchen Size?
+              </h3>
+              <p class="leading-relaxed">
+                The best ways to add more storage without changing the kitchen
+                size involve clever solutions like pull-out drawers, tall
+                cabinets, and smart corner systems that make every inch count.
+                We focus on maximizing space and eliminating clutter through
+                ergonomic layouts that fit your cooking style.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                What Happens if I Want to Move the Sink or Stove to a New
+                Location?
+              </h3>
+              <p class="leading-relaxed">
+                If you want to move the sink or stove, our team manages the
+                plumbing, gas, and electrical updates required to maintain a
+                safe and efficient layout. We redesign the space to preserve a
+                proper work triangle and ensure smooth, unobstructed movement
+                throughout your kitchen.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                What Is the Strategy for Setting Up a Temporary Kitchen During
+                Construction?
+              </h3>
+              <p class="leading-relaxed">
+                The strategy for setting up a temporary kitchen is established
+                during the planning phase to minimize disruption to your daily
+                routine. We assess your cooking habits and household needs to
+                create a functional interim setup while our in-house team
+                completes the main build.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                How Is the Kitchen Work Area Sealed Off to Prevent Dust From
+                Spreading?
+              </h3>
+              <p class="leading-relaxed">
+                The kitchen work area is sealed off using professional
+                containment systems and daily site management practices to
+                prevent dust from spreading into other parts of your home. We
+                isolate the construction zone carefully so your living
+                environment remains clean and safe.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-green-900 mb-1">
+                How Is Daily Debris Handled to Keep My Kitchen Safe and
+                Walkable?
+              </h3>
+              <p class="leading-relaxed">
+                Daily debris is removed consistently through structured project
+                management and quality control processes. Materials are
+                scheduled and staged carefully to prevent clutter, keeping your
+                space safe, organized, and walkable throughout the remodeling
+                process.
+              </p>
             </div>
           </div>
         </div>
@@ -1776,18 +1649,14 @@
             <div
               class="flex flex-wrap justify-center gap-8 text-sm text-gray-200 mb-6"
             >
-              <a href="privacy-policy.html" class="hover:text-white transition"
-                >Privacy Policy</a
-              >
+              <a href="#" class="hover:text-white transition">Privacy Policy</a>
               <a href="resource.html" class="hover:text-white transition"
                 >Resource</a
               >
-              <a
-                href="terms-conditions.html"
-                class="hover:text-white transition"
+              <a href="#" class="hover:text-white transition"
                 >Terms & Conditions</a
               >
-              <a href="warranty.html" class="hover:text-white transition"
+              <a href="#" class="hover:text-white transition"
                 >EcoBuild Plus Warranty</a
               >
             </div>
