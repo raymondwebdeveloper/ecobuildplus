@@ -32,9 +32,7 @@
       x-data="{ open: false }"
       class="sticky top-0 z-50 bg-white border-b"
     >
-      <div
-        class="max-w-[1440px] mx-auto px-5 py-2 h-18 flex items-center justify-between"
-      >
+      <div class="mx-auto px-5 py-2 h-18 flex items-center justify-between">
         <a href="/" class="text-xl font-bold text-gray-900">
           <img
             src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
@@ -42,43 +40,6 @@
             class="h-12 w-auto"
           />
         </a>
-
-        <a
-          href="financing.html"
-          class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition hidden md:inline-block"
-        >
-          Financing Options
-        </a>
-        <img
-          src="assets/img/icons/usa-flag.webp"
-          alt="United States flag"
-          class="h-8 w-auto inline-block align-middle hidden md:inline-block"
-        />
-        <p class="text-sm text-gray-900 text-center hidden md:inline-block">
-          <strong class="text-green-900"
-            >Your #1 Home Improvement Experts</strong
-          >
-          <br />
-          Serving Chicago Area
-        </p>
-        <p class="text-center text-sm/6 hidden md:inline-block">
-          <span class="text-[16px]">Give Us A Call Today!</span>
-          <br />
-          <a
-            href="tel:+12242768350"
-            class="text-green-900 hover:text-green-800 transition font text-[22px]"
-            ><strong> (224) 276 - 8350</strong></a
-          >
-        </p>
-        <a
-          href="contact.html"
-          class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition hidden md:inline-block"
-        >
-          Get a Free Estimate
-        </a>
-        <button @click="open = !open" class="md:hidden text-2xl">☰</button>
-      </div>
-      <div>
         <nav class="hidden md:flex gap-12 justify-center items-center py-3">
           <div class="relative group">
             <button
@@ -110,7 +71,7 @@
           </div>
           <div class="relative group">
             <button
-              class="flex items-center gap-1 font-medium text-[18px] text-gray-900 hover:text-green-900"
+              class="flex items-center gap-1 font-medium text-[18px] hover:text-green-900"
             >
               Residential
               <i
@@ -202,12 +163,12 @@
           </div>
           <a
             href="service-areas.html"
-            class="text-gray-900 font-medium text-[18px] text-green-900 hover:text-green-800 px-1"
+            class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
             >Service Areas</a
           >
           <a
             href="financing.html"
-            class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
+            class="text-gray-900 font-medium text-[18px] hover:text-green-800 px-1"
             >Financing</a
           >
           <a
@@ -216,17 +177,26 @@
             >Commercial</a
           >
           <a
-            href="/pages/blog.html"
+            href="blog.html"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
             >Blog</a
           >
           <a
             href="contact.html"
-            class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
+            class="text-gray-900 font-medium text-[18px] text-green-900 hover:text-green-800 px-1"
           >
             Contact
           </a>
         </nav>
+
+        <a
+          href="tel:+18476496706"
+          class="uppercase inline-flex items-center gap-2 rounded-full bg-green-900 px-7 py-4 text-white font-semibold hover:bg-green-700 transition"
+        >
+          <i class="fas fa-phone-alt text-xs"></i>
+          (847) 649-6706
+        </a>
+        <button @click="open = !open" class="md:hidden text-2xl">☰</button>
       </div>
 
       <!-- Mobile Menu -->
@@ -367,13 +337,13 @@
           >
           <a
             href="financing.html"
-            class="block text-green-900 hover:text-green-900"
+            class="block text-green-900 hover:text-green-800"
             >Financing</a
           >
           <a href="commercial.html" class="block hover:text-green-900"
             >Commercial</a
           >
-          <a href="#" class="block hover:text-green-900">Blog</a>
+          <a href="blog.html" class="block hover:text-green-900">Blog</a>
           <a href="contact.html" class="block hover:text-green-900">Contact</a>
 
           <!-- CTA -->
@@ -417,360 +387,90 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="relative h-[50vh] min-h-[320px] overflow-hidden">
-        <!-- Cover Background -->
-        <img
-          src="assets/img/bg/bg_form.svg"
-          class="absolute inset-0 -z-index-10 w-full h-full object-cover"
-          alt="Residential Interior Design with Ecobuild Plus"
-        />
-
-        <!-- DARK OVERLAY -->
-        <div class="absolute inset-0 bg-[#112c1a]/95"></div>
-
-        <!-- CONTENT -->
-        <div class="relative z-10 h-full flex items-center">
-          <div class="mx-auto max-w-[1440px] px-6 text-white">
-            <h1 class="uppercase text-4xl md:text-5xl font-bold leading-tight">
-              Service Areas
-            </h1>
-
-            <p class="mt-6 text-md md:text-lg text-white/90">
-              Below you’ll find a list of our service areas in Chicagoland.
-              Don’t see your location listed below? Just give us a call. We’d be
-              happy to learn more about your project and see what we can do to
-              assist you.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Map -->
-      <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-          <div
-            id="serviceMap"
-            class="relative w-full h-[600px] rounded-xl overflow-hidden shadow-lg z-0"
-          ></div>
-        </div>
-      </section>
-
-      <!-- Service Areas -->
       <section class="py-10 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6">
-          <!-- Section Title -->
-          <div class="mb-10">
-            <h2 class="text-4xl md:text-5xl font-bold text-[#112c1a]">
-              NORTHWEST SUBURBS SERVICE AREAS
+          <!-- Title -->
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-green-900">
+              GET A FREE CONSULTATION NOW!
             </h2>
           </div>
 
-          <!-- Grid -->
-          <div
-            class="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-12 text-lg"
-          >
-            <!-- Column 1 -->
-            <a href="#" class="area-link">
-              <i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Arlington Heights </span></a
-            >
-            <a href="#" class="area-link">
-              <i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Bensenville</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Deer Park</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Elk Grove Village</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Grayslake</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Hoffman Estates</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Itasca</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Lake Villa</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Lindenhurst</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Mundelein</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Oakwood Hills</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Prairie Grove</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Roselle</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Schiller Park</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Vernon Hills</span></a
-            >
+          <div class="grid lg:grid-cols-2 gap-16">
+            <!-- LEFT SIDE -->
+            <div>
+              <!-- Map -->
+              <div
+                id="map"
+                class="w-full h-[350px] rounded-lg shadow-md mb-10 z-0"
+              ></div>
 
-            <!-- Column 2 -->
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Arlington Heights</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Buffalo Grove</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Deerfield</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Evanston</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Hanover Park</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Holiday Hills</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Kildeer</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Lake Zurich</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Long Grove</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Niles</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Palatine</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Prospect Heights</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Rosemont</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> South Barrington</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> West Dundee</span></a
-            >
+              <!-- Contact Info -->
+              <div class="space-y-6">
+                <h3 class="text-lg font-bold text-[#112c1a] tracking-wide">
+                  CONTACT INFORMATION
+                </h3>
 
-            <!-- Column 3 -->
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Barrington Hills</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Carpentersville</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Des Plaines</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Fox River Grove</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Harwood Heights</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Inverness</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Lake Barrington</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Libertyville</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Morton Grove</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> North Barrington</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Park Ridge</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Riverwoods</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Round Lake</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Streamwood</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Wheeling</span></a
-            >
+                <div>
+                  <p class="font-semibold text-green-900">ECOBUILD PLUS</p>
+                  <hr />
+                  <p
+                    class="flex items-center gap-3 text-gray-700 font-bold mt-3"
+                  >
+                    <span
+                      class="flex items-center justify-center w-6 h-6 bg-green-900 rounded-full text-white"
+                      ><i class="fa-map-marker-alt fas text-xs"></i
+                    ></span>
+                    <span class="text-[#112c1a]"
+                      >409 W Algonquin Rd F, Mt Prospect, IL 60056</span
+                    >
+                  </p>
+                  <a
+                    href="tel:+18476496706"
+                    class="flex items-center gap-3 text-gray-700 font-bold mt-2 hover:text-green-900 hover:underline transition"
+                  >
+                    <span
+                      class="flex items-center justify-center w-6 h-6 bg-green-900 rounded-full text-white"
+                      ><i class="fas fa-phone-alt text-xs"></i
+                    ></span>
+                    <span class="text-green-900">(847) 649-6706</span>
+                  </a>
+                </div>
 
-            <!-- Column 4 -->
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Bartlett</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Cary</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Elgin</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Glenview</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Hawthorn Woods</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Island Lake</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Lake in the Hills</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Lake Forest</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Mount Prospect</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Northbrook</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Port Barrington</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Rolling Meadows</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Schaumburg</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Trout Valley</span></a
-            >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Wood Dale</span></a
-            >
-          </div>
-        </div>
-      </section>
+                <div>
+                  <p class="font-semibold text-green-900 mt-6">FOLLOW US</p>
+                  <hr />
+                  <div class="flex gap-4 mt-4 text-xl text-green-900">
+                    <a
+                      href="https://www.instagram.com/ecobuild_plus/"
+                      target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/ecobuildplus"
+                      target="_blank"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/company/ecobuildplus/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a
+                      href="https://www.yelp.com/biz/eco-build-plus-mt-prospect?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+                      target="_blank"
+                      ><i class="fab fa-yelp"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <!-- Our Trusted Industry Partners -->
-      <section class="py-10 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="flex flex-wrap justify-center items-center gap-10">
-            <img
-              src="assets/img/logo/jameshardie.svg"
-              class="h-6 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="James Hardie"
-            />
-
-            <img
-              src="assets/img/logo/andersen.svg"
-              class="h-5 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="Andersen"
-            />
-
-            <img
-              src="assets/img/logo/certainteed.svg"
-              class="h-5 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="CertainTeed"
-            />
-
-            <img
-              src="assets/img/logo/kohler.svg"
-              class="h-8 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="Kohler"
-            />
-
-            <img
-              src="assets/img/logo/moen.svg"
-              class="h-8 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="Moen"
-            />
-
-            <img
-              src="assets/img/logo/cambria.svg"
-              class="h-8 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="Cambria"
-            />
-
-            <img
-              src="assets/img/logo/Sherwin-Williams.webp"
-              class="h-[75px] opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="Sherwin Williams"
-            />
-
-            <img
-              src="assets/img/logo/lp-smartside.svg"
-              class="h-8 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="LP SmartSide"
-            />
+            <!-- RIGHT SIDE -->
+            <div>
+              <!-- HubSpot Form Container -->
+              <div id="hubspot-form"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -855,9 +555,7 @@
                   >
                 </li>
                 <li>
-                  <a
-                    href="home-addition-chicago.html"
-                    class="hover:text-white transition"
+                  <a href="#" class="hover:text-white transition"
                     >Home Additions</a
                   >
                 </li>
@@ -876,10 +574,14 @@
                   >
                 </li>
                 <li>
-                  <a href="#" class="hover:text-white transition">Projects</a>
+                  <a href="projects.html" class="hover:text-white transition"
+                    >Projects</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="hover:text-white transition">Blog</a>
+                  <a href="blog.html" class="hover:text-white transition"
+                    >Blog</a
+                  >
                 </li>
                 <li>
                   <a href="contact.html" class="hover:text-white transition"
@@ -1139,7 +841,7 @@
       </footer>
     </main>
 
-    <script src="assets/js/map.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
@@ -1148,6 +850,44 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- map -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+      var map = L.map("map").setView([42.0295116, -87.9426578], 16);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      L.marker([42.0295116, -87.9426578])
+        .addTo(map)
+        .bindPopup(
+          "<b>EcoBuild Plus Headquarters</b><br>409 W Algonquin Rd F, Mt Prospect, IL 60056",
+        )
+        .openPopup();
+    </script>
+
+    <!-- form -->
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/embed/v2.js"
+    ></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "9441304",
+        formId: "3bb9c553-3a51-4b16-ba93-ce9ff52a1138",
+        region: "na1",
+        target: "#hubspot-form",
+      });
+    </script>
+
+    <style>
+      .grecaptcha-badge {
+        display: none;
+      }
+    </style>
   </body>
 </html>
