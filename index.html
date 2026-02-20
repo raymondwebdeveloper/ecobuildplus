@@ -20,6 +20,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <header
@@ -225,6 +230,7 @@
 
       <!-- Mobile Menu -->
       <div
+        x-cloak
         x-show="open"
         x-transition
         @click.away="open = false"
@@ -1262,7 +1268,7 @@
       </section>
 
       <!-- Request a Quote -->
-      <section class="relative py-10 bg-gray-100 md:bg-white overflow-hidden">
+      <section class="relative py-10 bg-gray-200 md:bg-white overflow-hidden">
         <img
           src="assets/img/bg/bg_form.svg"
           class="absolute right-0 top-0 h-full object-cover"
@@ -1273,7 +1279,9 @@
         >
           <div></div>
           <div class="col-span-2 col-start-2">
-            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+            <h2
+              class="text-3xl font-bold text-center text-gray-900 mb-6 md:mb-12"
+            >
               Request a Quote Now
             </h2>
             <!-- HubSpot Form Container -->
@@ -1543,6 +1551,7 @@
             <img
               src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
               class="mx-auto h-[85px] mb-4"
+              alt="EcoBuild Plus Logo"
             />
             <p class="max-w-3xl mx-auto text-gray-200 leading-relaxed">
               EcoBuild Plus is your trusted Chicagoland General Contractor,
@@ -1903,11 +1912,11 @@
     <script src="assets/js/main.js" defer></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
     ></script>
 
     <!-- form -->

@@ -20,6 +20,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <header
@@ -29,7 +34,7 @@
       <div
         class="max-w-[1440px] mx-auto px-5 py-2 h-18 flex items-center justify-between"
       >
-        <a href="/" class="text-xl font-bold text-gray-900">
+        <a href="/rebuild" class="text-xl font-bold text-gray-900">
           <img
             src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
             alt="EcoBuild Plus Logo"
@@ -225,6 +230,7 @@
 
       <!-- Mobile Menu -->
       <div
+        x-cloak
         x-show="open"
         x-transition
         @click.away="open = false"
@@ -434,7 +440,7 @@
     </header>
 
     <main id="ecobuild-resources">
-      <section class="max-w-7xl mx-auto py-10">
+      <section class="max-w-7xl mx-auto pt-10 pb-5">
         <header>
           <h1
             id="ecobuild-resources-heading"
@@ -453,7 +459,7 @@
       <!-- 1. Company Identity -->
       <section
         id="company-identity"
-        class="max-w-7xl mx-auto py-10"
+        class="max-w-7xl mx-auto py-5"
         aria-labelledby="company-identity-heading"
       >
         <h2 class="mb-3 text-[#112c1a] text-5xl font-bold">
@@ -484,7 +490,7 @@
       <section
         id="licensing"
         aria-labelledby="licensing-heading"
-        class="max-w-7xl mx-auto py-10"
+        class="max-w-7xl mx-auto pt-5"
       >
         <h2 class="mb-3 text-[#112c1a] text-5xl font-bold">
           2. Licensing, Insurance &amp; Compliance
@@ -535,7 +541,7 @@
       <section
         id="pricing"
         aria-labelledby="pricing-heading"
-        class="max-w-7xl mx-auto py-10"
+        class="max-w-7xl mx-auto pb-5"
       >
         <h2 class="mb-3 text-[#112c1a] text-5xl font-bold">
           3. Transparent Pricing and Financing Options
@@ -737,7 +743,7 @@
       <section
         id="expertise"
         aria-labelledby="expertise-heading"
-        class="max-w-7xl mx-auto py-10"
+        class="max-w-7xl mx-auto py-5"
       >
         <h2 class="mb-3 text-[#112c1a] text-5xl font-bold">
           4. Technical Expertise &amp; Building Services
@@ -753,7 +759,7 @@
         </ul>
       </section>
       <!-- 5. Reputation -->
-      <section class="max-w-7xl mx-auto py-10">
+      <section class="max-w-7xl mx-auto py-5">
         <h2 class="mb-3 text-[#112c1a] text-5xl font-bold">
           5. Reputation &amp; Social Proof
         </h2>
@@ -840,6 +846,7 @@
             <img
               src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
               class="mx-auto h-[85px] mb-4"
+              alt="EcoBuild Plus Logo"
             />
             <p class="max-w-3xl mx-auto text-gray-200 leading-relaxed">
               EcoBuild Plus is your trusted Chicagoland General Contractor,
@@ -1194,11 +1201,11 @@
     <script src="assets/js/main.js" defer></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
     ></script>
   </body>
 </html>

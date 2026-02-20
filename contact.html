@@ -27,6 +27,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <header
@@ -34,7 +39,7 @@
       class="sticky top-0 z-50 bg-white border-b"
     >
       <div class="mx-auto px-5 py-2 h-18 flex items-center justify-between">
-        <a href="/" class="text-xl font-bold text-gray-900">
+        <a href="/rebuild" class="text-xl font-bold text-gray-900">
           <img
             src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
             alt="EcoBuild Plus Logo"
@@ -192,7 +197,7 @@
 
         <a
           href="tel:+18476496706"
-          class="uppercase inline-flex items-center gap-2 rounded-full bg-green-900 px-7 py-4 text-white font-semibold hover:bg-green-700 transition"
+          class="uppercase inline-flex items-center gap-2 rounded-full bg-green-900 px-7 py-4 text-white font-semibold hover:bg-green-700 transition hidden md:inline-block"
         >
           <i class="fas fa-phone-alt text-xs"></i>
           (847) 649-6706
@@ -202,6 +207,7 @@
 
       <!-- Mobile Menu -->
       <div
+        x-cloak
         x-show="open"
         x-transition
         @click.away="open = false"
@@ -493,6 +499,7 @@
             <img
               src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
               class="mx-auto h-[85px] mb-4"
+              alt="EcoBuild Plus Logo"
             />
             <p class="max-w-3xl mx-auto text-gray-200 leading-relaxed">
               EcoBuild Plus is your trusted Chicagoland General Contractor,
@@ -845,11 +852,11 @@
     <script src="assets/js/main.js" defer></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
     ></script>
 
     <!-- map -->
