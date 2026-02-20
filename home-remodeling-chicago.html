@@ -468,14 +468,16 @@
       </section>
 
       <!-- CERTIFICATIONS -->
-      <section class="bg-white py-10">
+      <section class="bg-white py-5 md:py-10">
         <div class="max-w-7xl mx-auto px-6">
           <!-- REVIEWS -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8"
+          >
             <!-- Google -->
             <a
               href="#"
-              class="bg-white rounded-xl shadow-md p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
+              class="bg-white rounded-xl shadow-md md:p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
             >
               <img
                 src="assets/img/logo/google-reviews.webp"
@@ -483,13 +485,15 @@
                 alt="Google Reviews"
               />
 
-              <p class="mt-2 text-sm text-gray-600">Read Google Reviews</p>
+              <p class="mt-2 text-[10px] md:text-sm text-gray-600">
+                Read Google Reviews
+              </p>
             </a>
 
             <!-- Yelp -->
             <a
               href="#"
-              class="bg-white rounded-xl shadow-md p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
+              class="bg-white rounded-xl shadow-md md:p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
             >
               <img
                 src="assets/img/logo/yelp-reviews.webp"
@@ -497,26 +501,30 @@
                 alt="Yelp Reviews"
               />
 
-              <p class="mt-2 text-sm text-gray-600">Read Yelp Reviews</p>
+              <p class="mt-2 text-[10px] md:text-sm text-gray-600">
+                Read Yelp Reviews
+              </p>
             </a>
 
             <!-- Angi -->
             <a
               href="#"
-              class="bg-white rounded-xl shadow-md p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
+              class="bg-white rounded-xl shadow-md md:p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
             >
               <img
                 src="assets/img/logo/angi-logo-400x235.webp"
                 class="mx-auto h-10"
                 alt="Angi Reviews"
               />
-              <p class="mt-4 text-sm text-gray-600">Read Angi Reviews</p>
+              <p class="mt-2 text-[10px] md:text-sm text-gray-600">
+                Read Angi Reviews
+              </p>
             </a>
 
             <!-- BBB -->
             <a
               href="#"
-              class="bg-white rounded-xl shadow-md p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
+              class="bg-white rounded-xl shadow-md md:p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
             >
               <img
                 src="assets/img/logo/bbb-reviews.webp"
@@ -524,7 +532,9 @@
                 alt="BBB Reviews"
               />
 
-              <p class="mt-2 text-sm text-gray-600">Read BBB Reviews</p>
+              <p class="mt-2 text-[10px] md:text-sm text-gray-600">
+                Read BBB Reviews
+              </p>
             </a>
           </div>
         </div>
@@ -541,11 +551,13 @@
         />
 
         <!-- Green Overlay -->
-        <div class="h-1/2 absolute mt-auto inset-0 bg-green-900/70"></div>
+        <div
+          class="h-3/4 md:h-1/2 absolute mt-auto inset-0 bg-green-900/70"
+        ></div>
 
         <!-- Content -->
         <div
-          class="h-1/2 absolute mt-auto inset-0 flex flex-col items-center justify-center text-center px-6"
+          class="h-3/4 md:h-1/2 absolute mt-auto inset-0 flex flex-col items-center justify-center text-center px-6"
         >
           <h2 class="text-white text-4xl md:text-6xl font-bold mb-6">
             Your Dream Home Starts Here
@@ -571,7 +583,7 @@
       </section>
 
       <!-- Why Chicago Trusts Our Signature New Home Construction -->
-      <section class="bg-gray-100 py-16">
+      <section class="bg-gray-100 py-10">
         <div
           class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start"
         >
@@ -708,10 +720,10 @@
       </section>
 
       <!-- REMODELING -->
-      <section class="bg-gray-100 py-16">
-        <div class="max-w-7xl mx-auto px-6 space-y-20">
+      <section class="bg-gray-100 py-10">
+        <div class="max-w-7xl mx-auto px-6 space-y-10">
           <!-- ========== KITCHEN REMODELING ========== -->
-          <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
             <!-- Text -->
             <div>
               <h2 class="text-3xl md:text-4xl font-bold text-[#112c1a] mb-6">
@@ -754,7 +766,7 @@
           </div>
 
           <!-- ========== BATHROOM REMODELING ========== -->
-          <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
             <!-- Image -->
             <div class="order-2 md:order-1">
               <img
@@ -846,254 +858,252 @@
           </div>
 
           <!-- Grid -->
-          <div
-            class="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-12 text-lg"
-          >
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-12 text-lg">
             <!-- Column 1 -->
             <a href="#" class="area-link">
-              <i class="fa-solid fa-link text-xs opacity-70"></i
+              <i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Arlington Heights </span></a
             >
             <a href="#" class="area-link">
-              <i class="fa-solid fa-link text-xs opacity-70"></i
+              <i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Bensenville</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Deer Park</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Elk Grove Village</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Grayslake</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Hoffman Estates</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Itasca</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Lake Villa</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Lindenhurst</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Mundelein</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Oakwood Hills</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Prairie Grove</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Roselle</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Schiller Park</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Vernon Hills</span></a
             >
 
             <!-- Column 2 -->
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Arlington Heights</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Buffalo Grove</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Deerfield</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Evanston</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Hanover Park</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Holiday Hills</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Kildeer</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Lake Zurich</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Long Grove</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Niles</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Palatine</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Prospect Heights</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Rosemont</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> South Barrington</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> West Dundee</span></a
             >
 
             <!-- Column 3 -->
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Barrington Hills</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Carpentersville</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Des Plaines</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Fox River Grove</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Harwood Heights</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Inverness</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Lake Barrington</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Libertyville</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Morton Grove</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> North Barrington</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Park Ridge</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Riverwoods</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Round Lake</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Streamwood</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Wheeling</span></a
             >
 
             <!-- Column 4 -->
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Bartlett</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Cary</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Elgin</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Glenview</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Hawthorn Woods</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Island Lake</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Lake in the Hills</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Lake Forest</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Mount Prospect</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Northbrook</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Port Barrington</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Rolling Meadows</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Schaumburg</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Trout Valley</span></a
             >
             <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Wood Dale</span></a
             >
           </div>
@@ -1360,52 +1370,42 @@
       <!-- Our Trusted Industry Partners -->
       <section class="py-10 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-          <div class="flex flex-wrap justify-center items-center gap-10">
+          <div
+            class="grid grid-cols-4 md:grid-cols-8 gap-3 md:gap-8 items-center"
+          >
             <img
               src="assets/img/logo/jameshardie.svg"
-              class="h-6 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
+              class="h-6"
               alt="James Hardie"
             />
 
             <img
               src="assets/img/logo/andersen.svg"
-              class="h-5 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
+              class="h-5"
               alt="Andersen"
             />
 
             <img
               src="assets/img/logo/certainteed.svg"
-              class="h-5 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
+              class="h-5"
               alt="CertainTeed"
             />
 
-            <img
-              src="assets/img/logo/kohler.svg"
-              class="h-8 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="Kohler"
-            />
+            <img src="assets/img/logo/kohler.svg" class="h-8" alt="Kohler" />
 
-            <img
-              src="assets/img/logo/moen.svg"
-              class="h-8 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="Moen"
-            />
+            <img src="assets/img/logo/moen.svg" class="h-8" alt="Moen" />
 
-            <img
-              src="assets/img/logo/cambria.svg"
-              class="h-8 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-              alt="Cambria"
-            />
+            <img src="assets/img/logo/cambria.svg" class="h-8" alt="Cambria" />
 
             <img
               src="assets/img/logo/Sherwin-Williams.webp"
-              class="h-[75px] opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
+              class="h-[75px]"
               alt="Sherwin Williams"
             />
 
             <img
               src="assets/img/logo/lp-smartside.svg"
-              class="h-8 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
+              class="h-8"
               alt="LP SmartSide"
             />
           </div>
