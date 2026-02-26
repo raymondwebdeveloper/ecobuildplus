@@ -1,18 +1,86 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoBuild Plus | Home Remodeling Chicago</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      About EcoBuild Plus | 25+ Years of Luxury Home Building & Remodeling in
+      Chicago
+    </title>
+
     <meta
       name="description"
-      content="EcoBuild Plus provides high-quality kitchen and bathroom remodeling services in Chicago and surrounding areas."
+      content="Learn about EcoBuild Plus, a trusted Chicago general contractor with 25+ years of experience in luxury home construction and remodeling across the Northwest suburbs."
     />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ecobuildplus.com/about-us/" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="About EcoBuild Plus | Chicago General Contractor"
+    />
+    <meta
+      property="og:description"
+      content="Meet EcoBuild Plus, Chicago’s trusted luxury home builder and remodeling contractor serving families for over 25 years."
+    />
+    <meta property="og:url" content="https://ecobuildplus.com/about-us/" />
+    <meta
+      property="og:image"
+      content="https://ecobuildplus.com/assets/img/EcoBuild-Plus-About-Open-Graph-Image.webp"
+    />
+    <meta property="og:site_name" content="EcoBuild Plus" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://ecobuildplus.com/about-us/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@id": "https://ecobuildplus.com/",
+                  "name": "Home"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@id": "https://ecobuildplus.com/about-us/",
+                  "name": "Trusted Builders & Remodelers Chicago | EcoBuild Plus"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <link
+      rel="icon"
+      type="image/webp"
+      href="/assets/img/icons/ecobuild-plus-favicon-iphone.webp"
+    />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/icons/ecobuild-plus-favicon-iphone.webp"
+    />
+
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Your custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -28,28 +96,28 @@
   </head>
   <body>
     <header
-      x-data="{ open: false }"
+      x-data="{ open: false, active: null }"
       class="sticky top-0 z-50 bg-white border-b"
     >
       <div
         class="max-w-[1440px] mx-auto px-5 py-2 h-18 flex items-center justify-between"
       >
-        <a href="/rebuild" class="text-xl font-bold text-gray-900">
+        <a href="/" class="text-xl font-bold text-gray-900">
           <img
-            src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
+            src="/assets/img/logo/ecobuild-plus-vectorised-image.svg"
             alt="EcoBuild Plus Logo"
             class="h-12 w-auto"
           />
         </a>
 
         <a
-          href="financing.html"
+          href="financing.html/"
           class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition hidden md:inline-block"
         >
           Financing Options
         </a>
         <img
-          src="assets/img/icons/usa-flag.webp"
+          src="/assets/img/icons/usa-flag.webp"
           alt="United States flag"
           class="h-8 w-auto inline-block align-middle hidden md:inline-block"
         />
@@ -70,7 +138,7 @@
           >
         </p>
         <a
-          href="contact.html"
+          href="/contact/"
           class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition hidden md:inline-block"
         >
           Get a Free Estimate
@@ -94,13 +162,13 @@
               class="absolute left-0 mt-2 w-56 overflow-hidden rounded-md bg-green-900 shadow-lg opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible"
             >
               <a
-                href="about-us.html"
+                href="/about-us/"
                 class="block px-4 py-3 text-[18px] text-white transition-all duration-300 bg-green-700 hover:bg-green-700"
               >
                 About EcoBuild Plus
               </a>
               <a
-                href="resource.html"
+                href="/resource/"
                 class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Resource
@@ -122,49 +190,49 @@
               class="absolute left-0 mt-2 w-80 overflow-hidden rounded-md bg-green-900 shadow-lg opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible"
             >
               <a
-                href="residential.html"
+                href="/residential/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 View All Residential Services
               </a>
               <a
-                href="chicago-new-home-construction.html"
+                href="/chicago-new-home-construction/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 New Home Construction
               </a>
               <a
-                href="home-remodeling-chicago.html"
+                href="/home-remodeling-chicago/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Home Remodeling
               </a>
               <a
-                href="kitchen-remodeling-chicago.html"
+                href="/kitchen-remodeling-chicago/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Kitchen Remodeling
               </a>
               <a
-                href="bathroom-remodeling-chicago.html"
+                href="/bathroom-remodeling-chicago/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Bathroom Remodeling
               </a>
               <a
-                href="basement-remodeling-chicago.html"
+                href="/basement-remodeling-chicago/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Basement Remodeling
               </a>
               <a
-                href="home-addition-chicago.html"
+                href="/home-addition-chicago/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Home Additions
               </a>
               <a
-                href="accessible-home-remodeling.html"
+                href="/accessible-home-remodeling/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Accessible Remodeling
@@ -186,13 +254,13 @@
               class="absolute left-0 mt-2 w-64 overflow-hidden rounded-md bg-green-900 shadow-lg opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible"
             >
               <a
-                href="kitchen-before-after-gallery.html"
+                href="/kitchen-before-after-gallery/"
                 class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Kitchen Before & After
               </a>
               <a
-                href="bathroom-before-after-gallery.html"
+                href="/bathroom-before-after-gallery/"
                 class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Bathroom Before & After
@@ -200,27 +268,27 @@
             </div>
           </div>
           <a
-            href="service-areas.html"
+            href="/service-areas/"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
             >Service Areas</a
           >
           <a
-            href="financing.html"
+            href="/financing/"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
             >Financing</a
           >
           <a
-            href="commercial.html"
+            href="/commercial/"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
             >Commercial</a
           >
           <a
-            href="blog.html"
+            href="https://ecobuildplus.com/blog/"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
             >Blog</a
           >
           <a
-            href="contact.html"
+            href="/contact/"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
           >
             Contact
@@ -244,7 +312,7 @@
           <div>
             <button
               @click="active === 'about' ? active = null : active = 'about'"
-              class="flex items-center justify-between w-full text-green-800 hover:text-green-900"
+              class="flex items-center justify-between w-full text-green-900 hover:text-green-900"
             >
               About
               <svg
@@ -268,10 +336,12 @@
               x-collapse
               class="mt-2 ml-4 space-y-2 text-base text-gray-600 overflow-hidden"
             >
-              <a href="about-us.html" class="block hover:text-green-900"
+              <a
+                href="/about-us/"
+                class="block text-green-900 hover:text-green-900"
                 >About EcoBuild Plus</a
               >
-              <a href="resource.html" class="block hover:text-green-900"
+              <a href="/resource/" class="block hover:text-green-900"
                 >Resource</a
               >
             </div>
@@ -305,41 +375,41 @@
               x-collapse
               class="mt-2 ml-4 space-y-2 text-base text-gray-600"
             >
-              <a href="residential.html" class="block hover:text-green-900"
+              <a href="/residential/" class="block hover:text-green-900"
                 >View All Residential Services</a
               >
               <a
-                href="chicago-new-home-construction.html"
+                href="/chicago-new-home-construction/"
                 class="block hover:text-green-900"
                 >New Home Construction</a
               >
               <a
-                href="home-remodeling-chicago.html"
+                href="/home-remodeling-chicago/"
                 class="block hover:text-green-900"
                 >Home Remodeling</a
               >
               <a
-                href="kitchen-remodeling-chicago.html"
+                href="/kitchen-remodeling-chicago/"
                 class="block hover:text-green-900"
                 >Kitchen Remodeling</a
               >
               <a
-                href="bathroom-remodeling-chicago.html"
+                href="/bathroom-remodeling-chicago/"
                 class="block hover:text-green-900"
                 >Bathroom Remodeling</a
               >
               <a
-                href="basement-remodeling-chicago.html"
+                href="/basement-remodeling-chicago/"
                 class="block hover:text-green-900"
                 >Basement Remodeling</a
               >
               <a
-                href="home-addition-chicago.html"
+                href="/home-addition-chicago/"
                 class="block hover:text-green-900"
                 >Home Additions</a
               >
               <a
-                href="accessible-home-remodeling.html"
+                href="/accessible-home-remodeling/"
                 class="block hover:text-green-900"
                 >Accessible Remodeling</a
               >
@@ -375,12 +445,12 @@
               class="mt-2 ml-4 space-y-2 text-base text-gray-600"
             >
               <a
-                href="kitchen-before-after-gallery.html"
+                href="/kitchen-before-after-gallery/"
                 class="block hover:text-green-900"
                 >Kitchen Before & After</a
               >
               <a
-                href="bathroom-before-after-gallery.html"
+                href="/bathroom-before-after-gallery/"
                 class="block hover:text-green-900"
                 >Bathroom Before & After</a
               >
@@ -388,17 +458,19 @@
           </div>
 
           <!-- NORMAL LINKS -->
-          <a href="service-areas.html" class="block hover:text-green-900"
+          <a href="/service-areas/" class="block hover:text-green-900"
             >Service Areas</a
           >
-          <a href="financing.html" class="block hover:text-green-900"
-            >Financing</a
-          >
-          <a href="commercial.html" class="block hover:text-green-900"
+          <a href="/financing/" class="block hover:text-green-900">Financing</a>
+          <a href="/commercial/" class="block hover:text-green-900"
             >Commercial</a
           >
-          <a href="blog.html" class="block hover:text-green-900">Blog</a>
-          <a href="contact.html" class="block hover:text-green-900">Contact</a>
+          <a
+            href="https://ecobuildplus.com/blog/"
+            class="block hover:text-green-900"
+            >Blog</a
+          >
+          <a href="/contact/" class="block hover:text-green-900">Contact</a>
 
           <!-- CTA -->
           <div class="pt-6 text-center">
@@ -406,7 +478,7 @@
               (847) 592-6206</a
             >
             <a
-              href="contact.html"
+              href="/contact/"
               class="block text-center mt-4 rounded-full bg-green-900 px-6 py-3 text-white hover:bg-green-800 transition"
             >
               Contact Us Now
@@ -414,21 +486,21 @@
             <!-- Social Media Premium -->
             <div class="flex justify-center gap-4 mt-6">
               <a
-                href="#"
+                href="https://www.facebook.com/ecobuildplus"
                 class="w-10 h-10 flex items-center justify-center rounded bg-green-900 text-white hover:bg-green-800 transition"
               >
                 <i class="fa-brands fa-facebook-f text-sm"></i>
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/ecobuild_plus/"
                 class="w-10 h-10 flex items-center justify-center rounded bg-green-900 text-white hover:bg-green-800 transition"
               >
                 <i class="fa-brands fa-instagram text-sm"></i>
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/company/ecobuildplus/"
                 class="w-10 h-10 flex items-center justify-center rounded bg-green-900 text-white hover:bg-green-800 transition"
               >
                 <i class="fa-brands fa-linkedin-in text-sm"></i>
@@ -444,7 +516,7 @@
       <section class="relative h-[80vh] min-h-[520px] bg-black overflow-hidden">
         <!-- Cover background -->
         <img
-          src="assets/img/bg/About-Us-Cover.webp"
+          src="/assets/img/bg/About-Us-Cover.webp"
           class="absolute h-full w-full object-cover"
           alt=""
         />
@@ -473,7 +545,7 @@
 
             <div class="mt-8 flex flex-wrap justify-center gap-4">
               <a
-                href="contact.html"
+                href="/contact/"
                 class="inline-flex items-center gap-2 rounded-full bg-green-900 px-7 py-4 text-white font-semibold hover:bg-green-700 transition"
               >
                 Contact Us Now
@@ -498,7 +570,7 @@
             <!-- Image -->
             <div>
               <img
-                src="assets/img/Jeff-Headshot-800x671.webp"
+                src="/assets/img/Jeff-Headshot-800x671.webp"
                 alt="Jeff Goble - Senior Project Manager"
                 class="w-full h-full rounded-xl shadow-lg hover:brightness-150 transition duration-500 object-cover"
               />
@@ -588,7 +660,7 @@
           <div class="space-y-4">
             <!-- Large Image -->
             <img
-              src="assets/img/25-years-of-luxury-.webp"
+              src="/assets/img/25-years-of-luxury-.webp"
               alt="Luxury Home"
               class="w-full hover:brightness-150 transition duration-500"
             />
@@ -624,7 +696,7 @@
             </p>
 
             <a
-              href="#services"
+              href="/residential/"
               class="inline-flex items-center gap-3 rounded-full bg-green-900 px-8 py-4 text-white font-medium hover:bg-green-800 transition"
             >
               View Our Services
@@ -706,7 +778,7 @@
               </h3>
 
               <img
-                src="assets/img/Premier-Engineering--600x503.webp"
+                src="/assets/img/Premier-Engineering--600x503.webp"
                 alt="Intelligent Engineering"
                 class="w-full h-[300px] object-cover mb-6 hover:brightness-150 transition duration-500"
               />
@@ -728,7 +800,7 @@
               </h3>
 
               <img
-                src="assets/img/EcoBuild-Plus-Tailored-Luxury-600x503.webp"
+                src="/assets/img/EcoBuild-Plus-Tailored-Luxury-600x503.webp"
                 alt="Tailored Luxury"
                 class="w-full h-[300px] object-cover mb-6 hover:brightness-150 transition duration-500"
               />
@@ -749,7 +821,7 @@
               </h3>
 
               <img
-                src="assets/img/EcoBuild-Way-600x503.webp"
+                src="/assets/img/EcoBuild-Way-600x503.webp"
                 alt="Plus Experience"
                 class="w-full h-[300px] object-cover mb-6 hover:brightness-150 transition duration-500"
               />
@@ -778,7 +850,7 @@
             <!-- LEFT IMAGE -->
             <div>
               <img
-                src="assets/img/EcoBuild-Plus-Service-Area-Map-1-1-800x450.webp"
+                src="/assets/img/EcoBuild-Plus-Service-Area-Map-1-1-800x450.webp"
                 alt="Chicago and Suburbs Coverage"
                 class="w-full h-auto object-cover transition duration-500 hover:scale-105 transition-transform"
               />
@@ -804,7 +876,7 @@
 
               <!-- Optional CTA -->
               <a
-                href="/pages/service-areas.html"
+                href="/service-areas/"
                 class="inline-block mt-8 rounded-full bg-green-900 px-8 py-4 text-white font-medium hover:bg-green-800 transition"
               >
                 Explore Service Areas →
@@ -832,7 +904,7 @@
             >
               <div class="overflow-hidden">
                 <img
-                  src="assets/img/Luxury-Kitchen-Remodel-800x671.webp"
+                  src="/assets/img/Luxury-Kitchen-Remodel-800x671.webp"
                   class="w-full rounded-md h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
                   alt="Kitchen Remodeling"
                 />
@@ -849,7 +921,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="/kitchen-remodeling-chicago/"
                   class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
                 >
                   View Details
@@ -863,7 +935,7 @@
             >
               <div class="overflow-hidden">
                 <img
-                  src="assets/img/Luxury-Bathroom-Remodel-800x671.webp"
+                  src="/assets/img/Luxury-Bathroom-Remodel-800x671.webp"
                   class="w-full rounded-md h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
                   alt="Bathroom Remodeling"
                 />
@@ -880,7 +952,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="/bathroom-remodeling-chicago/"
                   class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
                 >
                   View Details
@@ -894,7 +966,7 @@
             >
               <div class="overflow-hidden">
                 <img
-                  src="assets/img/Luxury-Basement-Remodel-800x671.webp"
+                  src="/assets/img/Luxury-Basement-Remodel-800x671.webp"
                   class="w-full rounded-md h-[330px] object-cover group-hover:scale-105 transition-transform duration-500"
                   alt="Basement Remodeling"
                 />
@@ -912,7 +984,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="/basement-remodeling-chicago/"
                   class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
                 >
                   View Details
@@ -932,7 +1004,7 @@
             >
               <div class="overflow-hidden">
                 <img
-                  src="assets/img/New-Home-Addition-800x671.webp"
+                  src="/assets/img/New-Home-Addition-800x671.webp"
                   class="w-full h-[330px] rounded-md object-cover group-hover:scale-105 transition-transform duration-500"
                   alt="Multi Room Remodeling"
                 />
@@ -949,7 +1021,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="/home-addition-chicago/"
                   class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
                 >
                   View Details
@@ -964,7 +1036,7 @@
             >
               <div class="overflow-hidden">
                 <img
-                  src="assets/img/Accessible-Home-Remodeling-1-800x671.webp"
+                  src="/assets/img/Accessible-Home-Remodeling-1-800x671.webp"
                   class="w-full h-[330px] rounded-md object-cover group-hover:scale-105 transition-transform duration-500"
                   alt="Accessible Home Remodeling"
                 />
@@ -982,7 +1054,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="/accessible-home-remodeling/"
                   class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-green-900 hover:text-white transition duration-300 font-medium"
                 >
                   View Details
@@ -1011,7 +1083,7 @@
               class="bg-white rounded-2xl shadow-sm p-10 text-center transition duration-500 hover:shadow-xl hover:-translate-y-2"
             >
               <img
-                src="assets/img/logo/Green-Attic-Roofing-Logo.svg"
+                src="/assets/img/logo/Green-Attic-Roofing-Logo.svg"
                 alt="Green Attic Roofing"
                 class="h-16 mx-auto mb-6 object-contain"
               />
@@ -1036,7 +1108,7 @@
               class="bg-white rounded-2xl shadow-sm p-10 text-center transition duration-500 hover:shadow-xl hover:-translate-y-2"
             >
               <img
-                src="assets/img/logo/Profix247-Logo.svg"
+                src="/assets/img/logo/Profix247-Logo.svg"
                 alt="ProFix 24/7"
                 class="h-16 mx-auto mb-6 object-contain"
               />
@@ -1060,7 +1132,7 @@
               class="bg-white rounded-2xl shadow-sm p-10 text-center transition duration-500 hover:shadow-xl hover:-translate-y-2"
             >
               <img
-                src="assets/img/logo/Green-Attic-Insualtion-Main-Logo.svg"
+                src="/assets/img/logo/Green-Attic-Insualtion-Main-Logo.svg"
                 alt="Green Attic Insulation"
                 class="h-16 mx-auto mb-6 object-contain"
               />
@@ -1089,48 +1161,49 @@
             class="grid grid-cols-4 md:grid-cols-8 gap-3 md:gap-8 items-center"
           >
             <img
-              src="assets/img/logo/jameshardie.svg"
+              src="/assets/img/logo/jameshardie.svg"
               class="h-6"
               alt="James Hardie"
             />
 
             <img
-              src="assets/img/logo/andersen.svg"
+              src="/assets/img/logo/andersen.svg"
               class="h-5"
               alt="Andersen"
             />
 
             <img
-              src="assets/img/logo/certainteed.svg"
+              src="/assets/img/logo/certainteed.svg"
               class="h-5"
               alt="CertainTeed"
             />
 
-            <img src="assets/img/logo/kohler.svg" class="h-8" alt="Kohler" />
+            <img src="/assets/img/logo/kohler.svg" class="h-8" alt="Kohler" />
 
-            <img src="assets/img/logo/moen.svg" class="h-8" alt="Moen" />
+            <img src="/assets/img/logo/moen.svg" class="h-8" alt="Moen" />
 
-            <img src="assets/img/logo/cambria.svg" class="h-8" alt="Cambria" />
+            <img src="/assets/img/logo/cambria.svg" class="h-8" alt="Cambria" />
 
             <img
-              src="assets/img/logo/Sherwin-Williams.webp"
+              src="/assets/img/logo/Sherwin-Williams.webp"
               class="h-[75px]"
               alt="Sherwin Williams"
             />
 
             <img
-              src="assets/img/logo/lp-smartside.svg"
+              src="/assets/img/logo/lp-smartside.svg"
               class="h-8"
               alt="LP SmartSide"
             />
           </div>
         </div>
       </section>
+
       <footer class="relative text-white overflow-hidden">
         <!-- Background Image -->
         <div class="absolute inset-0 -z-10">
           <img
-            src="assets/img/bg/bg_footer.svg"
+            src="/assets/img/bg/bg_footer.svg"
             alt="Footer Background"
             class="w-full h-full object-cover z-1 opacity-5"
           />
@@ -1141,7 +1214,7 @@
           <!-- Logo + Description -->
           <div class="text-center mb-12">
             <img
-              src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
+              src="/assets/img/logo/ecobuild-plus-vectorised-image.svg"
               class="mx-auto h-[85px] mb-4"
             />
             <p class="max-w-3xl mx-auto text-gray-200 leading-relaxed">
@@ -1163,7 +1236,11 @@
                 409 W Algonquin Rd<br />
                 Mt Prospect, IL 60056
               </p>
-              <p class="mt-4 font-semibold">(847) 7383-9000</p>
+              <p class="mt-4 font-semibold">
+                <a href="tel:+18473839000" class="hover:underline"
+                  >(847) 383-9000</a
+                >
+              </p>
             </div>
 
             <!-- Opening Hours -->
@@ -1186,28 +1263,28 @@
               <ul class="text-sm text-gray-200 space-y-2">
                 <li>
                   <a
-                    href="chicago-new-home-construction.html"
+                    href="/chicago-new-home-construction/"
                     class="hover:text-white transition"
                     >New Home Construction</a
                   >
                 </li>
                 <li>
                   <a
-                    href="kitchen-remodeling-chicago.html"
+                    href="/kitchen-remodeling-chicago/"
                     class="hover:text-white transition"
                     >Kitchen Remodeling</a
                   >
                 </li>
                 <li>
                   <a
-                    href="bathroom-remodeling-chicago.html"
+                    href="/bathroom-remodeling-chicago/"
                     class="hover:text-white transition"
                     >Bathroom Remodeling</a
                   >
                 </li>
                 <li>
                   <a
-                    href="home-addition-chicago.html"
+                    href="/home-addition-chicago/"
                     class="hover:text-white transition"
                     >Home Additions</a
                   >
@@ -1222,16 +1299,26 @@
               </h3>
               <ul class="text-sm text-gray-200 space-y-2">
                 <li>
-                  <a href="#" class="hover:text-white transition">About</a>
+                  <a href="/about-us/" class="hover:text-white transition"
+                    >About</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="hover:text-white transition">Projects</a>
+                  <a
+                    href="/kitchen-before-after-gallery/"
+                    class="hover:text-white transition"
+                    >Projects</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="hover:text-white transition">Blog</a>
+                  <a
+                    href="/https://ecobuildplus.com/blog/"
+                    class="hover:text-white transition"
+                    >Blog</a
+                  >
                 </li>
                 <li>
-                  <a href="contact.html" class="hover:text-white transition"
+                  <a href="/contact/" class="hover:text-white transition"
                     >Contact</a
                   >
                 </li>
@@ -1246,7 +1333,7 @@
               <div class="flex flex-wrap justify-center gap-4 mt-8">
                 <!-- Google Map -->
                 <a
-                  href="#"
+                  href="https://maps.app.goo.gl/4CPVjGKgCuXpDaqt6"
                   aria-label="Google Map"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1255,7 +1342,7 @@
 
                 <!-- X (Twitter) -->
                 <a
-                  href="#"
+                  href="https://x.com/ecobuildplus"
                   aria-label="X"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1264,7 +1351,7 @@
 
                 <!-- Instagram -->
                 <a
-                  href="#"
+                  href="https://www.instagram.com/ecobuild_plus/"
                   aria-label="Instagram"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1273,16 +1360,19 @@
 
                 <!-- Houzz (closest icon substitute = house) -->
                 <a
-                  href="#"
+                  href="https://www.chamberofcommerce.com/business-directory/illinois/mount-prospect/bathroom-remodeler/2012095932-ecobuild-plus"
                   aria-label="Houzz"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
-                  <i class="fa-solid fa-house text-white text-lg"></i>
+                  <img
+                    src="/assets/img/icons/Chamber-of-Commerce-logo.svg"
+                    alt="Chamber-of-Commerce"
+                  />
                 </a>
 
                 <!-- Angi (no official icon → use stylized A) -->
                 <a
-                  href="#"
+                  href="https://www.angi.com/companylist/us/il/mount-prospect/ecobuild-plus-reviews-11075114.htm"
                   aria-label="Angi"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1291,7 +1381,7 @@
 
                 <!-- Facebook -->
                 <a
-                  href="#"
+                  href="https://www.facebook.com/ecobuildplus"
                   aria-label="Facebook"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1300,7 +1390,7 @@
 
                 <!-- TikTok -->
                 <a
-                  href="#"
+                  href="https://www.tiktok.com/@ecobuildplus"
                   aria-label="TikTok"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1309,7 +1399,7 @@
 
                 <!-- YouTube -->
                 <a
-                  href="#"
+                  href="https://www.youtube.com/@EcoBuildPlus"
                   aria-label="YouTube"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1318,7 +1408,7 @@
 
                 <!-- LinkedIn -->
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/ecobuildplus/"
                   aria-label="LinkedIn"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1327,7 +1417,7 @@
 
                 <!-- Yelp -->
                 <a
-                  href="#"
+                  href="https://www.yelp.com/biz/eco-build-plus-mt-prospect"
                   aria-label="Yelp"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1340,14 +1430,22 @@
             <div
               class="flex flex-wrap justify-center gap-8 text-sm text-gray-200 mb-6"
             >
-              <a href="#" class="hover:text-white transition">Privacy Policy</a>
-              <a href="resource.html" class="hover:text-white transition"
+              <a
+                href="https://ecobuildplus.com/privacy-policy/"
+                class="hover:text-white transition"
+                >Privacy Policy</a
+              >
+              <a href="/resource/" class="hover:text-white transition"
                 >Resource</a
               >
-              <a href="#" class="hover:text-white transition"
+              <a
+                href="https://ecobuildplus.com/terms-conditions/"
+                class="hover:text-white transition"
                 >Terms & Conditions</a
               >
-              <a href="#" class="hover:text-white transition"
+              <a
+                href="https://ecobuildplus.com/ecobuildplus-warranty/"
+                class="hover:text-white transition"
                 >EcoBuild Plus Warranty</a
               >
             </div>
@@ -1363,123 +1461,131 @@
               including:
 
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/deerfield/"
                 class="hover:text-white transition-colors hover:underline"
                 >Deerfield</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/arlington-heights/"
                 class="hover:text-white transition-colors hover:underline"
                 >Arlington Heights</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/des-plaines/"
                 class="hover:text-white transition-colors hover:underline"
                 >Des Plaines</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/elk-grove-village/"
                 class="hover:text-white transition-colors hover:underline"
                 >Elk Grove Village</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/morton-grove/"
                 class="hover:text-white transition-colors hover:underline"
                 >Morton Grove</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/mount-prospect/"
                 class="hover:text-white transition-colors hover:underline"
                 >Mount Prospect</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/niles/"
                 class="hover:text-white transition-colors hover:underline"
                 >Niles</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/palatine/"
                 class="hover:text-white transition-colors hover:underline"
                 >Palatine</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/park-ridge/"
                 class="hover:text-white transition-colors hover:underline"
                 >Park Ridge</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/prospect-heights/"
                 class="hover:text-white transition-colors hover:underline"
                 >Prospect Heights</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/schaumburg/"
                 class="hover:text-white transition-colors hover:underline"
                 >Schaumburg</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/evanston/"
                 class="hover:text-white transition-colors hover:underline"
                 >Evanston</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/northbrook/"
                 class="hover:text-white transition-colors hover:underline"
                 >Northbrook</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/inverness/"
                 class="hover:text-white transition-colors hover:underline"
                 >Inverness</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/lake-zurich/"
                 class="hover:text-white transition-colors hover:underline"
                 >Lake Zurich</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/lincolnshire/"
                 class="hover:text-white transition-colors hover:underline"
                 >Lincolnshire</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/mundelein/"
                 class="hover:text-white transition-colors hover:underline"
                 >Mundelein</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/north-barrington/"
                 class="hover:text-white transition-colors hover:underline"
                 >North Barrington</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/riverwoods/"
                 class="hover:text-white transition-colors hover:underline"
                 >Riverwoods</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/rolling-meadows/"
                 class="hover:text-white transition-colors hover:underline"
                 >Rolling Meadows</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/roselle/"
                 class="hover:text-white transition-colors hover:underline"
                 >Roselle</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/rosemont/"
                 class="hover:text-white transition-colors hover:underline"
                 >Rosemont</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/schiller-park/"
+                class="hover:text-white transition-colors hover:underline"
+                >Schiller Park</a
+              >,
+              <a
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/vernon-hills/"
                 class="hover:text-white transition-colors hover:underline"
                 >Vernon Hills</a
               >
               —
 
-              <a href="#" class="underline hover:text-white transition-colors">
+              <a
+                href="https://ecobuildplus.com/service-areas/"
+                class="underline hover:text-white transition-colors"
+              >
                 See all service areas
               </a>
             </p>
@@ -1488,14 +1594,13 @@
       </footer>
     </main>
 
-    <script src="assets/js/main.js" defer></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.13.5/dist/cdn.min.js"
     ></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"
     ></script>
   </body>
 </html>

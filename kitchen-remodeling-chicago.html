@@ -1,18 +1,91 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoBuild Plus | Home Remodeling Chicago</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kitchen Remodeling Chicago & NW Suburbs | EcoBuild Plus</title>
+
     <meta
       name="description"
-      content="EcoBuild Plus provides high-quality kitchen and bathroom remodeling services in Chicago and surrounding areas."
+      content="EcoBuild Plus provides expert kitchen remodeling in Chicago and the Northwest suburbs. Custom cabinets, full renovations, and trusted craftsmanship for over 25 years. Get a free estimate today."
     />
-    <meta name="robots" content="noindex, nofollow" />
+
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://ecobuildplus.com/kitchen-remodeling-chicago/"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Kitchen Remodeling Chicago & NW Suburbs | EcoBuild Plus"
+    />
+    <meta
+      property="og:description"
+      content="Custom kitchen renovations and cabinetry by Chicago’s trusted remodeling experts."
+    />
+    <meta
+      property="og:url"
+      content="https://ecobuildplus.com/kitchen-remodeling-chicago/"
+    />
+    <meta property="og:site_name" content="EcoBuild Plus" />
+    <meta
+      property="og:image"
+      content="https://ecobuildplus.com/assets/img/Kitchen-Remodeling-Chicago-Open-Graph-Image.webp"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link
+      rel="icon"
+      type="image/webp"
+      href="/assets/img/icons/ecobuild-plus-favicon-iphone.webp"
+    />
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/icons/ecobuild-plus-favicon-iphone.webp"
+    />
+
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://ecobuildplus.com/kitchen-remodeling-chicago/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@id": "https://ecobuildplus.com/",
+                  "name": "Home"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@id": "https://ecobuildplus.com/kitchen-remodeling-chicago/",
+                  "name": "Kitchen Remodeling Chicago & NW Suburbs | EcoBuild Plus"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Your custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -28,28 +101,28 @@
   </head>
   <body>
     <header
-      x-data="{ open: false }"
+      x-data="{ open: false, active: null }"
       class="sticky top-0 z-50 bg-white border-b"
     >
       <div
         class="max-w-[1440px] mx-auto px-5 py-2 h-18 flex items-center justify-between"
       >
-        <a href="/rebuild" class="text-xl font-bold text-gray-900">
+        <a href="/" class="text-xl font-bold text-gray-900">
           <img
-            src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
+            src="/assets/img/logo/ecobuild-plus-vectorised-image.svg"
             alt="EcoBuild Plus Logo"
             class="h-12 w-auto"
           />
         </a>
 
         <a
-          href="financing.html"
+          href="/financing/"
           class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition hidden md:inline-block"
         >
           Financing Options
         </a>
         <img
-          src="assets/img/icons/usa-flag.webp"
+          src="/assets/img/icons/usa-flag.webp"
           alt="United States flag"
           class="h-8 w-auto inline-block align-middle hidden md:inline-block"
         />
@@ -70,7 +143,7 @@
           >
         </p>
         <a
-          href="contact.html"
+          href="/contact/"
           class="inline-flex items-center justify-center rounded-full bg-green-900 px-6 py-3 text-sm font-medium text-white hover:bg-green-800 transition hidden md:inline-block"
         >
           Get a Free Estimate
@@ -94,13 +167,13 @@
               class="absolute left-0 mt-2 w-56 overflow-hidden rounded-md bg-green-900 shadow-lg opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible"
             >
               <a
-                href="about-us.html"
+                href="/about-us/"
                 class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 About EcoBuild Plus
               </a>
               <a
-                href="resource.html"
+                href="/resource/"
                 class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Resource
@@ -122,49 +195,49 @@
               class="absolute left-0 mt-2 w-80 overflow-hidden rounded-md bg-green-900 shadow-lg opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible"
             >
               <a
-                href="residential.html"
+                href="/residential/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 View All Residential Services
               </a>
               <a
-                href="chicago-new-home-construction.html"
+                href="/chicago-new-home-construction/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 New Home Construction
               </a>
               <a
-                href="home-remodeling-chicago.html"
+                href="/home-remodeling-chicago/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Home Remodeling
               </a>
               <a
-                href="kitchen-remodeling-chicago.html"
+                href="/kitchen-remodeling-chicago/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 bg-green-700 hover:bg-green-700"
               >
                 Kitchen Remodeling
               </a>
               <a
-                href="bathroom-remodeling-chicago.html"
+                href="/bathroom-remodeling-chicago/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Bathroom Remodeling
               </a>
               <a
-                href="basement-remodeling-chicago.html"
+                href="/basement-remodeling-chicago/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Basement Remodeling
               </a>
               <a
-                href="home-addition-chicago.html"
+                href="/home-addition-chicago/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Home Additions
               </a>
               <a
-                href="accessible-home-remodeling.html"
+                href="/accessible-home-remodeling/"
                 class="block px-5 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Accessible Remodeling
@@ -186,13 +259,13 @@
               class="absolute left-0 mt-2 w-64 overflow-hidden rounded-md bg-green-900 shadow-lg opacity-0 invisible transition-all duration-200 group-hover:opacity-100 group-hover:visible"
             >
               <a
-                href="kitchen-before-after-gallery.html"
+                href="/kitchen-before-after-gallery/"
                 class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Kitchen Before & After
               </a>
               <a
-                href="bathroom-before-after-gallery.html"
+                href="/bathroom-before-after-gallery/"
                 class="block px-4 py-3 text-[18px] text-white transition-all duration-300 hover:bg-green-700"
               >
                 Bathroom Before & After
@@ -200,27 +273,27 @@
             </div>
           </div>
           <a
-            href="service-areas.html"
+            href="/service-areas/"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
             >Service Areas</a
           >
           <a
-            href="financing.html"
+            href="/financing/"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
             >Financing</a
           >
           <a
-            href="commercial.html"
+            href="/commercial/"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
             >Commercial</a
           >
           <a
-            href="blog.html"
+            href="/blog"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
             >Blog</a
           >
           <a
-            href="contact.html"
+            href="/contact/"
             class="text-gray-900 font-medium text-[18px] hover:text-green-900 px-1"
           >
             Contact
@@ -268,10 +341,10 @@
               x-collapse
               class="mt-2 ml-4 space-y-2 text-base text-gray-600 overflow-hidden"
             >
-              <a href="about-us.html" class="block hover:text-green-900"
+              <a href="/about-us/" class="block hover:text-green-900"
                 >About EcoBuild Plus</a
               >
-              <a href="resource.html" class="block hover:text-green-900"
+              <a href="/resource/" class="block hover:text-green-900"
                 >Resource</a
               >
             </div>
@@ -281,7 +354,7 @@
           <div>
             <button
               @click="active === 'residential' ? active = null : active = 'residential'"
-              class="flex items-center justify-between w-full hover:text-green-900"
+              class="flex items-center justify-between w-full text-green-900 hover:text-green-900"
             >
               Residential
               <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
@@ -292,41 +365,41 @@
               x-collapse
               class="mt-2 ml-4 space-y-2 text-base text-gray-600"
             >
-              <a href="#" class="block hover:text-green-900"
+              <a href="/residential/" class="block hover:text-green-900"
                 >View All Residential Services</a
               >
               <a
-                href="chicago-new-home-construction.html"
+                href="/chicago-new-home-construction/"
                 class="block hover:text-green-900"
                 >New Home Construction</a
               >
               <a
-                href="home-remodeling-chicago.html"
+                href="/home-remodeling-chicago/"
                 class="block hover:text-green-900"
                 >Home Remodeling</a
               >
               <a
-                href="kitchen-remodeling-chicago.html"
-                class="block hover:text-green-900"
+                href="/kitchen-remodeling-chicago/"
+                class="block text-green-900 hover:text-green-900"
                 >Kitchen Remodeling</a
               >
               <a
-                href="bathroom-remodeling-chicago.html"
+                href="/bathroom-remodeling-chicago/"
                 class="block hover:text-green-900"
                 >Bathroom Remodeling</a
               >
               <a
-                href="basement-remodeling-chicago.html"
+                href="/basement-remodeling-chicago/"
                 class="block hover:text-green-900"
                 >Basement Remodeling</a
               >
               <a
-                href="home-addition-chicago.html"
+                href="/home-addition-chicago/"
                 class="block hover:text-green-900"
                 >Home Additions</a
               >
               <a
-                href="accessible-home-remodeling.html"
+                href="/accessible-home-remodeling/"
                 class="block hover:text-green-900"
                 >Accessible Remodeling</a
               >
@@ -349,12 +422,12 @@
               class="mt-2 ml-4 space-y-2 text-base text-gray-600"
             >
               <a
-                href="kitchen-before-after-gallery.html"
+                href="/kitchen-before-after-gallery/"
                 class="block hover:text-green-900"
                 >Kitchen Before & After</a
               >
               <a
-                href="bathroom-before-after-gallery.html"
+                href="/bathroom-before-after-gallery/"
                 class="block hover:text-green-900"
                 >Bathroom Before & After</a
               >
@@ -362,19 +435,15 @@
           </div>
 
           <!-- NORMAL LINKS -->
-          <a href="service-areas.html" class="block hover:text-green-900"
+          <a href="/service-areas/" class="block hover:text-green-900"
             >Service Areas</a
           >
-          <a
-            href="financing.html"
-            class="block text-green-900 hover:text-green-900"
-            >Financing</a
-          >
-          <a href="commercial.html" class="block hover:text-green-900"
+          <a href="/financing/" class="block hover:text-green-900">Financing</a>
+          <a href="/commercial/" class="block hover:text-green-900"
             >Commercial</a
           >
-          <a href="blog.html" class="block hover:text-green-900">Blog</a>
-          <a href="contact.html" class="block hover:text-green-900">Contact</a>
+          <a href="/blog" class="block hover:text-green-900">Blog</a>
+          <a href="/contact/" class="block hover:text-green-900">Contact</a>
 
           <!-- CTA -->
           <div class="pt-6 text-center">
@@ -382,7 +451,7 @@
               (847) 592-6206</a
             >
             <a
-              href="contact.html"
+              href="/contact/"
               class="block text-center mt-4 rounded-full bg-green-900 px-6 py-3 text-white hover:bg-green-800 transition"
             >
               Contact Us Now
@@ -390,21 +459,21 @@
             <!-- Social Media Premium -->
             <div class="flex justify-center gap-4 mt-6">
               <a
-                href="#"
+                href="https://www.facebook.com/ecobuildplus"
                 class="w-10 h-10 flex items-center justify-center rounded bg-green-900 text-white hover:bg-green-800 transition"
               >
                 <i class="fa-brands fa-facebook-f text-sm"></i>
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/ecobuild_plus/"
                 class="w-10 h-10 flex items-center justify-center rounded bg-green-900 text-white hover:bg-green-800 transition"
               >
                 <i class="fa-brands fa-instagram text-sm"></i>
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/company/ecobuildplus/"
                 class="w-10 h-10 flex items-center justify-center rounded bg-green-900 text-white hover:bg-green-800 transition"
               >
                 <i class="fa-brands fa-linkedin-in text-sm"></i>
@@ -420,7 +489,7 @@
       <section class="relative h-[80vh] min-h-[520px] bg-black overflow-hidden">
         <!-- Cover Background -->
         <img
-          src="assets/img/bg/EcoBuild-Plus-Accessible-Remodeling-Invisible-Accessibility.webp"
+          src="/assets/img/bg/EcoBuild-Plus-Accessible-Remodeling-Invisible-Accessibility.webp"
           class="absolute inset-0 w-full h-full object-cover"
           alt="Residential Interior Design with Ecobuild Plus"
         />
@@ -444,7 +513,7 @@
 
             <div class="mt-8 flex flex-wrap justify-center gap-4">
               <a
-                href="contact.html"
+                href="/contact/"
                 class="inline-flex items-center gap-2 rounded-full bg-green-900 px-7 py-4 text-white font-semibold hover:bg-green-700 transition"
               >
                 Contact Us Now
@@ -475,12 +544,11 @@
             class="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8"
           >
             <!-- Google -->
-            <a
-              href="#"
+            <div
               class="bg-white rounded-xl shadow-md md:p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
             >
               <img
-                src="assets/img/logo/google-reviews.webp"
+                src="/assets/img/logo/google-reviews.webp"
                 class="mx-auto h-10"
                 alt="Google Reviews"
               />
@@ -488,15 +556,14 @@
               <p class="mt-2 text-[10px] md:text-sm text-gray-600">
                 Read Google Reviews
               </p>
-            </a>
+            </div>
 
             <!-- Yelp -->
-            <a
-              href="#"
+            <div
               class="bg-white rounded-xl shadow-md md:p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
             >
               <img
-                src="assets/img/logo/yelp-reviews.webp"
+                src="/assets/img/logo/yelp-reviews.webp"
                 class="mx-auto h-10"
                 alt="Yelp Reviews"
               />
@@ -504,30 +571,28 @@
               <p class="mt-2 text-[10px] md:text-sm text-gray-600">
                 Read Yelp Reviews
               </p>
-            </a>
+            </div>
 
             <!-- Angi -->
-            <a
-              href="#"
+            <div
               class="bg-white rounded-xl shadow-md md:p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
             >
               <img
-                src="assets/img/logo/angi-logo-400x235.webp"
+                src="/assets/img/logo/angi-logo-400x235.webp"
                 class="mx-auto h-10"
                 alt="Angi Reviews"
               />
               <p class="mt-2 text-[10px] md:text-sm text-gray-600">
                 Read Angi Reviews
               </p>
-            </a>
+            </div>
 
             <!-- BBB -->
-            <a
-              href="#"
+            <div
               class="bg-white rounded-xl shadow-md md:p-6 text-center hover:translate-y-[-10px] transition ease-out duration-300 hover:shadow-lg transition"
             >
               <img
-                src="assets/img/logo/bbb-reviews.webp"
+                src="/assets/img/logo/bbb-reviews.webp"
                 class="mx-auto h-10"
                 alt="BBB Reviews"
               />
@@ -535,7 +600,7 @@
               <p class="mt-2 text-[10px] md:text-sm text-gray-600">
                 Read BBB Reviews
               </p>
-            </a>
+            </div>
           </div>
         </div>
       </section>
@@ -546,7 +611,7 @@
       >
         <!-- Background -->
         <img
-          src="assets/img/Dream-Kitchen-Remodeling-1.webp"
+          src="/assets/img/Dream-Kitchen-Remodeling-1.webp"
           class="w-full h-full object-cover"
         />
 
@@ -573,7 +638,7 @@
           </p>
 
           <a
-            href="contact.html"
+            href="/contact/"
             class="inline-flex items-center gap-2 bg-white text-green-900 font-medium px-8 py-4 rounded-full shadow-lg hover:bg-green-900 hover:text-white transition"
           >
             Get a Free Quote
@@ -590,12 +655,12 @@
           <!-- LEFT IMAGE COLUMN -->
           <div class="space-y-1">
             <img
-              src="assets/img/Dream-Kitchen-Remodel.webp"
+              src="/assets/img/Dream-Kitchen-Remodel.webp"
               class="w-full h-[300px] shadow-md object-cover object-center"
               alt="New Home Construction with EcoBuild Plus"
             />
             <img
-              src="assets/img/Dream-Kitchen-Remodel-1.webp"
+              src="/assets/img/Dream-Kitchen-Remodel-1.webp"
               class="w-full shadow-md object-cover object-center"
               alt="Luxury Kitchen and Family Room Remodeling with EcoBuild Plus"
             />
@@ -692,7 +757,7 @@
             </p>
 
             <a
-              href="contact.html"
+              href="/contact/"
               class="inline-block mt-6 bg-green-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-800 transition duration-300"
             >
               Get a Free Estimate →
@@ -773,7 +838,7 @@
               <!-- CTA -->
               <div class="mt-10">
                 <a
-                  href="contact.html"
+                  href="/contact/"
                   class="inline-flex items-center gap-3 bg-white border text-green-900 px-8 py-4 rounded-full font-semibold hover:bg-transparent hover:text-white transition duration-300 shadow-md"
                 >
                   Get a Free Consultation Now →
@@ -785,12 +850,12 @@
           <!-- RIGHT IMAGE -->
           <div class="relative space-y-1 bg-white p-1">
             <img
-              src="assets/img/EcoBuild-Plus-Kitchen-Remodel--800x450.webp"
+              src="/assets/img/EcoBuild-Plus-Kitchen-Remodel--800x450.webp"
               alt="Luxury Home"
               class="w-full h-[350px] object-cover transition duration-500 hover:brightness-150"
             />
             <img
-              src="assets/img/EcoBuild-Plus-Kitchen-Remodels-800x450.webp"
+              src="/assets/img/EcoBuild-Plus-Kitchen-Remodels-800x450.webp"
               alt="Luxury Home"
               class="w-full h-[350px] object-cover transition duration-500 hover:brightness-150"
             />
@@ -842,9 +907,11 @@
           <div class="grid md:grid-cols-3 gap-10">
             <!-- Card 1 -->
             <div class="relative group shadow-lg rounded overflow-hidden">
-              <a href="#">
+              <a
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/deerfield/"
+              >
                 <img
-                  src="assets/img/Accessible-Kitchen-Remodeling-600x503.webp"
+                  src="/assets/img/Accessible-Kitchen-Remodeling-600x503.webp"
                   alt="Kitchen Remodeling in Deerfield"
                   class="w-full h-[420px] object-cover"
                 />
@@ -865,9 +932,11 @@
 
             <!-- Card 2 -->
             <div class="relative group shadow-lg rounded overflow-hidden">
-              <a href="#">
+              <a
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/evanston/kitchen-remodeling/"
+              >
                 <img
-                  src="assets/img/kitchen-remodeling-in-evanston-600x450.webp"
+                  src="/assets/img/kitchen-remodeling-in-evanston-600x450.webp"
                   alt="Kitchen Remodeling in Evanston"
                   class="w-full h-[420px] object-cover"
                 />
@@ -888,9 +957,11 @@
 
             <!-- Card 3 -->
             <div class="relative group shadow-lg rounded overflow-hidden">
-              <a href="#">
+              <a
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/des-plaines/kitchen-remodeling/"
+              >
                 <img
-                  src="assets/img/kitchen-remodeling-in-des-plaines-600x599.webp"
+                  src="/assets/img/kitchen-remodeling-in-des-plaines-600x599.webp"
                   alt="Kitchen Remodeling in Des Plaines"
                   class="w-full h-[420px] object-cover"
                 />
@@ -923,254 +994,364 @@
           </div>
 
           <!-- Grid -->
-          <div
-            class="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-12 text-lg"
-          >
-            <!-- Column 1 -->
-            <a href="#" class="area-link">
-              <i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Arlington Heights </span></a
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-12 text-lg">
+            <!-- COLUMN 1 -->
+            <a
+              href="/service-areas/northwest-suburbs/arlington-heights/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
+              ><span> Arlington Heights</span></a
             >
-            <a href="#" class="area-link">
-              <i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/bensenville/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Bensenville</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/deer-park/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Deer Park</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/elk-grove-village/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Elk Grove Village</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/grayslake/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Grayslake</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/hoffman-estates/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Hoffman Estates</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a href="/service-areas/northwest-suburbs/itasca/" class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Itasca</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/lake-villa/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Lake Villa</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/lindenhurst/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Lindenhurst</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/mundelein/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Mundelein</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/oakwood-hills/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Oakwood Hills</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/prairie-grove/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Prairie Grove</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/roselle/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Roselle</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/schiller-park/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Schiller Park</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/vernon-hills/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Vernon Hills</span></a
             >
 
-            <!-- Column 2 -->
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Arlington Heights</span></a
+            <!-- COLUMN 2 -->
+            <a
+              href="/service-areas/northwest-suburbs/barrington/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
+              ><span> Barrington</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/buffalo-grove/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Buffalo Grove</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/deerfield/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Deerfield</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/evanston/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Evanston</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/hanover-park/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Hanover Park</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/holiday-hills/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Holiday Hills</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/kildeer/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Kildeer</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/lake-zurich/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Lake Zurich</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/long-grove/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Long Grove</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a href="/service-areas/northwest-suburbs/niles/" class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Niles</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/palatine/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Palatine</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/prospect-heights/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Prospect Heights</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/rosemont/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Rosemont</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/south-barrington/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> South Barrington</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/west-dundee/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> West Dundee</span></a
             >
 
-            <!-- Column 3 -->
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <!-- COLUMN 3 -->
+            <a
+              href="/service-areas/northwest-suburbs/barrington-hills/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Barrington Hills</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/carpentersville/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Carpentersville</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/des-plaines/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Des Plaines</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/fox-river-grove/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Fox River Grove</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/harwood-heights/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Harwood Heights</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/inverness/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Inverness</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/lake-barrington/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Lake Barrington</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/libertyville/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Libertyville</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/morton-grove/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Morton Grove</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/north-barrington/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> North Barrington</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/park-ridge/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Park Ridge</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/riverwoods/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Riverwoods</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/round-lake/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Round Lake</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/streamwood/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Streamwood</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/wheeling/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Wheeling</span></a
             >
 
-            <!-- Column 4 -->
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <!-- COLUMN 4 -->
+            <a
+              href="/service-areas/northwest-suburbs/bartlett/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Bartlett</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a href="/service-areas/northwest-suburbs/cary/" class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Cary</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a href="/service-areas/northwest-suburbs/elgin/" class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Elgin</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/glenview/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Glenview</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/hawthorn-woods/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Hawthorn Woods</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/island-lake/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Island Lake</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Lake in the Hills</span></a
+            <a
+              href="/service-areas/northwest-suburbs/lake-in-the-hills/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
+              ><span> Lake In The Hills</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
-              ><span> Lake Forest</span></a
+            <a
+              href="/service-areas/northwest-suburbs/lincolnshire/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
+              ><span> Lincolnshire</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/mount-prospect/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Mount Prospect</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/northbrook/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Northbrook</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/port-barrington/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Port Barrington</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/rolling-meadows/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Rolling Meadows</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/schaumburg/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Schaumburg</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/trout-valley/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Trout Valley</span></a
             >
-            <a href="#" class="area-link"
-              ><i class="fa-solid fa-link text-xs opacity-70"></i
+            <a
+              href="/service-areas/northwest-suburbs/wood-dale/"
+              class="area-link"
+              ><i class="fa-solid fa-link text-xs hidden md:block"></i
               ><span> Wood Dale</span></a
             >
           </div>
@@ -1270,7 +1451,7 @@
       <!-- FAQ -->
       <section class="relative bg-gray-100 py-10 overflow-hidden">
         <img
-          src="assets/img/bg/bg_faq.svg"
+          src="/assets/img/bg/bg_faq.svg"
           class="absolute inset-0 object-cover w-full h-full opacity-10 pointer-events-none"
           alt="FAQ Background"
         />
@@ -1427,37 +1608,37 @@
             class="grid grid-cols-4 md:grid-cols-8 gap-3 md:gap-8 items-center"
           >
             <img
-              src="assets/img/logo/jameshardie.svg"
+              src="/assets/img/logo/jameshardie.svg"
               class="h-6"
               alt="James Hardie"
             />
 
             <img
-              src="assets/img/logo/andersen.svg"
+              src="/assets/img/logo/andersen.svg"
               class="h-5"
               alt="Andersen"
             />
 
             <img
-              src="assets/img/logo/certainteed.svg"
+              src="/assets/img/logo/certainteed.svg"
               class="h-5"
               alt="CertainTeed"
             />
 
-            <img src="assets/img/logo/kohler.svg" class="h-8" alt="Kohler" />
+            <img src="/assets/img/logo/kohler.svg" class="h-8" alt="Kohler" />
 
-            <img src="assets/img/logo/moen.svg" class="h-8" alt="Moen" />
+            <img src="/assets/img/logo/moen.svg" class="h-8" alt="Moen" />
 
-            <img src="assets/img/logo/cambria.svg" class="h-8" alt="Cambria" />
+            <img src="/assets/img/logo/cambria.svg" class="h-8" alt="Cambria" />
 
             <img
-              src="assets/img/logo/Sherwin-Williams.webp"
+              src="/assets/img/logo/Sherwin-Williams.webp"
               class="h-[75px]"
               alt="Sherwin Williams"
             />
 
             <img
-              src="assets/img/logo/lp-smartside.svg"
+              src="/assets/img/logo/lp-smartside.svg"
               class="h-8"
               alt="LP SmartSide"
             />
@@ -1469,7 +1650,7 @@
         <!-- Background Image -->
         <div class="absolute inset-0 -z-10">
           <img
-            src="assets/img/bg/bg_footer.svg"
+            src="/assets/img/bg/bg_footer.svg"
             alt="Footer Background"
             class="w-full h-full object-cover z-1 opacity-5"
           />
@@ -1480,9 +1661,8 @@
           <!-- Logo + Description -->
           <div class="text-center mb-12">
             <img
-              src="assets/img/logo/ecobuild-plus-vectorised-image.svg"
+              src="/assets/img/logo/ecobuild-plus-vectorised-image.svg"
               class="mx-auto h-[85px] mb-4"
-              alt="EcoBuild Plus Logo"
             />
             <p class="max-w-3xl mx-auto text-gray-200 leading-relaxed">
               EcoBuild Plus is your trusted Chicagoland General Contractor,
@@ -1503,7 +1683,11 @@
                 409 W Algonquin Rd<br />
                 Mt Prospect, IL 60056
               </p>
-              <p class="mt-4 font-semibold">(847) 7383-9000</p>
+              <p class="mt-4 font-semibold">
+                <a href="tel:+184773839000" class="hover:underline"
+                  >(847) 7383-9000</a
+                >
+              </p>
             </div>
 
             <!-- Opening Hours -->
@@ -1526,28 +1710,28 @@
               <ul class="text-sm text-gray-200 space-y-2">
                 <li>
                   <a
-                    href="chicago-new-home-construction.html"
+                    href="/chicago-new-home-construction/"
                     class="hover:text-white transition"
                     >New Home Construction</a
                   >
                 </li>
                 <li>
                   <a
-                    href="kitchen-remodeling-chicago.html"
+                    href="/kitchen-remodeling-chicago/"
                     class="hover:text-white transition"
                     >Kitchen Remodeling</a
                   >
                 </li>
                 <li>
                   <a
-                    href="bathroom-remodeling-chicago.html"
+                    href="/bathroom-remodeling-chicago/"
                     class="hover:text-white transition"
                     >Bathroom Remodeling</a
                   >
                 </li>
                 <li>
                   <a
-                    href="home-addition-chicago.html"
+                    href="/home-addition-chicago/"
                     class="hover:text-white transition"
                     >Home Additions</a
                   >
@@ -1562,22 +1746,26 @@
               </h3>
               <ul class="text-sm text-gray-200 space-y-2">
                 <li>
-                  <a href="about-us.html" class="hover:text-white transition"
+                  <a href="/about-us/" class="hover:text-white transition"
                     >About</a
                   >
                 </li>
                 <li>
-                  <a href="projects.html" class="hover:text-white transition"
+                  <a
+                    href="/kitchen-before-after-gallery/"
+                    class="hover:text-white transition"
                     >Projects</a
                   >
                 </li>
                 <li>
-                  <a href="blog.html" class="hover:text-white transition"
+                  <a
+                    href="https://ecobuildplus.com/blog/"
+                    class="hover:text-white transition"
                     >Blog</a
                   >
                 </li>
                 <li>
-                  <a href="contact.html" class="hover:text-white transition"
+                  <a href="/contact/" class="hover:text-white transition"
                     >Contact</a
                   >
                 </li>
@@ -1592,7 +1780,7 @@
               <div class="flex flex-wrap justify-center gap-4 mt-8">
                 <!-- Google Map -->
                 <a
-                  href="#"
+                  href="https://maps.app.goo.gl/4CPVjGKgCuXpDaqt6"
                   aria-label="Google Map"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1601,7 +1789,7 @@
 
                 <!-- X (Twitter) -->
                 <a
-                  href="#"
+                  href="https://x.com/ecobuildplus"
                   aria-label="X"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1610,7 +1798,7 @@
 
                 <!-- Instagram -->
                 <a
-                  href="#"
+                  href="https://www.instagram.com/ecobuild_plus/"
                   aria-label="Instagram"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1619,16 +1807,19 @@
 
                 <!-- Houzz (closest icon substitute = house) -->
                 <a
-                  href="#"
+                  href="https://www.chamberofcommerce.com/business-directory/illinois/mount-prospect/bathroom-remodeler/2012095932-ecobuild-plus"
                   aria-label="Houzz"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
-                  <i class="fa-solid fa-house text-white text-lg"></i>
+                  <img
+                    src="/assets/img/icons/Chamber-of-Commerce-logo.svg"
+                    alt="Chamber-of-Commerce"
+                  />
                 </a>
 
                 <!-- Angi (no official icon → use stylized A) -->
                 <a
-                  href="#"
+                  href="https://www.angi.com/companylist/us/il/mount-prospect/ecobuild-plus-reviews-11075114.htm"
                   aria-label="Angi"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1637,7 +1828,7 @@
 
                 <!-- Facebook -->
                 <a
-                  href="#"
+                  href="https://www.facebook.com/ecobuildplus"
                   aria-label="Facebook"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1646,7 +1837,7 @@
 
                 <!-- TikTok -->
                 <a
-                  href="#"
+                  href="https://www.tiktok.com/@ecobuildplus"
                   aria-label="TikTok"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1655,7 +1846,7 @@
 
                 <!-- YouTube -->
                 <a
-                  href="#"
+                  href="https://www.youtube.com/@EcoBuildPlus"
                   aria-label="YouTube"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1664,7 +1855,7 @@
 
                 <!-- LinkedIn -->
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/ecobuildplus/"
                   aria-label="LinkedIn"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1673,7 +1864,7 @@
 
                 <!-- Yelp -->
                 <a
-                  href="#"
+                  href="https://www.yelp.com/biz/eco-build-plus-mt-prospect"
                   aria-label="Yelp"
                   class="group w-12 h-12 flex items-center justify-center bg-green-800/40 rounded-xl hover:bg-green-600 transition-all duration-300"
                 >
@@ -1686,14 +1877,22 @@
             <div
               class="flex flex-wrap justify-center gap-8 text-sm text-gray-200 mb-6"
             >
-              <a href="#" class="hover:text-white transition">Privacy Policy</a>
-              <a href="resource.html" class="hover:text-white transition"
+              <a
+                href="https://ecobuildplus.com/privacy-policy/"
+                class="hover:text-white transition"
+                >Privacy Policy</a
+              >
+              <a href="/resource/" class="hover:text-white transition"
                 >Resource</a
               >
-              <a href="#" class="hover:text-white transition"
+              <a
+                href="https://ecobuildplus.com/terms-conditions/"
+                class="hover:text-white transition"
                 >Terms & Conditions</a
               >
-              <a href="#" class="hover:text-white transition"
+              <a
+                href="https://ecobuildplus.com/ecobuildplus-warranty/"
+                class="hover:text-white transition"
                 >EcoBuild Plus Warranty</a
               >
             </div>
@@ -1709,123 +1908,131 @@
               including:
 
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/deerfield/"
                 class="hover:text-white transition-colors hover:underline"
                 >Deerfield</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/arlington-heights/"
                 class="hover:text-white transition-colors hover:underline"
                 >Arlington Heights</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/des-plaines/"
                 class="hover:text-white transition-colors hover:underline"
                 >Des Plaines</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/elk-grove-village/"
                 class="hover:text-white transition-colors hover:underline"
                 >Elk Grove Village</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/morton-grove/"
                 class="hover:text-white transition-colors hover:underline"
                 >Morton Grove</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/mount-prospect/"
                 class="hover:text-white transition-colors hover:underline"
                 >Mount Prospect</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/niles/"
                 class="hover:text-white transition-colors hover:underline"
                 >Niles</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/palatine/"
                 class="hover:text-white transition-colors hover:underline"
                 >Palatine</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/park-ridge/"
                 class="hover:text-white transition-colors hover:underline"
                 >Park Ridge</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/prospect-heights/"
                 class="hover:text-white transition-colors hover:underline"
                 >Prospect Heights</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/schaumburg/"
                 class="hover:text-white transition-colors hover:underline"
                 >Schaumburg</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/evanston/"
                 class="hover:text-white transition-colors hover:underline"
                 >Evanston</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/northbrook/"
                 class="hover:text-white transition-colors hover:underline"
                 >Northbrook</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/inverness/"
                 class="hover:text-white transition-colors hover:underline"
                 >Inverness</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/lake-zurich/"
                 class="hover:text-white transition-colors hover:underline"
                 >Lake Zurich</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/lincolnshire/"
                 class="hover:text-white transition-colors hover:underline"
                 >Lincolnshire</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/mundelein/"
                 class="hover:text-white transition-colors hover:underline"
                 >Mundelein</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/north-barrington/"
                 class="hover:text-white transition-colors hover:underline"
                 >North Barrington</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/riverwoods/"
                 class="hover:text-white transition-colors hover:underline"
                 >Riverwoods</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/rolling-meadows/"
                 class="hover:text-white transition-colors hover:underline"
                 >Rolling Meadows</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/roselle/"
                 class="hover:text-white transition-colors hover:underline"
                 >Roselle</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/rosemont/"
                 class="hover:text-white transition-colors hover:underline"
                 >Rosemont</a
               >,
               <a
-                href="#"
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/schiller-park/"
+                class="hover:text-white transition-colors hover:underline"
+                >Schiller Park</a
+              >,
+              <a
+                href="https://ecobuildplus.com/service-areas/northwest-suburbs/vernon-hills/"
                 class="hover:text-white transition-colors hover:underline"
                 >Vernon Hills</a
               >
               —
 
-              <a href="#" class="underline hover:text-white transition-colors">
+              <a
+                href="https://ecobuildplus.com/service-areas/"
+                class="underline hover:text-white transition-colors"
+              >
                 See all service areas
               </a>
             </p>
@@ -1834,14 +2041,13 @@
       </footer>
     </main>
 
-    <script src="assets/js/main.js" defer></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.13.5/dist/cdn.min.js"
     ></script>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"
     ></script>
   </body>
 </html>
